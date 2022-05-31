@@ -1,0 +1,683 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>PROBLEMS - chapter 9</title>
+  <metadata>
+  <md:content-id>m28398</md:content-id><md:title>PROBLEMS - chapter 9</md:title>
+  <md:abstract/>
+  <md:uuid>05954c9b-9baf-4dec-a1bb-c101c4eae87c</md:uuid>
+</metadata>
+
+<content>
+    <para id="id11443301">PROBLEMS</para>
+    <para id="id9824767">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <para id="id7617525">9.1 A 1-kW, 120-V, 60-Hz capacitor-start motor has the following parameters for the main and auxiliary windings (at starting):</para>
+    <para id="id11276377"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mtext>82</m:mtext><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">j7</m:mi></m:mrow><m:mtext>.</m:mtext><m:mtext>25</m:mtext><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{ ital "main"} } =4 "." "82"+j7 "." "25" %OMEGA } {}</m:annotation></m:semantics></m:math>main winding</para>
+    <para id="id11326403"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>7</m:mn></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mtext>95</m:mtext><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">j9</m:mi></m:mrow><m:mtext>.</m:mtext><m:mtext>21</m:mtext><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{ ital "aux"} } =7 "." "95"+j9 "." "21" %OMEGA } {}</m:annotation></m:semantics></m:math> auxiliary winding</para>
+    <para id="id10824991">a. Find the magnitude and the phase angles of the currents in the two windings when rated voltage is applied to the motor under starting conditions.</para>
+    <para id="id10226868">b. Find the value of starting capacitance that will place the main- and auxiliary-winding currents in time quadrature at starting.</para>
+    <para id="id10370165">c. Repeat part (a) when the capacitance of part (b) is inserted in series with the auxiliary winding.</para>
+    <para id="id3446879">9.2 Repeat Problem 9.1 if the motor is operated from a 120-V, 50-Hz source.</para>
+    <para id="id8158710">9.3 Given the applied electrical frequency and the corresponding impedances 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math> of the main and auxiliary windings at starting, write a MATLAB script to calculate the value of the capacitance, which, when connected in series with the starting winding, will produce a starting winding current which will lead that of the main winding by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id11284035">9.4 A 500-W, four-pole, 115-V, 60-Hz single-phase induction motor has the following parameters (resistances and reactances in 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>/phase):</para>
+    <para id="id10926293">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>1,</m:mn>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>main</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>68</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>2,</m:mn>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>main</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>96</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>1,</m:mn>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>main</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>87</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                            <m:mi>,</m:mi>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>main</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>60</m:mtext>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>6</m:mn>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mn>2,</m:mn>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>main</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>72</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1, ital "main"} } =1 "." "68""    "R rSub { size 8{2, ital "main"} } =2 "." "96""    "X rSub { size 8{1, ital "main"} } =1 "." "87""    "X rSub { size 8{m, ital "main"} } ="60" "." 6"    "X rSub { size 8{2, ital "main"} } =1 "." "72"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id11456701">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mtext>Coreloss</m:mtext>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>38</m:mtext>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:mtext>W            Friction and windage</m:mtext>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>11</m:mtext>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>8W</m:mn>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{"Coreloss"="38""W            Friction and windage"="11" "." 8W} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id9030048">Find the speed, stator current, torque, power output, and efficiency when the motor is operating at rated voltage and a slip of 4.2 percent.</para>
+    <para id="id7404089">9.5 Write a MATLAB script to produce plots of the speed and efficiency of the single-phase motor of Problem 9.4 as a function of output power over the range 0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>out</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= P rSub { size 8{ ital "out"} }  &lt;= {}} {}</m:annotation></m:semantics></m:math>500 W.</para>
+    <para id="id8302781">9.6 At standstill the rms currents in the main and auxiliary windings of a four-pole, capacitor-start induction motor are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math> = 20.7 A and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math> = 11.1 A respectively. The auxiliary-winding current leads the main-winding current by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>53</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"53" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. The effective turns per pole (i.e., the number of turns corrected for the effects of winding distribution) are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>42</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{ ital "main"} } ="42"} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>68</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{ ital "aux"} } ="68"} {}</m:annotation></m:semantics></m:math>. The windings are in space quadrature.</para>
+    <para id="id11024619">a. Determine the peak amplitudes of the forward and backward stator-mmf waves.</para>
+    <para id="id9148772">b. Suppose it were possible to adjust the magnitude and phase of the auxiliary-winding current. What magnitude and phase would produce a purely forward mmf wave?</para>
+    <para id="id10909217">9.7 The equivalent-circuit parameters of an 8-kW, 230-V, 60-Hz, four-pole, two-phase, squirrel-cage induction motor in ohms per phase are</para>
+    <para id="id7484035">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>253</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>14</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>32</m:mtext>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>7</m:mn>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>446</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>30</m:mtext>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } =0 "." "253""     "X rSub { size 8{1} } =1 "." "14""     "X rSub { size 8{m} } ="32" "." 7"     "R rSub { size 8{2} } =0 "." "446""     "X rSub { size 8{2} } =1 "." "30"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id11431708">This motor is operated from an unbalanced two-phase, 60-Hz source whose phase voltages are, respectively, 223 and 190 V, the smaller voltage leading the larger by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>73</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"73" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. For a slip of 0.045, find</para>
+    <para id="id8963899">a. the phase currents in each of the windings and</para>
+    <para id="id10920345">b. the internal mechanical power.</para>
+    <para id="id10908169">9.8 The induction motor of Problem 9.7 is supplied from an unbalanced two phase source by a four-wire feeder having an impedance Z = 0.32 + j1.5 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>/phase. The source voltages can be expressed as</para>
+    <para id="id9903747">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:msub>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mover accent="true">
+                              <m:mi>V</m:mi>
+                              <m:mo stretchy="false">ˆ</m:mo>
+                            </m:mover>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>α</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>235</m:mtext>
+                        </m:mrow>
+                        <m:mi>∠</m:mi>
+                        <m:msup>
+                          <m:mn>0</m:mn>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>o</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mtext>                {</m:mtext>
+                        <m:mover accent="true">
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mi>V</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">ˆ</m:mo>
+                        </m:mover>
+                      </m:mrow>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>α</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mo stretchy="false">=</m:mo>
+                <m:mtext>212</m:mtext>
+              </m:mrow>
+              <m:mi>∠</m:mi>
+              <m:msup>
+                <m:mtext>78</m:mtext>
+                <m:mstyle fontsize="8pt">
+                  <m:mrow>
+                    <m:mi>o</m:mi>
+                  </m:mrow>
+                </m:mstyle>
+              </m:msup>
+            </m:mrow>
+            <m:mrow>
+              <m:mrow/>
+              <m:mrow/>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } ="235"∠0 rSup { size 8{o} } "                {" hat  ital {V}} rSub { size 8{α} } ="212"∠"78" rSup { size 8{o} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7601412">For a slip of 5 percent, show that the induction-motor terminal voltages correspond more nearly to a balanced two-phase set than do those of the source.</para>
+    <para id="id6265474">9.9 The equivalent-circuit parameters in ohms per phase referred to the stator for a two-phase, 1.0 kW, 220-V, four-pole, 60-Hz, squirrel-cage induction motor are given below. The no-load rotational loss is 65 W.</para>
+    <para id="id11102019">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>78</m:mtext>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>4</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>2</m:mn>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>X</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msub>
+                        <m:mi>X</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>5</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>3</m:mn>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>X</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>93</m:mtext>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } =0 "." "78""     "R rSub { size 8{2} } =4 "." 2"     "X rSub { size 8{1} } =X rSub { size 8{2} } =5 "." 3"     "X rSub { size 8{m} } ="93"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id10416128">a. The voltage applied to phase 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math> is 220
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>∠</m:mi><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{∠0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> V and that applied to phase 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> is 220
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>∠</m:mi><m:msup><m:mtext>65</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{∠"65" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> V. Find the net air-gap torque at a slip s = 0.035.</para>
+    <para id="id10868126">b. What is the starting torque with the applied voltages of part (a)?</para>
+    <para id="id9985446">c. The applied voltages are readjusted so that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>220</m:mtext></m:mrow><m:mi>∠</m:mi><m:msup><m:mtext>65</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } ="220"∠"65" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>V and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mtext>220</m:mtext></m:mrow><m:mi>∠</m:mi><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{β} } ="220"∠"90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>V. Full load on the machine occurs at s = 0.048. At what slip does maximum internal torque occur? What is the value of the maximum torque?</para>
+    <para id="id5958876">d. While the motor is running as in part (c), phase 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> is open-circuited. What is the power output of the machine at a slip s = 0.04?</para>
+    <para id="id5662333">e. What voltage appears across the open phase-
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> terminals under the conditions of part (d)?</para>
+    <para id="id11395082">9.10 A 120-V, 60-Hz, capacitor-run, two-pole, single-phase induction motor has the following parameters:</para>
+    <para id="id6636094">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>main</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>47</m:mtext>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>2</m:mn>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>mH</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>main</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>38</m:mtext>
+                  <m:mo stretchy="false">Ω</m:mo>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>aux</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>102</m:mtext>
+                  </m:mrow>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>mH</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>aux</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>78</m:mtext>
+                  <m:mo stretchy="false">Ω</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main"} } ="47" "." 2 ital "mH""     "R rSub { size 8{ ital "main"} } =0 "." "38" %OMEGA "      "L rSub { size 8{ ital "aux"} } ="102" ital "mH""     "R rSub { size 8{ ital "aux"} } =1 "." "78" %OMEGA } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id11123074">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>35</m:mtext>
+                  <m:mi fontstyle="italic">μH</m:mi>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>17</m:mtext>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>2μ</m:mn>
+                  <m:mo stretchy="false">Ω</m:mo>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>main</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mi>,</m:mi>
+                            <m:mi>r</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>342</m:mtext>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>mH</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>aux</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mi>,</m:mi>
+                            <m:mi>r</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>530</m:mtext>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>mH</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{r} } =2 "." "35"μH"     "R rSub { size 8{r} } ="17" "." 2μ %OMEGA "     "L rSub { size 8{ ital "main",r} } =0 "." "342" ital "mH""     "L rSub { size 8{ ital "aux",r} } =0 "." "530" ital "mH"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id8570868">You may assume that the motor has 48 W of core loss and 23 W of rotational losses. The motor windings are connected with the polarity shown in Fig. 9.1 with a 40
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>F run capacitor.</para>
+    <figure id="id10346824">
+      <media id="id6329748" alt=""><image src="../../media/graphics1-b9ee.png" mime-type="image/png" height="211" width="433"/></media>
+    </figure>
+    <para id="id4480351">Figure 9.1 Permanent-split-capacitor induction-motor connections</para>
+    <para id="id4477296">a. Calculate the motor starting torque.</para>
+    <para id="id4354910">With the motor operating at a speed of 3490 r/min, calculate</para>
+    <para id="id11748271">b. the main and auxiliary-winding currents,</para>
+    <para id="id12063599">c. the total line current and the motor power factor,</para>
+    <para id="id10035029">d. the output power and</para>
+    <para id="id4376490">e. the electrical input power and the efficiency.</para>
+    <para id="id4332840">Note that this problem is most easily solved using MATLAB.</para>
+    <para id="id11601234">9.11 Consider the single-phase motor of Problem 9.10. Write a MATLAB script to search over the range of capacitor values from 25
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>F to 75
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>F to find the value which will maximize the motor efficiency at a motor speed of 3490 r/min. What is the corresponding maximum efficiency?</para>
+    <para id="id2878214">9.12 In order to raise the starting torque, the single-phase induction motor of Problem 9.10 is to be converted to a capacitor-start, capacitor-run motor. Write a MATLAB script to find the minimum value of starting capacitance required to raise the starting torque to 0.5 N. m.</para>
+  </content>
+</document>

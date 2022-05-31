@@ -1,0 +1,73 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>PROBLEMS - chapter 8</title>
+  <metadata>
+  <md:content-id>m28377</md:content-id><md:title>PROBLEMS - chapter 8</md:title>
+  <md:abstract/>
+  <md:uuid>dd923d9c-c45d-4aa0-a056-946dbde43cfb</md:uuid>
+</metadata>
+
+<content>
+    <para id="id10733839">PROBLEMS</para>
+    <para id="id6556557">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <para id="id10882315">8.1 Repeat Example 8.1 for a machine identical to that considered in the example except that the stator pole-face angle is, β = 45°. </para>
+    <para id="id6642816">8.2 In the paragraph preceeding Eq. 8.1, the text states that "under the assumption of negligible iron reluctance the mutual inductances between the phases of the doubly-salient VRM of Fig. 8.lb will be zero, with the exception of a small, essentially constant component gyyassociated with leakage flux." Neglect any leakage flux effects and use magnetic circuit techniques to show that this statement is true. </para>
+    <para id="id10019484">8.3 Use magnetic-circuit techniques to show that the phase-to-phase mutual inductance in the 6/4 VRM of Fig. 8.5 is zero under the assumption of infinite rotor- and stator-iron permeability. Neglect any contributions of leakage flux. </para>
+    <para id="id6979929">8.4 A 6/4 VRM of the form of Fig. 8.5 has the following properties: </para>
+    <para id="id8256877">Stator pole angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>β</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>30</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β="30" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id10895341">Rotor pole angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>α</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>30</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α="30" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id11019546">Air-gap length g = 0.35 mm </para>
+    <para id="id3380554">Rotor outer radius R = 5.1 cm </para>
+    <para id="id6152362">Active length D = 7 cm</para>
+    <para id="id11584802">This machine is connected as a three-phase motor with opposite poles connected in series to form each phase winding. There are 40 turns per pole (80 turns per phase). The rotor and stator iron can be considered to be of infinite permeability and hence mutual-inductance effects can be neglected. </para>
+    <para id="id10792979">a. Defining the zero of rotor angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> at the position when the phase-1 inductance is maximum, plot and label the inductance of phase 1 as a function of rotor angle. </para>
+    <para id="id10939963">b. On the plot of part (a), plot the inductances of phases 2 and 3. </para>
+    <para id="id4439402">c. Find the phase-1 current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> which results in a magnetic flux density of 1.0 T in the air gap under the phase-1 pole face when the rotor is in a position of maximum phase-1 inductance. </para>
+    <para id="id9077678">d. Assuming that the phase-1 current is held constant at the value found in part (c) and that there is no current in phases 2 and 3, plot the torque as a function of rotor position. The motor is to be driven from a three-phase current-source inverter which can be switched on or off to supply either zero current or a constant current of magnitude 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> in phases 2 and 3; plot the torque as a function of rotor position. </para>
+    <para id="id4434284">e. Under the idealized assumption that the currents can be instantaneously switched, determine the sequence of phase currents (as a function of rotor position) that will result in constant positive motor torque, independent of rotor position. </para>
+    <para id="id4407259">f. If the frequency of the stator excitation is such that a time 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 35 msec is required to sequence through all three phases under the excitation conditions of part (e), find the rotor angular velocity and its direction of rotation. </para>
+    <para id="id10637854">8.5 In Section 8.2, when discussing Fig. 8.5, the text states: "In addition to the fact that there are not positions of simultaneous alignment for the 6/4 VRM, it can be seen that there also are no rotor positions at which only a torque of a single sign (either positive or negative) can be produced." Show that this statement is true. </para>
+    <para id="id11450183">8.6 Consider a three-phase 6/8 VRM. The stator phases are excited sequentially, requiting a total time of 15 msec. Find the angular velocity of the rotor in r/min. </para>
+    <para id="id9077771">8.7 The phase windings of the castleated machine of Fig. 8.8 are to be excited by turning the phases on and off individually (i.e., only one phase can be on at any given time). </para>
+    <para id="id11313231">a. Describe the sequence of phase excitations required to move the rotor to the fight (clockwise) by an angle of approximately 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>21</m:mtext><m:mtext>.</m:mtext><m:msup><m:mn>4</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"21" "." 4 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. </para>
+    <para id="id11541513">b. The stator phases are to be excited as a regular sequence of pulses. Calculate the phase order and the time between pulses required to produce a steady-state rotor rotation of 125 r/min in the counterclockwise direction. </para>
+    <para id="id5011637">8.8 Replace the 28-tooth rotor of Problem 8.7 with a rotor with 26 teeth. </para>
+    <para id="id11406847">a. Phase 1 is excited, and the rotor is allowed to come to rest. If the excitation on phase 1 is removed and excitation is applied to phase 2, calculate the resultant direction and magnitude (in degrees) of rotor rotation. </para>
+    <para id="id5373248">b. The stator phases are to be excited as a regular sequence of pulses. Calculate the phase order and the time between pulses required to produce a steady-state rotor rotation of 80 r/min in the counterclockwise direction.</para>
+    <para id="id11335037">8.9 The three-phase 6/4 VRM of Problem 8.4 has a winding resistance of 0.15 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>/phase and a leakage inductance of 4.5 mH in each phase. Assume that the rotor is rotating at a constant angular velocity of 1750 ffmin. </para>
+    <para id="id9076916">a. Plot the phase-1 inductance as a function of the rotor angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>. </para>
+    <para id="id10332923">b. A voltage of 75 V is applied to phase 1 as the rotor reaches the position 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:msup><m:mtext>30</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } = - "30" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> and is maintained constant until 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. Calculate and plot the phase-1 current as a function of time during this period. </para>
+    <para id="id9957107">c. When the rotor reaches 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ=0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>, the applied voltage is reversed so that a voltage of -75 V is applied to the winding. This voltage is maintained until the winding current reaches zero, at which point the winding is open-circuited. Calculate and plot the current decay during the time until the current decays to zero. </para>
+    <para id="id6625665">d. Calculate and plot the torque during the time periods investigated in parts (b) and (c).</para>
+    <para id="id5373733">8.10 Consider a two-phase stepper motor with a permanent-magnet rotor such as shown in Fig.8.18 and whose torque-angle curve is as shown in Fig.8.19a. This machine is to be excited by a four-bit digital sequence corresponding to the following winding excitation:</para>
+    <figure id="id10034639">
+      <media id="id18104774" alt=""><image src="../../media/graphics1-04cc.png" mime-type="image/png" height="160" width="371"/></media>
+    </figure>
+    <para id="id4312070">a. Make a table of 4-bit patterns which will produce rotor angular positions of 0, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"45" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>,..., 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>315</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"315" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. </para>
+    <para id="id10756440">b. By sequencing through the bit pattern found in part (a) the motor can be made to rotate. What time interval (in milliseconds) between bit-pattern changes will result in a rotor speed of 1200 r/min? </para>
+    <para id="id8263231">8.11 Figure 8.22 shows a two-phase hybrid stepping motor with castleated poles on the stator. The rotor is shown in the position it occupies when current is flowing into the positive lead of phase 1. </para>
+    <para id="id10034342">a. If phase one is turned off and phase 2 is excited with current flowing into its positive lead, calculate the corresponding angular rotation of the rotor. Is it in the clockwise or counterclockwise direction? </para>
+    <para id="id4015265">b. Describe an excitation sequence for the phase windings which will result in a steady rotation of the rotor in the clockwise direction.</para>
+    <figure id="id10757540">
+      <media id="id14752366" alt=""><image src="../../media/graphics2-7641.png" mime-type="image/png" height="432" width="345"/></media>
+    </figure>
+    <para id="id10068711">Figure 8.22 Castleated hybrid stepping motor</para>
+    <para id="id9164140">c. Determine the frequency of the phase currents required to achieve a rotor speed of 8 r/min. </para>
+    <para id="id5159147">8.12 Consider a multistack, multiphase variable-reluctance stepping motor, such as that shown schematically in Fig. 8.17, with 14 poles on each of the rotor and stator stacks and three stacks with one phase winding per stack. The motor is built such that the stator poles of each stack are aligned. </para>
+    <para id="id10807868">a. Calculate the angular displacement between the rotor stacks. </para>
+    <para id="id7491124">b. Determine the frequency of phase currents required to achieve a rotor speed of 900 r/min.</para>
+  </content>
+</document>

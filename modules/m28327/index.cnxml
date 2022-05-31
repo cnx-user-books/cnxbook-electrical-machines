@@ -1,0 +1,1201 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Chapter 9: Single- and Two-Phase Motors</title>
+  <metadata>
+  <md:content-id>m28327</md:content-id><md:title>Chapter 9: Single- and Two-Phase Motors</md:title>
+  <md:abstract/>
+  <md:uuid>9d10cef6-aace-47c7-a966-5661747dc322</md:uuid>
+</metadata>
+
+<content>
+    <para id="id10715790">Single- and Two-Phase</para>
+    <para id="id10715797">Motors</para>
+    <para id="id10715801">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <list id="id10715809" list-type="bulleted">
+      <item>This chapter discusses single-phase motors. While focusing on induction motors, synchronous-reluctance, hysteresis, and shaded-pole induction motors are also discussed. </item>
+      <item>Most induction motors of fractional-kilowatt (fractional horsepower) rating are single-phase motors. In residential and commercial applications, they are found in a wide range of equipment including refrigerators, air conditioners and heat pumps, fans, pumps, washers, and dryers.</item>
+      <item>Most single-phase induction motors are actually two-phase motors with unsymmetrical windings; the two windings are typically quite different, with different numbers of turns and/or winding distributions. </item>
+      <item>9.1 SINGLE-PHASE INDUCTION MOTORS:</item>
+    </list>
+    <para id="id10715849">QUALITATIVE EXAMINATION</para>
+    <list id="id10715853" list-type="bulleted">
+      <item>Structurally, the most common types of single-phase induction motors resemble polyphase squirrel-cage motors except for the arrangement of the stator windings. An induction motor with a squirrel-cage rotor and a single-phase stator winding is represented schematically in Fig. 9.1. </item>
+      <item>Instead of being a concentrated coil, the actual stator winding is distributed in slots to produce an approximately sinusoidal space distribution of mmf. A single-phase winding produces equal forward- and backward-rotating mmf waves. By symmetry, it is clear that such a motor inherently will produce no starting torque since at standstill, it will produce equal torque in both directions. </item>
+      <item>If it is started by auxiliary <media id="id1165980249398" alt=""><image src="../../media/graphics1-b9ba.png" mime-type="image/png" height="195" width="241"/></media></item>
+    </list>
+    <para id="id10743130">Figure 9.1 Schematic view of a single-phase induction motor.</para>
+    <para id="id10743139">means, the result will be a net torque in the direction in which it is started, and hence the motor will continue to run.</para>
+    <list id="id10743146" list-type="bulleted">
+      <item>We will discuss the basic properties of the schematic motor of Fig. 9.1. If the stator current is a cosinusoidal function of time, the resultant air-gap mmf is given by</item>
+    </list>
+    <para id="id10743157"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>agl</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ae</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mtext>cos</m:mtext><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F rSub { size 8{"agl"} } =F rSub { size 8{"max"} } "cos" \( θ rSub { size 8{ ital "ae"} }  \) "cos"ω rSub { size 8{e} } t} {}</m:annotation></m:semantics></m:math>(9.1)</para>
+    <para id="id10743282">which, can be written as the sum of positive- and negative traveling mmf waves of equal magnitude. The positive-traveling wave is given by</para>
+    <para id="id10743288"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msubsup><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>agl</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msub><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ae</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F rSub { size 8{ ital "agl"} }  rSup { size 8{+{}} } = {  {1}  over  {2} } F rSub { size 8{"max"} } "cos" \( θ rSub { size 8{ ital "ae"} }  - ω rSub { size 8{e} } t \) } {}</m:annotation></m:semantics></m:math>(9.2)</para>
+    <para id="id10743429">and the negative-traveling wave is given by</para>
+    <para id="id8808174"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msubsup><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>agl</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msub><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:mtext>cos</m:mtext><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ae</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi>t</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{F rSub { size 8{ ital "agl"} }  rSup { size 8{ - {}} } = {  {1}  over  {2} } F rSub { size 8{"max"} } "cos" \( θ rSub { size 8{ ital "ae"} } +ω rSub { size 8{e} } t \) } {}</m:annotation></m:semantics></m:math>(9.3)</para>
+    <list id="id8808315" list-type="bulleted">
+      <item>Each of these component mmf waves produces induction-motor action, but the corresponding torques are in opposite directions. With the rotor at rest, the forward and backward air-gap flux waves created by the combined mmf's of the stator and rotor currents are equal, the component torques are equal, and no starting torque is produced. If the forward and backward air-gap flux waves were to remain equal when the rotor revolves, each of the component fields would produce a torque-speed characteristic similar to that of a polyphase motor with negligible stator leakage impedance, as illustrated by the dashed curves f and b in Fig. 9.2a. The resultant torque-speed characteristic, which is the algebraic sum of the two component curves, shows that if the motor were started by auxiliary means, it would produce torque in whatever direction it was started.</item>
+      <item>The assumption that the air-gap flux waves remain equal when the rotor is in motion is a rather drastic simplification of the actual state of affairs. First, the effects of stator leakage impedance are ignored. Second, the effects of induced rotor currents are not properly accounted for. </item>
+    </list>
+    <figure id="id8808351">
+      <media id="id1165978214732" alt=""><image src="../../media/graphics2-51e9.png" mime-type="image/png" height="325" width="407"/></media>
+    </figure>
+    <figure id="id8808378">
+      <media id="id1165970734509" alt=""><image src="../../media/graphics3-33cb.png" mime-type="image/png" height="398" width="404"/></media>
+    </figure>
+    <para id="id8808402">Figure 9.2 Torque-speed characteristic of a single-phase induction motor </para>
+    <para id="id8808411">(a) on the basis of constant forward and backward flux waves, </para>
+    <para id="id8808417">(b) taking into account changes in the flux waves.</para>
+    <list id="id8808422" list-type="bulleted">
+      <item>When the rotor is in motion, the component rotor currents induced by the backward field are greater than at standstill, and their power factor is lower. Their mmf, which opposes that of the stator current, results in a reduction of the backward flux wave. Conversely, the magnetic effect of the component currents induced by the forward field is less than at standstill because the rotor currents are less and their power factor is higher. As speed increases, therefore, the forward flux wave increases while the backward flux wave decreases. The sum of these flux waves must remain roughly constant since it must induce the stator counter emf, which is approximately constant if the stator leakage-impedance voltage drop is small.</item>
+      <item>Hence, with the rotor in motion, the torque of the forward field is greater and that of the backward field less than in Fig. 9.2a, the true situation being about that shown in Fig. 9.2b. In the normal running region at a few percent slip, the forward field is several times greater than the backward field, and the flux wave does not differ greatly from the constant-amplitude revolving field in the air gap of a balanced polyphase motor. </item>
+      <item>In the normal running region, therefore, the torque-speed characteristic of a single-phase motor is not too greatly inferior to that of a polyphase motor having the same rotor and operating with the same maximum air-gap flux density.</item>
+      <item>In addition to the torques shown in Fig. 9.2, double-stator-frequency torque pulsations are produced by the interactions of the oppositely rotating flux and mmf waves which rotate past each other at twice synchronous speed. These interactions produce no average torque, but they tend to make the motor noisier than a polyphase motor. </item>
+    </list>
+    <para id="id8808475">9.2 STARTING AND RUNNING</para>
+    <para id="id9151476">PERFORMANCE OF SINGLE-PHASE</para>
+    <para id="id9151480">INDUCTION AND SYNCHRONOUS MOTORS</para>
+    <para id="id9151487">Single-phase induction motors are classified in accordance with their starting methods and are usually referred to by names descriptive of these methods. </para>
+    <figure id="id9151497">
+      <media id="id1165970087270" alt=""><image src="../../media/graphics4-f779.png" mime-type="image/png" height="213" width="600"/></media>
+    </figure>
+    <para id="id9151521">Figure 9.3 Split-phase motor: (a) connections, (b) phasor diagram at starting,</para>
+    <para id="id9151531">and (c) typical torque-speed characteristic.</para>
+    <para id="id9151536">9.2.1 Split-Phase Motors</para>
+    <list id="id9151543" list-type="bulleted">
+      <item>Split-phase motors have two stator windings, a main winding (also referred to as the run winding) which we will refer to with the subscript 'main' and an auxiliary winding (also referred to as the start winding) which we will refer to with the subscript 'aux'. As in a two-phase motor, the axes of these windings are displaced 90 electrical degrees in space, and they are connected as shown in Fig. 9.3a. The auxiliary winding has a higher resistance-to-reactance ratio than the main winding, with the result that the two currents will be out of phase, as indicated in the phasor diagram of Fig. 9.3b, which is representative of conditions at starting. Since the auxiliary-winding current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math> leads the main-winding current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math>, the stator field first reaches a maximum along the axis of the auxiliary winding and then somewhat later in time reaches a maximum along the axis of the main winding.</item>
+      <item>The winding currents are equivalent to unbalanced two-phase currents, and the motor is equivalent to an unbalanced two-phase motor. The result is a rotating stator field which causes the motor to start. After the motor starts, the auxiliary winding is disconnected, usually by means of a centrifugal switch that operates at about 75 percent of synchronous speed. The simple way to obtain the high resistance-to-reactance ratio for the auxiliary winding is to wind it with smaller wire than the main winding, a permissible procedure because this winding operates only during starting. Its reactance can be reduced somewhat by placing it in the tops of the slots. A typical torque-speed characteristic for such a motor is shown in Fig. 9.3c.</item>
+      <item>Split-phase motors have moderate starting torque with low starting current. Typical applications include fans, blowers, centrifugal pumps, and office equipment. Typical ratings are 50 to 500 watts; in this range they are the lowest-cost motors available.</item>
+    </list>
+    <para id="id9151747">9.2.2 Capacitor-Type Motors</para>
+    <list id="id9151754" list-type="bulleted">
+      <item>Capacitors can be used to improve motor starting performance, running performance, or both, depending on the size and connection of the capacitor. The capacitor-start</item>
+    </list>
+    <figure id="id9151773"><media id="id1326133" alt=""><image src="../../media/graphics5-aebd.png" mime-type="image/png" height="232" width="599"/></media>
+</figure>
+    <para id="id11177009">Figure 9.4 Capacitor-start motor: (a) connections, (b) phasor diagram at starting, </para>
+    <para id="id11177019">and (c) typical torque-speed characteristic.</para>
+    <para id="id11177024">motor is also a split-phase motor, but the time-phase displacement between the two</para>
+    <para id="id11177034">currents is obtained by means of a capacitor in series with the auxiliary winding,</para>
+    <para id="id11177040">as shown in Fig. 9.4a. Again the auxiliary winding is disconnected after the motor has started, and consequently the auxiliary winding and capacitor can be designed at minimum cost for intermittent service.</para>
+    <list id="id11177047" list-type="bulleted">
+      <item>By using a starting capacitor of appropriate value, the auxiliary-winding current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math> at standstill can be made to lead the main-winding current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math> by 90 electrical degrees, as it would in a balanced two-phase motor (see Fig. 9.4b). In practice, the best compromise between starting torque, starting current, and cost typically results with a phase angle somewhat less than 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. A typical torque-speed characteristic is shown in Fig. 9.4c, high starting torque being an outstanding feature. These motors are used for compressors, pumps, refrigeration and air-conditioning equipment, and other hard-to-start loads. A cutaway view of a capacitor-start motor is shown in Fig. 9.5.</item>
+      <item>In the permanent-split-capacitor motor, the capacitor and auxiliary winding are not cut out after starting; the construction can be simplified by omission of the switch, and the power factor, efficiency, and torque pulsations improved. For example, the capacitor and auxiliary winding could be designed for perfect two-phase operation (i.e., no backwards flux wave) at any one desired load. The losses due to the backward field at this operating point would then be eliminated, with resulting improvement in efficiency. The double-stator-frequency torque pulsations would also be eliminated, with the capacitor serving as an energy storage reservoir for smoothing out the pulsations in power input from the single-phase line, resulting in quieter operation.</item>
+      <item>Starting torque must be sacrificed because the choice of capacitance is necessarily a compromise between the best starting and running values. The resulting torque-speed characteristic and a schematic diagram are given in Fig. 9.6.</item>
+      <item>If two capacitors are used, one for starting and one for running, theoretically optimum starting and running performance can both be obtained. One way of accomplishing this result is shown in Fig. 9.7a. The small value of capacitance required for</item>
+    </list>
+    <figure id="id11177293">
+      <media id="id1165974816376" alt=""><image src="../../media/graphics6-c37e.png" mime-type="image/png" height="304" width="434"/></media>
+    </figure>
+    <para id="id10729294">Figure 9.5 Cutaway view of a capacitor-start induction motor.</para>
+    <para id="id10729303">The starting switch is at the right of the rotor. The motor is of</para>
+    <para id="id10729309">drip-proof construction. (General Electric Company.)</para>
+    <figure id="id10729320">
+      <media id="id1165970088119" alt=""><image src="../../media/graphics7-cce1.png" mime-type="image/png" height="196" width="522"/></media>
+    </figure>
+    <para id="id10729344">Figure 9.6 Permanent-split-capacitor motor </para>
+    <para id="id10729352">and typical torque-speed characteristic.</para>
+    <figure id="id10729360">
+      <media id="id1165976961363" alt=""><image src="../../media/graphics8-c766.png" mime-type="image/png" height="229" width="600"/></media>
+    </figure>
+    <para id="id10729383">Figure 9.7 Capacitor-start, capacitor-run motor </para>
+    <para id="id10729392">and typical torque-speed characteristic.</para>
+    <para id="id10729396">optimum running conditions is permanently connected in series with the auxiliary winding, and the much larger value required for starting is obtained by a capacitor connected in parallel with the running capacitor via a switch with opens as the motor comes up to speed. Such a motor is known as a capacitor-start, capacitor-run motor.</para>
+    <list id="id10729409" list-type="bulleted">
+      <item>The capacitor for a capacitor-start motor has a typical value of 300 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>F for a 500-W motor. Since it must carry current for just the starting time, the capacitor is a special compact ac electrolytic type made for motor-starting duty. The capacitor for the same motor permanently connected has a typical rating of 40 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>F, and since it operates continuously, the capacitor is an ac paper, foil, and oil type. </item>
+    </list>
+    <para id="id10729510">9.2.3 Shaded-Pole Induction Motors</para>
+    <list id="id10729517" list-type="bulleted">
+      <item>In Fig.9.8a, the shaded-pole induction motor usually has salient poles with one portion of each pole surrounded by a short-circuited turn of copper called a shading coil. Induced currents in the shading coil cause the flux in the shaded portion of the pole to lag the flux in the other portion. The result is similar to a rotating field moving in the direction from the unshaded to the shaded portion of the pole; currents are induced in the squirrel-cage rotor and a low starting torque is produced. A typical torque-speed characteristic is shown in Fig. 9.8b. Their efficiency is low, but shaded-pole motors are the least expensive type of subfractional-kilowatt motor. They are found in ratings up to about 50 watts.</item>
+    </list>
+    <para id="id10729547">9.2.4 Self-Starting Synchronous-Reluctance Motors</para>
+    <list id="id10729552" list-type="bulleted">
+      <item>Any one of the induction-motor types described above can be made into a self-starting synchronous-reluctance motor. Anything which makes the reluctance of the air gap a function of the angular position of the rotor with respect to the stator coil axis will produce reluctance torque when the rotor is revolving at synchronous speed. For</item>
+    </list>
+    <figure id="id10729586">
+      <media id="id1165969720808" alt=""><image src="../../media/graphics9-de59.png" mime-type="image/png" height="224" width="600"/></media>
+    </figure>
+    <para id="id10729610">Figure 9.8 Shaded-pole induction motor and typical torque-speed characteristic.</para>
+    <figure id="id10761456">
+      <media id="id1165982716807" alt=""><image src="../../media/graphics10-3696.png" mime-type="image/png" height="399" width="561"/></media>
+    </figure>
+    <para id="id10761479">Figure 9.9 Rotor punching for four-pole synchronous-reluctance motor </para>
+    <para id="id10761492">and typical torque-speed characteristic.</para>
+    <para id="id10761497">example, suppose some of the teeth are removed from a squirrel-cage rotor, leaving the bars and end tings intact, as in an ordinary squirrel-cage induction motor. Figure 9.9a shows a lamination for such a rotor designed for use with a four-pole stator. The stator may be polyphase or any one of the single-phase types described above.</para>
+    <list id="id10761506" list-type="bulleted">
+      <item>The motor will start as an induction motor and at light loads will speed up to a small value of slip. The reluctance torque arises from the tendency of the rotor to try to align itself in the minimum-reluctance position with respect to the synchronously revolving forward air-gap flux wave, in accordance with the principles discussed in Chapter 3. At a small slip, this torque alternates slowly in direction; the rotor is accelerated during a positive half cycle of the torque variation and decelerated during the succeeding negative half cycle. If the moment of inertia of the rotor and its mechanical load are sufficiently small, the rotor will be accelerated from slip speed up to synchronous speed during an accelerating half cycle of the reluctance torque. The rotor will then pull into synchronism and continue to run at synchronous speed.</item>
+      <item>A typical torque-speed characteristic for a split-phase-start synchronousreluctance motor is shown in Fig. 9.9b. </item>
+    </list>
+    <para id="id10761536">9.2.5 Hysteresis Motors</para>
+    <list id="id10761541" list-type="bulleted">
+      <item>In its simplest form, the rotor of a hysteresis motor is a smooth cylinder of magnetically hard steel, without windings or teeth. It is placed inside a slotted stator carrying distributed windings designed to produce as nearly as possible a sinusoidal space distribution of flux, since undulations in the flux wave greatly increase the losses. In single-phase motors, the stator windings usually are of the permanent-split-capacitor type, as in Fig. 9.6. The capacitor is chosen so as to result in approximately balanced two-phase conditions within the motor windings. The stator then produces a primarily space-fundamental air-gap field revolving at synchronous speed.</item>
+      <item>Instantaneous magnetic conditions in the air gap and rotor are indicated in Fig. 9.10a for a two-pole stator. The axis S
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>S</m:mi><m:mi>'</m:mi></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {S}} sup { ' }} {}</m:annotation></m:semantics></m:math> of the stator-mmf wave revolves at synchronous speed. Because of hysteresis, the magnetization of the rotor lags behind the inducing mmf wave, and therefore the axis R 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>R</m:mi><m:mi>'</m:mi></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {R}} sup { ' }} {}</m:annotation></m:semantics></m:math> of the rotor flux wave lags behind the axis of the stator-mmf wave by the hysteretic lag angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math> (Fig. 9.10a). If the rotor is stationary, starting torque is produced proportional to the product of the fundamental components of the stator mmf and rotor flux and the sine of the torque angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math>. The rotor then accelerates if the torque of the load is less than the developed torque of the motor.</item>
+      <item>As long as the rotor is turning at less than synchronous speed, each region of the rotor is subjected to a repetitive hysteresis cycle at slip frequency. While the rotor accelerates, the lag angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math> remains constant if the flux is constant, since the angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math></item>
+    </list>
+    <figure id="id9387667">
+      <media id="id5145989" alt=""><image src="../../media/graphics11-9ee1.png" mime-type="image/png" height="335" width="528"/></media>
+    </figure>
+    <para id="id9387691">Figure 9.10 (a) General nature of the magnetic field in the air gap </para>
+    <para id="id9387700">and rotor of a hysteresis motor; (b) idealized torque-speed characteristic.</para>
+    <para id="id9387706">depends merely on the hysteresis loop of the rotor material and is independent of the rate at which the loop is traversed. The motor therefore develops constant torque right up to synchronous speed, as shown in the idealized torque-speed characteristic of Fig. 9.10b. </para>
+    <list id="id9387715" list-type="bulleted">
+      <item>This feature is one of the advantages of the hysteresis motor. In contrast with a reluctance motor, which must "snap" its load into synchronism from an induction-motor torque-speed characteristic, a hysteresis motor can synchronize any load which it can accelerate, no matter how great the inertia. After reaching synchronism, the motor continues to run at synchronous speed and adjusts its torque angle so as to develop the torque required by the load. The hysteresis motor is inherently quiet and produces smooth rotation of its load.</item>
+    </list>
+    <para id="id9387732">9.3 REVOLVING-FIELD THEORY OF</para>
+    <para id="id9387736">SINGLE-PHASE INDUCTION MOTORS</para>
+    <list id="id9387740" list-type="bulleted">
+      <item>Consider conditions with the rotor stationary and only the main stator winding excited. The motor then is equivalent to a transformer with its secondary shortcircuited. The equivalent circuit is shown in Fig. 9.11 a, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>1,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1, ital "main"} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>1,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{1, ital "main"} } } {}</m:annotation></m:semantics></m:math> are, respectively, the resistance and leakage reactance of the main winding, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mi>,</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{m, ital "main"} } } {}</m:annotation></m:semantics></m:math> is the magnetizing reactance, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2, ital "main"} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{2, ital "main"} } } {}</m:annotation></m:semantics></m:math> are the standstill values of the rotor resistance and leakage reactance referred to the main stator winding by use of the appropriate turns ratio. Core loss, which is omitted here, will be accounted for later as if it were a rotational loss. The applied voltage is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}}} {}</m:annotation></m:semantics></m:math>, and the main-winding current is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math>. The voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math> is the counter emf generated in the main winding by the stationary pulsating air-gap flux wave produced by the combined action of the stator and rotor currents.</item>
+      <item>In accordance with the double-revolving-field concept of Section 9.1, the stator mmf can be resolved into half-amplitude forward and backward rotating fields. </item>
+      <item>At</item>
+    </list>
+    <figure id="id11337136">
+      <media id="id8884921" alt=""><image src="../../media/graphics12-a2f0.png" mime-type="image/png" height="394" width="592"/></media>
+    </figure>
+    <para id="id11337160">Figure 9.11 Equivalent circuits for a single-phase induction motor: (a) rotor blocked</para>
+    <para id="id11337170">(b) rotor blocked, showing effects of forward and backward fields; (c) running conditions.</para>
+    <para id="id11337175">standstill the amplitudes of the forward and backward resultant air-gap flux waves both equal half the amplitude of the pulsating field. In Fig. 9.11 b the portion of the equivalent circuit representing the effects of the air-gap flux is split into two equal portions, representing the effects of the forward and backward fields, respectively.</para>
+    <list id="id11337185" list-type="bulleted">
+      <item>Now consider conditions after the motor has been brought up to speed by some auxiliary means and is running on only its main winding in the direction of the forward field at a per-unit slip s. The rotor currents induced by the forward field are of slip frequency 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>sf</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "sf" rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math>is the stator applied electrical frequency. Just as in any polyphase motor with a symmetric polyphase or squirrel-cage rotor, these rotor currents produce an mmf wave traveling forward at slip speed with respect to the rotor and therefore at synchronous speed with respect to the stator. The resultant of the forward waves of stator and rotor mmf creates a resultant forward wave of air-gap flux, which generates a counter emf 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "main",f} } } {}</m:annotation></m:semantics></m:math> in the main winding of the stator. The reflected effect of the rotor as viewed from the stator is like that in a polyphase motor and can be represented by an impedance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>0</m:mn><m:mtext>.</m:mtext><m:mrow><m:mrow><m:msub><m:mn>5R</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">+</m:mo><m:mi fontstyle="italic">j0</m:mi></m:mrow><m:mtext>.</m:mtext><m:msub><m:mn>5X</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0 "." 5R rSub { size 8{2, ital "main"} } /s+j0 "." 5X rSub { size 8{2, ital "main"} } } {}</m:annotation></m:semantics></m:math> in parallel with j0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mi>,</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{m, ital "main"} } } {}</m:annotation></m:semantics></m:math> as in the portion of the equivalent circuit of Fig. 9.1 lc labeled 'f'. The factors of 0.5 come from the resolution of the pulsating stator mmf into forward and backward components.</item>
+      <item>Now consider conditions with respect to the backward field. The rotor is still turning at a slip s with respect to the forward field, and its per-unit speed n in the direction of the forward field is n = 1 - s. The relative speed of the rotor with respect to the backward field is 1 + n, or its slip with respect to the backward field is 1 + n = 2 - s. The backward field then induces rotor currents whose frequency is (2 - s)
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math>.</item>
+      <item>For small slips, these rotor currents are of almost twice stator frequency.</item>
+      <item>By use of the equivalent circuit of Fig. 9.11 c, the stator current, power input, and power factor can be computed for any assumed value of slip when the applied voltage and the motor impedances are known. To simplify the notation, let</item>
+    </list>
+    <para id="id11050552"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≡</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow><m:mo stretchy="false">≡</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mi>s</m:mi></m:mfrac><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mfenced></m:mrow><m:msub><m:mtext> in parallel with jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>m,main</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{f} }  equiv R rSub { size 8{f} } + ital "jX" rSub { size 8{f} }  equiv  left [ {  {R rSub { size 8{2, ital "main"} } }  over  {s} } + ital "jX" rSub { size 8{2, ital "main"} }  right ]" in parallel with jX" rSub { size 8{"m,main"} } } {}</m:annotation></m:semantics></m:math>(9.4)</para>
+    <para id="id11050719">And</para>
+    <para id="id11050726"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≡</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow><m:mo stretchy="false">≡</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow></m:mfrac><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mfenced></m:mrow><m:msub><m:mtext> in parallel with jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>m,main</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{b} }  equiv R rSub { size 8{b} } + ital "jX" rSub { size 8{b} }  equiv  left [ {  {R rSub { size 8{2, ital "main"} } }  over  {2 - s} } + ital "jX" rSub { size 8{2, ital "main"} }  right ]" in parallel with jX" rSub { size 8{"m,main"} } } {}</m:annotation></m:semantics></m:math>(9.5)</para>
+    <para id="id11050903">The impedances representing the reactions of the forward and backward fields from the viewpoint of the single-phase main stator winding are 0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and 0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>, respectively, in Fig. 9.11 c.</para>
+    <list id="id11051009" list-type="bulleted">
+      <item>Examination of the equivalent circuit (Fig. 9.11c) confirms the conclusion, reached by qualitative reasoning in Section 9.1 (Fig. 9.2b), that the forward airgap flux wave increases and the backward wave decreases when the rotor is set in motion. When the motor is running at a small slip, the reflected effect of the rotor resistance in the forward field, 0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:mi>s</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2, ital "main"} } /s} {}</m:annotation></m:semantics></m:math>, is much larger than its standstill value, while the corresponding effect in the backward field, 0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2, ital "main"} } / \( 2 - s \) } {}</m:annotation></m:semantics></m:math>, is smaller.</item>
+      <item>The forward-field impedance therefore is larger than its standstill value, while that of the backward field is smaller. The forward-field counter emf 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "main",f} } } {}</m:annotation></m:semantics></m:math> therefore is larger than its standstill value, while the backward-field counter emf 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "main",b} } } {}</m:annotation></m:semantics></m:math> is smaller; i.e., the forward air-gap flux wave increases, while the backward flux wave decreases.</item>
+      <item>The electromagnetic torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "main",f} } } {}</m:annotation></m:semantics></m:math> of the forward field in newtonmeters equals 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">/</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1/ω rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math> times the power 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "gap",f} } } {}</m:annotation></m:semantics></m:math> in watts delivered by the stator winding to the forward field, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math> is the synchronous angular velocity in mechanical radians per second; thus</item>
+    </list>
+    <para id="id11240754"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "main",f} } = {  {1}  over  {ω rSub { size 8{s} } } } P rSub { size 8{ ital "gap",f} } } {}</m:annotation></m:semantics></m:math>(9.6)</para>
+    <para id="id11234896">When the magnetizing impedance is treated as purely inductive, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "gap",f} } } {}</m:annotation></m:semantics></m:math> is the power absorbed by the impedance 0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math>; that is,</para>
+    <para id="id11235010"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mtext>.</m:mtext><m:msub><m:mn>5R</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "gap",f} } =I rSup { size 8{2} }  \( 0 "." 5R rSub { size 8{f} }  \) } {}</m:annotation></m:semantics></m:math>(9.7)</para>
+    <para id="id11235120">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> is the resistive component of the forward-field impedance defined in Eq. 9.4. </para>
+    <list id="id11235175" list-type="bulleted">
+      <item>The internal torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "main",b} } } {}</m:annotation></m:semantics></m:math> of the backward field is</item>
+    </list>
+    <para id="id11235244"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "main",b} } = {  {1}  over  {ω rSub { size 8{s} } } } P rSub { size 8{ ital "gap",b} } } {}</m:annotation></m:semantics></m:math>(9.8)</para>
+    <para id="id11235354">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "gap",b} } } {}</m:annotation></m:semantics></m:math> is the power delivered by the stator winding to the backward field, or </para>
+    <para id="id11235419"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mtext>.</m:mtext><m:msub><m:mn>5R</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "gap",b} } =I rSup { size 8{2} }  \( 0 "." 5R rSub { size 8{b} }  \) } {}</m:annotation></m:semantics></m:math>(9.9)</para>
+    <para id="id11051505">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> is the resistive component of the backward-field impedance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> defined in Eq. 9.5.</para>
+    <list id="id11051610" list-type="bulleted">
+      <item>The net internal torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } } {}</m:annotation></m:semantics></m:math> is</item>
+    </list>
+    <para id="id11051673"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } =T rSub { size 8{ ital "main",f} }  - T rSub { size 8{ ital "main",b} } = {  {1}  over  {ω rSub { size 8{s} } } }  \( P rSub { size 8{ ital "gap",f} }  - P rSub { size 8{ ital "gap",b} }  \) } {}</m:annotation></m:semantics></m:math>(9.10)</para>
+    <list id="id11051864" list-type="bulleted">
+      <item>The rotor 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>R loss caused by a rotating field equals the slip of the field times the power absorbed from the stator. Thus</item>
+    </list>
+    <para id="id11051928"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>Forward</m:mtext><m:mo stretchy="false">−</m:mo><m:mtext>field rotor </m:mtext></m:mrow><m:msup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>sP</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Forward" - "field rotor "I rSup { size 8{2} } R= ital "sP" rSub { size 8{ ital "gap",f} } } {}</m:annotation></m:semantics></m:math>(9.11)</para>
+    <para id="id11052033"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>Backward</m:mtext><m:mo stretchy="false">−</m:mo><m:mtext>field rotor </m:mtext></m:mrow><m:msup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Backward" - "field rotor "I rSup { size 8{2} } R= \( 2 - s \) P rSub { size 8{ ital "gap",b} } } {}</m:annotation></m:semantics></m:math>(9.12)</para>
+    <para id="id10582509"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>Total rotor </m:mtext><m:msup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>sP</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mo stretchy="false">(</m:mo></m:mrow></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Total rotor "I rSup { size 8{2} } R= ital "sP" rSub { size 8{ ital "gap",f} } + \( 2 - s \) P rSub { size 8{ ital "gap",b} } } {}</m:annotation></m:semantics></m:math>(9.13)</para>
+    <list id="id10582651" list-type="bulleted">
+      <item>The internal power 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "mech"} } } {}</m:annotation></m:semantics></m:math> converted to mechanical form, in watts, is</item>
+    </list>
+    <para id="id10582715"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>gap</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>b</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "mech"} } = \( 1 - s \) ω rSub { size 8{s} } T rSub { size 8{ ital "mech"} } = \( 1 - s \)  \( P rSub { size 8{ ital "gap",f} }  - P rSub { size 8{ ital "gap",b} }  \) } {}</m:annotation></m:semantics></m:math>(9.14)</para>
+    <para id="id10582908">As in the polyphase motor, the internal torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } } {}</m:annotation></m:semantics></m:math> and internal power 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "mech"} } } {}</m:annotation></m:semantics></m:math> are not the output values because rotational losses remain to be accounted for. It is obviously correct to subtract friction and windage losses from 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } } {}</m:annotation></m:semantics></m:math> or 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "mech"} } } {}</m:annotation></m:semantics></m:math> and it is usually assumed that core losses can be treated in the same manner. For the small changes in speed encountered in normal operation, the rotational losses are often assumed to be constant. </para>
+    <list id="id10583139" list-type="bulleted">
+      <item>Corresponding to a slightly greater approximation, the shunting effect of j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mi>,</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{m, ital "main"} } } {}</m:annotation></m:semantics></m:math> on the backward-field impedance can often be neglected, whence</item>
+    </list>
+    <para id="id10583210"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≈</m:mo><m:mrow><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow></m:mfrac><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{b} }  approx  {  {R rSub { size 8{2, ital "main"} } }  over  {2 - s} } + ital "jX" rSub { size 8{2, ital "main"} } } {}</m:annotation></m:semantics></m:math>(9.15)</para>
+    <para id="id11298095">for small slips</para>
+    <para id="id11298099"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≈</m:mo><m:mrow><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mn>2</m:mn></m:mfrac><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jX</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2,</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{b} }  approx  {  {R rSub { size 8{2, ital "main"} } }  over  {2} } + ital "jX" rSub { size 8{2, ital "main"} } } {}</m:annotation></m:semantics></m:math>(9.16)</para>
+    <para id="id11298218">9.4 TWO-PHASE INDUCTION MOTORS</para>
+    <list id="id11298223" list-type="bulleted">
+      <item>Most single-phase induction motors are actually constructed in the form of two-phase motors, with two stator windings in space quadrature. The main and auxiliary windings are typically quite different, with a different number of turns, wire size, and turns distribution. This difference, in combination with the capacitor that is typically used in series with the auxiliary winding, guarantees that the mmfs produced by the two winding currents will be quite unbalanced; at best they may be balanced at one specific operating point. </item>
+      <item>Under balanced operating conditions, a symmetrical two-phase motor can be analyzed using techniques developed for three-phase motors, modified only slightly to take into account the fact that there are two phases rather than three.</item>
+    </list>
+    <para id="id11298249">9.4.1 Unbalanced Operation of Symmetrical</para>
+    <para id="id11298254">Two-Phase Machines; The Symmetrical-Component Concept</para>
+    <list id="id11298262" list-type="bulleted">
+      <item>When operating from the main winding alone, the single-phase motor is the extreme case of a motor operating under unbalanced stator-current conditions. In some cases, unbalanced voltages or currents are produced in the supply network to a motor, e.g., when a line fuse is blown. In other cases, unbalanced voltages are produced by the starting impedances of single-phase motors, as described in Section 9.2. </item>
+      <item>When balanced two-phase voltages are applied to the stator terminals of a two-phase machine having a uniform air gap, a symmetrical polyphase or cage rotor, and two identical stator windings 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> in space quadrature, the stator currents are equal in magnitude and in time quadrature.</item>
+    </list>
+    <para id="id11298373">When the current in winding α is at its instantaneous maximum, the current in winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> is zero and the stator-mmf wave is centered on the axis of winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math>. Similarly, the stator-mmf wave is centered on the axis of winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> at the instant when the current in winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> is at its instantaneous maximum. </para>
+    <list id="id11298558" list-type="bulleted">
+      <item>The stator-mmf wave therefore travels 90 electrical degrees in space in a time interval corresponding to a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> phase change of the applied voltage, with the direction of its travel depending on the phase sequence of the currents. The traveling wave has constant amplitude and constant angular velocity. </item>
+      <item>If the rotor is turning at a slip s in the direction from winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math> toward winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math>, the terminal impedance per phase is given by the equivalent circuit of Fig. 9.12a when the applied voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{β} } } {}</m:annotation></m:semantics></m:math> lags the applied voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } } {}</m:annotation></m:semantics></m:math> by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. This phase sequence is called positive sequence and is designated by the subscript 'f' since positive sequence currents result in a forward field. With the rotor running at the same speed and in the same direction, the terminal impedance per phase is given by the equivalent circuit of Fig. 9.12b when 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{β} } } {}</m:annotation></m:semantics></m:math> leads 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } } {}</m:annotation></m:semantics></m:math> by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>. This phase sequence is called negative sequence and is designated by subscript 'b', since negative-sequence currents produce a backward field.</item>
+    </list>
+    <figure id="id10732087">
+      <media id="id1165974593984" alt=""><image src="../../media/graphics13-9a2d.png" mime-type="image/png" height="143" width="465"/></media>
+    </figure>
+    <para id="id10732111">Figure 9.12 Single-phase equivalent circuits for a two-phase motor </para>
+    <para id="id10732121">under unbalanced conditions (a) forward field and (b) backward field.</para>
+    <list id="id10732126" list-type="bulleted">
+      <item>Suppose now that two balanced two-phase voltage sources of opposite phase sequence are connected in series and applied simultaneously to the motor, as indicated in Fig. 9.13a, where phasor voltages 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> applied, respectively, to windings 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> form a balanced system of positive sequence, and phasor voltages 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> and -j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> form another balanced system but of negative sequence.</item>
+      <item>The resultant voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{α} } } {}</m:annotation></m:semantics></m:math> applied to winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math> is, as a phasor,</item>
+    </list>
+    <para id="id10493786"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } = { hat  {V}} rSub { size 8{f} } + { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>(9.17)</para>
+    <para id="id10493903">and that applied to winding fl is</para>
+    <para id="id10493907"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi>j</m:mi></m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>j</m:mi></m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{β} } =j { hat  {V}} rSub { size 8{f} }  - j { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>(9.18)</para>
+    <para id="id10494028">Fig. 9.13b shows a generalized phasor diagram in which the forward, or positivesequence, system is given by the phasors 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and the backward, or negativesequence, system is given by the phasors 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> and -j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>. The resultant voltages, given by the phasors 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{β} } } {}</m:annotation></m:semantics></m:math>are not, in general, either equal in magnitude or in time</para>
+    <figure id="id10494393">
+      <media id="id1165978303782" alt=""><image src="../../media/graphics14-ad9c.png" mime-type="image/png" height="313" width="546"/></media>
+    </figure>
+    <para id="id10494417">Figure 9.13 Synthesis of an unbalanced two-phase system </para>
+    <para id="id10494427">from the sum of two balanced systems of opposite phase sequence.</para>
+    <para id="id10494432">quadrature. </para>
+    <list id="id10494436" list-type="bulleted">
+      <item>The symmetrical-component systems are, however, much easier to work with than their unbalanced resultant system. Thus, it is easy to compute the component currents produced by each symmetrical-component system of applied voltages because the induction motor operates as a balanced two-phase motor for each component system.</item>
+      <item>By superposition, the actual current in a winding then is the sum of its components.</item>
+      <item>If 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> are, respectively, the positive- and negative-sequence component phasor currents in winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math>, then the corresponding positive- and negative-sequence component phasor currents in winding 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> are, respectively, j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and -j
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>, and the actual winding currents 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{α} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{β} } } {}</m:annotation></m:semantics></m:math> are</item>
+    </list>
+    <para id="id11520632"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{α} } = { hat  {I}} rSub { size 8{f} } + { hat  {I}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>(9.19)</para>
+    <para id="id11520751"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi>j</m:mi></m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>j</m:mi></m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{β} } =j { hat  {I}} rSub { size 8{f} }  - j { hat  {I}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>(9.20)</para>
+    <list id="id11520875" list-type="bulleted">
+      <item>The inverse operation of finding the symmetrical components of specified voltages or currents must be performed often. Solution of Eqs. 9.17 and 9.18 for the phasor components 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> in terms of known phasor voltages 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{α} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{β} } } {}</m:annotation></m:semantics></m:math> gives</item>
+    </list>
+    <para id="id10782642"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>j</m:mi></m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{f} } = {  {1}  over  {2} }  \(  { hat  {V}} rSub { size 8{α} }  - j { hat  {V}} rSub { size 8{β} }  \) } {}</m:annotation></m:semantics></m:math>(9.21)</para>
+    <para id="id10782780"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>j</m:mi></m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{b} } = {  {1}  over  {2} }  \(  { hat  {V}} rSub { size 8{α} } +j { hat  {V}} rSub { size 8{β} }  \) } {}</m:annotation></m:semantics></m:math>(9.22)</para>
+    <para id="id10782917">These operations are illustrated in the phasor diagram of Fig. 9.14. Obviously, similar relations give the phasor symmetrical components 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math> of the current in winding ot in terms of specified phasor current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mtext> and  {</m:mtext><m:mover accent="true"><m:mstyle fontstyle="italic"><m:mrow><m:mi>I</m:mi></m:mrow></m:mstyle><m:mo stretchy="false">ˆ</m:mo></m:mover></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{m} } " and  {" hat  ital {I}} rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>in the two phases; thus</para>
+    <para id="id10783132"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>j</m:mi></m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{f} } = {  {1}  over  {2} }  \(  { hat  {I}} rSub { size 8{α} }  - j { hat  {I}} rSub { size 8{β} }  \) } {}</m:annotation></m:semantics></m:math>(9.23)</para>
+    <para id="id10783266"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>j</m:mi></m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{b} } = {  {1}  over  {2} }  \(  { hat  {I}} rSub { size 8{α} } +j { hat  {I}} rSub { size 8{β} }  \) } {}</m:annotation></m:semantics></m:math>(9.24)</para>
+    <figure id="id10783407">
+      <media id="id1165975759952" alt=""><image src="../../media/graphics15-7afe.png" mime-type="image/png" height="158" width="360"/></media>
+    </figure>
+    <para id="id10783432">Figure 9.14 Resolution of unbalanced two-phase voltages </para>
+    <para id="id10783441">into symmetrical components.</para>
+    <para id="id10783445">9.4.2 The General Case: Unsymmetrical Two-Phase</para>
+    <para id="id10783453">Induction Machines</para>
+    <list id="id10783458" list-type="bulleted">
+      <item>A single-phase induction motor with a main and auxiliary winding is an example of an unsymmetrical two-phase induction motor. In this section we will develop a model for such a two-phase motor, using notation appropriate to the single-phase motor. We will assume, as is commonly the case, that the windings are in space quadrature but that they are unsymmetrical in that they may have a different number of turns, a different winding distribution, and so on.</item>
+      <item>To start with flux-linkage/current relationships for the rotor and stator of the form</item>
+    </list>
+    <para id="id11521107"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle></m:msub></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:mn>0</m:mn><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle></m:msub></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+λ rSub { size 8{ ital "main"} }  {} ##
+λ rSub { size 8{ ital "aux"} }  {} ##
+λ rSub { size 8{r1} }  {} ##
+λ rSub { size 8{r2} } 
+}  right ]= left [ matrix {
+L rSub { size 8{ ital "main"} }  {} # 0 {} # L rSub { size 8{ ital "main",r1} }  \( θ rSub { size 8{ ital "me"} }  \)  {} # L rSub { size 8{ ital "main",r2} }  \( θ rSub { size 8{ ital "me"} }  \)  {} ##
+0 {} # L rSub { size 8{ ital "aux"} }  {} # L rSub { size 8{ ital "aux",r1} }  \( θ rSub { size 8{ ital "me"} }  \)  {} # L rSub { size 8{ ital "aux",r2} }  \( θ rSub { size 8{ ital "me"} }  \)  {} ##
+L rSub { size 8{ ital "main",r1} }  \( θ rSub { size 8{ ital "me"} }  \)  {} # L rSub { size 8{ ital "aux",r1} }  \( θ rSub { size 8{ ital "me"} }  \)  {} # L rSub { size 8{r} }  {} # 0 {} ##
+L rSub { size 8{ ital "main",r2} }  \( θ rSub { size 8{ ital "me"} }  \)  {} # L rSub { size 8{ ital "aux",r2} }  \( θ rSub { size 8{ ital "me"} }  \)  {} # 0 {} # L rSub { size 8{r} } {}
+}  right ] left [ matrix {
+i rSub { size 8{ ital "main"} }  {} ##
+i rSub { size 8{ ital "aux"} }  {} ##
+i rSub { size 8{r1} }  {} ##
+i rSub { size 8{r2} } 
+}  right ]} {}</m:annotation></m:semantics></m:math>(9.25)</para>
+    <para id="id11521822">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math> is the rotor angle measured in electrical radians.</para>
+    <para id="id11521882"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main"} } ={}} {}</m:annotation></m:semantics></m:math> Self-inductance of the main winding</para>
+    <figure id="id11521950">
+      <media id="id1165980358371" alt=""><image src="../../media/graphics16-eed4.png" mime-type="image/png" height="359" width="368"/></media>
+    </figure>
+    <para id="id10207889">Figure 9.16 Schematic representation of a two-phase induction motor </para>
+    <para id="id10207899">with an equivalent two-phase rotor.</para>
+    <para id="id10207903"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux"} } ={}} {}</m:annotation></m:semantics></m:math>Self-inductance of the auxiliary winding</para>
+    <para id="id10207968"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{r} } ={}} {}</m:annotation></m:semantics></m:math>Self-inductance of the equivalent rotor windings</para>
+    <para id="id10208028"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main",r1} }  \( θ rSub { size 8{ ital "me"} }  \) ={}} {}</m:annotation></m:semantics></m:math>Mutual inductance between the main winding and equivalent rotor winding 1</para>
+    <para id="id10208127"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main",r2} }  \( θ rSub { size 8{ ital "me"} }  \) ={}} {}</m:annotation></m:semantics></m:math>Mutual inductance between the main winding and equivalent rotor winding 2</para>
+    <para id="id10208227"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux",r1} }  \( θ rSub { size 8{ ital "me"} }  \) ={}} {}</m:annotation></m:semantics></m:math>Mutual inductance between the auxiliary winding and rotor winding 1</para>
+    <para id="id10208326"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux",r2} }  \( θ rSub { size 8{ ital "me"} }  \) ={}} {}</m:annotation></m:semantics></m:math>Mutual inductance between the auxiliary winding and rotor winding 2</para>
+    <list id="id10208426" list-type="bulleted">
+      <item>Assuming a sinusoidal distribution of air-gap flux, the mutual inductances between the main winding and the rotor will be of the form</item>
+    </list>
+    <para id="id10208437"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>cos</m:mtext><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main",r1} }  \( θ rSub { size 8{ ital "me"} }  \) =L rSub { size 8{ ital "main",r} } "cos"θ rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math>(9.26)</para>
+    <para id="id10208572">And</para>
+    <para id="id10208576"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mtext>sin</m:mtext><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main",r2} }  \( θ rSub { size 8{ ital "me"} }  \) = - L rSub { size 8{ ital "main",r} } "sin"θ rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math>(9.27)</para>
+    <para id="id10208718">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main",r} } } {}</m:annotation></m:semantics></m:math> is the amplitude of the mutual inductance.</para>
+    <list id="id11481050" list-type="bulleted">
+      <item>The mutual inductances between the auxiliary winding will be of the same form with the exception that the auxiliary winding is displaced by 90 electrical degrees in space from the main winding. </item>
+    </list>
+    <para id="id11481062"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>sin</m:mtext><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux",r1} }  \( θ rSub { size 8{ ital "me"} }  \) =L rSub { size 8{ ital "aux",r} } "sin"θ rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math>(9.28)</para>
+    <para id="id11481197">And</para>
+    <para id="id11481201"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>cos</m:mtext><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux",r2} }  \( θ rSub { size 8{ ital "me"} }  \) =L rSub { size 8{ ital "aux",r} } "cos"θ rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math>(9.29)</para>
+    <list id="id11481336" list-type="bulleted">
+      <item>Note that the auxiliary winding will typically have a different number of turns (and perhaps a different winding distribution) from that of the main winding. Thus, for modeling purposes, it is often convenient to write</item>
+    </list>
+    <para id="id11481348"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>aL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux",r} } = ital "aL" rSub { size 8{ ital "main",r} } } {}</m:annotation></m:semantics></m:math>(9.30)</para>
+    <para id="id11481446">Where</para>
+    <para id="id11481450"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>a</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>Turns ratio</m:mtext></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mtext>Effective turns of auxiliary winding</m:mtext><m:mtext>Effective turns of main winding</m:mtext></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{a="Turns ratio"= {  {"Effective turns of auxiliary winding"}  over  {"Effective turns of main winding"} } } {}</m:annotation></m:semantics></m:math>(9.31)</para>
+    <list id="id11132448" list-type="bulleted">
+      <item>Similarly, if we write the self-inductance of the magnetizing branch as the sum of a leakage inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mmultiscripts><m:mtext/><m:mprescripts/><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:none/></m:mmultiscripts></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L"" lSub { size 8{ ital "main",1} } } {}</m:annotation></m:semantics></m:math> and a magnetizing inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math></item>
+    </list>
+    <para id="id11132571"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "main"} } =L rSub { size 8{ ital "main",1} } +L rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>(9.32)</para>
+    <para id="id11132672">then the self-inductance of the auxiliary winding can be written in the form</para>
+    <para id="id11481475"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msup><m:mi>a</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aux"} } =L rSub { size 8{ ital "aux",1} } +a rSup { size 8{2} } L rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>(9.33)</para>
+    <list id="id11481586" list-type="bulleted">
+      <item>The voltage equations for this machine can be written in terms of the winding currents and flux linkage as</item>
+    </list>
+    <para id="id11481596"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi fontstyle="italic">dλ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{ ital "main"} } =i rSub { size 8{ ital "main"} } R rSub { size 8{ ital "main"} } + {  {dλ rSub { size 8{ ital "main"} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(9.34)</para>
+    <para id="id11481723"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi fontstyle="italic">dλ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{ ital "aux"} } =i rSub { size 8{ ital "aux"} } R rSub { size 8{ ital "aux"} } + {  {dλ rSub { size 8{ ital "aux"} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(9.35)</para>
+    <para id="id11481850"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi fontstyle="italic">dλ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle></m:msub><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{r1} } =0=i rSub { size 8{r1} } R rSub { size 8{r} } + {  {dλ rSub { size 8{r1} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(9.36)</para>
+    <para id="id10623273"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi fontstyle="italic">dλ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle></m:msub><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{r2} } =0=i rSub { size 8{r2} } R rSub { size 8{r} } + {  {dλ rSub { size 8{r2} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(9.37)</para>
+    <para id="id10623395">Where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> are the resistances of the main, auxiliary, and rotor windings respectively. Note that the rotor-winding votages are set equal to zero because the rotor windings of an induction motor are internally shorted.</para>
+    <list id="id10623561" list-type="bulleted">
+      <item>Finally, the electro-magnetic torque of this motor can be written as</item>
+    </list>
+    <para id="id10623571">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>T</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>mech</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>main</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>i</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi fontstyle="italic">r1</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi fontstyle="italic">dL</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>main</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mi>,</m:mi>
+                                <m:mi fontstyle="italic">r1</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>me</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi fontstyle="italic">dθ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>main</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>i</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi fontstyle="italic">r2</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi fontstyle="italic">dL</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>main</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mi>,</m:mi>
+                              <m:mi fontstyle="italic">r2</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>me</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:msub>
+                      <m:mi fontstyle="italic">dθ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } =i rSub { size 8{ ital "main"} } i rSub { size 8{r1} }  {  {dL rSub { size 8{ ital "main",r1} }  \( θ rSub { size 8{ ital "me"} }  \) }  over  {dθ rSub { size 8{m} } } } +i rSub { size 8{ ital "main"} } i rSub { size 8{r2} }  {  {dL rSub { size 8{ ital "main",r2} }  \( θ rSub { size 8{ ital "me"} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id10623822">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>aux</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>i</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi fontstyle="italic">r1</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi fontstyle="italic">dL</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>aux</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mi>,</m:mi>
+                                <m:mi fontstyle="italic">r1</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>me</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi fontstyle="italic">dθ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>aux</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>i</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi fontstyle="italic">r2</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi fontstyle="italic">dL</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>aux</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mtext>.</m:mtext>
+                              <m:mi fontstyle="italic">r2</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>me</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:msub>
+                      <m:mi fontstyle="italic">dθ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{+i rSub { size 8{ ital "aux"} } i rSub { size 8{r1} }  {  {dL rSub { size 8{ ital "aux",r1} }  \( θ rSub { size 8{ ital "me"} }  \) }  over  {dθ rSub { size 8{m} } } } +i rSub { size 8{ ital "aux"} } i rSub { size 8{r2} }  {  {dL rSub { size 8{ ital "aux" "." r2} }  \( θ rSub { size 8{ ital "me"} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id10624058">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mrow>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mstyle fontsize="12pt">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow/>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfenced open="[" close="]">
+                              <m:mfrac>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>poles</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mn>2</m:mn>
+                              </m:mfrac>
+                            </m:mfenced>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">[</m:mo>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:msub>
+                              <m:mi>L</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>main</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                    <m:mi>,</m:mi>
+                                    <m:mi>r</m:mi>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:msub>
+                            <m:mi>i</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>main</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>i</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi fontstyle="italic">r1</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mtext>sin</m:mtext>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>θ</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>me</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:msub>
+                              <m:mi>i</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>main</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                          <m:msub>
+                            <m:mi>i</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi fontstyle="italic">r2</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mtext>cos</m:mtext>
+                          <m:msub>
+                            <m:mi>θ</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>me</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mtext/>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:msub>
+                        <m:mi>L</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>aux</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mi>,</m:mi>
+                              <m:mi>r</m:mi>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mo stretchy="false">(</m:mo>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>aux</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi fontstyle="italic">r1</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mtext>cos</m:mtext>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>θ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>me</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:msub>
+                        <m:mi>i</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>aux</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi fontstyle="italic">r2</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mtext>sin</m:mtext>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>me</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo stretchy="false">]</m:mo>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+              </m:mtable>
+              <m:mrow/>
+            </m:mrow>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{ {}= left [ {  { ital "poles"}  over  {2} }  right ] \[  - L rSub { size 8{ ital "main",r} }  \( i rSub { size 8{ ital "main"} } i rSub { size 8{r1} } "sin"θ rSub { size 8{ ital "me"} } +i rSub { size 8{ ital "main"} } i rSub { size 8{r2} } "cos"θ rSub { size 8{ ital "me"} }  \) }  {} # 
+"              "+L rSub { size 8{ ital "aux",r} }  \( i rSub { size 8{ ital "aux"} } i rSub { size 8{r1} } "cos"θ rSub { size 8{ ital "me"} }  - i rSub { size 8{ ital "aux"} } i rSub { size 8{r2} } "sin"θ rSub { size 8{ ital "me"} }  \)  \]  {} 
+} } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id11328068">where
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">/</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>poles</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } = \( 2/ ital "poles" \) θ rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math>is the rotor angle in radians.</para>
+    <list id="id11328168" list-type="bulleted">
+      <item>The equations derived in this section can be further developed by assuming steady-state operation, with constant mechanical speed 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math>, corresponding to a slip s, and constant electrical supply frequency 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math>. Consistent with this assumption the rotor currents will be at frequencies 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">sω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{r} } =ω rSub { size 8{e} }  - ω rSub { size 8{ ital "me"} } =sω rSub { size 8{ ital "me"} } } {}</m:annotation></m:semantics></m:math> (produced by the stator positive-sequence field) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>me</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{r} } =ω rSub { size 8{e} } +ω rSub { size 8{ ital "me"} } = \( 2 - s \) ω rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math> (produced by the stator negative-sequence field).</item>
+      <item>After considerable algebraic manipulation, which includes using Eqs. 9.36 and 9.37 to eliminate the rotor currents, the main- and auxiliary-winding flux-linkage/current relationships of Eq. 9.25 can be written as phasor equations</item>
+    </list>
+    <para id="id11328528"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>λ</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">[</m:mo></m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msubsup><m:mtext>jL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {λ}} rSub { size 8{ ital "main"} } = \[ L rSub { size 8{ ital "main"} }  -  ital "jL" rSub { size 8{ ital "main",r} }  rSup { size 8{2} }  \(  { hat  {K}} rSup { size 8{+{}} } + { hat  {K}} rSup { size 8{ - {}} }  \)  \]  { hat  {I}} rSub { size 8{ ital "main"} } +L rSub { size 8{ ital "main",r} } L rSub { size 8{ ital "aux",r} }  \(  { hat  {K}} rSup { size 8{+{}} }  -  { hat  {K}} rSup { size 8{ - {}} }  \)  { hat  {I}} rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math>(9.39)</para>
+    <para id="id10383236">And</para>
+    <para id="id10383240"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>λ</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">−</m:mo><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mo stretchy="false">[</m:mo></m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msubsup><m:mtext>jL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {λ}} rSub { size 8{ ital "aux"} } = - L rSub { size 8{ ital "main",r} } L rSub { size 8{ ital "aux",r} }  \(  { hat  {K}} rSup { size 8{+{}} }  -  { hat  {K}} rSup { size 8{ - {}} }  \)  { hat  {I}} rSub { size 8{ ital "main"} } + \[ L rSub { size 8{ ital "aux"} }  -  ital "jL" rSub { size 8{ ital "aux",r} }  rSup { size 8{2} }  \(  { hat  {K}} rSup { size 8{+{}} } + { hat  {K}} rSup { size 8{ - {}} }  \)  \]  { hat  {I}} rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math>(9.40)</para>
+    <para id="id10383595">Where</para>
+    <para id="id10383599"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi fontstyle="italic">sω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>js</m:mtext></m:mrow></m:mstyle></m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {K}} rSup { size 8{+{}} } = {  {sω rSub { size 8{e} } }  over  {2 \( R rSub { size 8{r} } + ital "js"ω rSub { size 8{e} } L rSub { size 8{r} }  \) } } } {}</m:annotation></m:semantics></m:math>(9.41)</para>
+    <para id="id10383741">and</para>
+    <para id="id10383745"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>j</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {K}} rSup { size 8{ - {}} } = {  { \( 2 - s \) ω rSub { size 8{e} } }  over  {2 \( R rSub { size 8{r} } +j \( 2 - s \) ω rSub { size 8{e} } L rSub { size 8{r} }  \) } } } {}</m:annotation></m:semantics></m:math>(9.42)</para>
+    <para id="id9071095">The voltage equations, Eqs. 9.34 and 9.35 become</para>
+    <para id="id9071100"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi fontstyle="italic">jω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mover accent="true"><m:mi>λ</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{ ital "main"} } = { hat  {I}} rSub { size 8{ ital "main"} } R rSub { size 8{ ital "main"} } +jω rSub { size 8{e} }  { hat  {λ}} rSub { size 8{ ital "main"} } } {}</m:annotation></m:semantics></m:math>(9.43)</para>
+    <para id="id9071257"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi fontstyle="italic">jω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mover accent="true"><m:mi>λ</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{ ital "aux"} } = { hat  {I}} rSub { size 8{ ital "aux"} } R rSub { size 8{ ital "aux"} } +jω rSub { size 8{e} }  { hat  {λ}} rSub { size 8{ ital "aux"} } } {}</m:annotation></m:semantics></m:math>(9.44)</para>
+    <para id="id9071414">The rotor currents will each consist of positive- and negative-sequence components. The complex amplitudes of the positive sequence components (at frequency 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi fontstyle="italic">sω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{sω rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math>) are given by</para>
+    <para id="id9071473"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>js</m:mtext></m:mrow></m:mstyle></m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">[</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">]</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>js</m:mtext></m:mrow></m:mstyle></m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{r1} }  rSup { size 8{+{}} } = {  { -  ital "js"ω rSub { size 8{e} }  \[ L rSub { size 8{ ital "main",r} }  { hat  {I}} rSub { size 8{ ital "main"} } + ital "jL" rSub { size 8{ ital "aux",r} }  { hat  {I}} rSub { size 8{ ital "aux"} }  \] }  over  {2 \( R rSub { size 8{r} } + ital "js"ω rSub { size 8{e} } L rSub { size 8{r} }  \) } } } {}</m:annotation></m:semantics></m:math>(9.45)</para>
+    <para id="id9071739">And</para>
+    <para id="id9071743"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>j</m:mi></m:mrow></m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{r2} }  rSup { size 8{+{}} } = - j { hat  {I}} rSub { size 8{r1} }  rSup { size 8{+{}} } } {}</m:annotation></m:semantics></m:math>(9.46)</para>
+    <para id="id9071866">while the complex amplitudes of the negative sequence components (at frequency (2 - s)
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math>) are given by</para>
+    <para id="id9071922"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>j</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">[</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">]</m:mo></m:mrow><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>j</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>2</m:mn><m:mo stretchy="false">−</m:mo><m:mi>s</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{r1} }  rSup { size 8{ - {}} } = {  { - j \( 2 - s \) ω rSub { size 8{e} }  \[ L rSub { size 8{ ital "main",r} }  { hat  {I}} rSub { size 8{ ital "main"} }  -  ital "jL" rSub { size 8{ ital "aux",r} }  { hat  {I}} rSub { size 8{ ital "aux"} }  \] }  over  {2 \( R rSub { size 8{r} } +j \( 2 - s \) ω rSub { size 8{e} } L rSub { size 8{r} }  \) } } } {}</m:annotation></m:semantics></m:math>(9.47)</para>
+    <para id="id3578570">And</para>
+    <para id="id3578575"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r2</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mi>j</m:mi></m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">r1</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{r2} }  rSup { size 8{ - {}} } =j { hat  {I}} rSub { size 8{r1} }  rSup { size 8{ - {}} } } {}</m:annotation></m:semantics></m:math>(9.48)</para>
+    <list id="id3578693" list-type="bulleted">
+      <item>Finally, the time-averaged electromagnetic torque can be shown to be given by</item>
+    </list>
+    <para id="id3578703">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow/>
+                  <m:msub>
+                    <m:mi>T</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>mech</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>&gt;=</m:mtext>
+                  <m:mfenced open="[" close="]">
+                    <m:mfrac>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>poles</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mfenced>
+                  <m:mtext>Re</m:mtext>
+                  <m:mo stretchy="false">[</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:msubsup>
+                    <m:mi>L</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>main</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mi>,</m:mi>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msubsup>
+                  <m:msub>
+                    <m:mover accent="true">
+                      <m:mi>I</m:mi>
+                      <m:mo stretchy="false">ˆ</m:mo>
+                    </m:mover>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>main</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mover accent="true">
+                        <m:mi>I</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>main</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msubsup>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msubsup>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>aux</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mi>,</m:mi>
+                            <m:mi>r</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msubsup>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mover accent="true">
+                      <m:mi>I</m:mi>
+                      <m:mo stretchy="false">ˆ</m:mo>
+                    </m:mover>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>aux</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:msubsup>
+                    <m:mover accent="true">
+                      <m:mi>I</m:mi>
+                      <m:mo stretchy="false">ˆ</m:mo>
+                    </m:mover>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>aux</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msubsup>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mover accent="true">
+                        <m:mi>K</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">+</m:mo>
+                            <m:mrow/>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msup>
+                    <m:mo stretchy="false">−</m:mo>
+                    <m:msup>
+                      <m:mover accent="true">
+                        <m:mi>K</m:mi>
+                        <m:mo stretchy="false">ˆ</m:mo>
+                      </m:mover>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mrow/>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msup>
+                  </m:mrow>
+                  <m:msup>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msup>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{&lt;T rSub { size 8{ ital "mech"} } "&gt;=" left [ {  { ital "poles"}  over  {2} }  right ]"Re" \[  \( L rSub { size 8{ ital "main",r} }  rSup { size 8{2} }  { hat  {I}} rSub { size 8{ ital "main"} }  { hat  {I}} rSub { size 8{ ital "main"} }  rSup { size 8{*} } +L rSub { size 8{ ital "aux",r} }  rSup { size 8{2} }  { hat  {I}} rSub { size 8{ ital "aux"} }  { hat  {I}} rSub { size 8{ ital "aux"} }  rSup { size 8{*} }  \)  \(  { hat  {K}} rSup { size 8{+{}} }  -  { hat  {K}} rSup { size 8{ - {}} }  \)  rSup { size 8{*} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id3579036"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>jL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle><m:mi>,</m:mi><m:mi>r</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>main</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:msubsup><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aux</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mrow><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">+</m:mo><m:msup><m:mover accent="true"><m:mi>K</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{+ ital "jL" rSub { size 8{ ital "main",r} } L rSub { size 8{ ital "aux",r} }  \(  { hat  {I}} rSub { size 8{ ital "main"} }  rSup { size 8{*} }  { hat  {I}} rSub { size 8{ ital "aux"} }  -  { hat  {I}} rSub { size 8{ ital "main"} }  { hat  {I}} rSub { size 8{ ital "aux"} }  rSup { size 8{*} }  \)  \(  { hat  {K}} rSup { size 8{+{}} } + { hat  {K}} rSup { size 8{ - {}} }  \)  rSup { size 8{*} } } {}</m:annotation></m:semantics></m:math>(9.49)</para>
+    <para id="id9254030">where the symbol Re[ ] again indicates the real part of a complex number and the superscript* indicates the complex conjugate. Note that Eq.9.49 is derived based upon the assumption that the various currents are expressed as rms quantities.</para>
+  </content>
+</document>

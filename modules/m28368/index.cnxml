@@ -1,0 +1,1009 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>PROBLEMS - chapter 4</title>
+  <metadata>
+  <md:content-id>m28368</md:content-id><md:title>PROBLEMS - chapter 4</md:title>
+  <md:abstract/>
+  <md:uuid>ca640039-8794-4c94-b811-f5df7ad0aaa6</md:uuid>
+</metadata>
+
+<content>
+    <para id="id4895996">PROBLEMS</para>
+    <para id="id4896001">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <para id="id4896008">4.1 The rotor of a six-pole synchronous generator is rotating at a mechanical speed of 1200 r/min.</para>
+    <para id="id4896020">a. Express this mechanical speed in radians per second.</para>
+    <para id="id4896025">b. What is the frequency of the generated voltage in hertz and in radians per second?</para>
+    <para id="id4896034">c. What mechanical speed in revolutions per minute would be required to generate voltage at a frequency of 50 Hz?</para>
+    <para id="id4896043">4.2 The voltage generated in one phase of an unloaded three-phase synchronous generator is of the form v(t) = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mtext>cos</m:mtext><m:mi fontstyle="italic">ωt</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{0} } "cos"ωt} {}</m:annotation></m:semantics></m:math>. Write expressions for the voltage in the remaining two phases.</para>
+    <para id="id4896126">4.3 A three-phase motor is used to drive a pump. It is observed (by the use of a stroboscope) that the motor speed decreases from 898 r/min when the pump is unloaded to 830 r/min as the pump is loaded.</para>
+    <para id="id4896139">a. Is this a synchronous or an induction motor?</para>
+    <para id="id4896144">b. Estimate the frequency of the applied armature voltage in hertz.</para>
+    <para id="id4896150">c. How many poles does this motor have?</para>
+    <para id="id4896154">4.4 A three-phase Y-connected ac machine is initially operating under balanced three-phase conditions when one of the phase windings becomes open-circuited. Because there is no neutral connection on the winding, this requires that the currents in the remaining two windings become equal and opposite. Under this condition, calculate the relative magnitudes of the resultant positive- and negative-traveling mmf waves.</para>
+    <para id="id4896179">4.5 What is the effect on the rotating mmf and flux waves of a three-phase winding produced by balanced-three-phase currents if two of the phase connections are interchanges?</para>
+    <para id="id6128918">4.6 In a balanced two-phase machine, the two windings are displaced 90 electrical degrees in space, and the currents in the two windings are phase-displaced 90 electrical degrees in time. For such a machine, carry out the process leading to an equation for the rotating mmf wave corresponding to Eq.4.39 (which is derived for a three-phase machine).</para>
+    <para id="id6128933">4.7 This problem investigates the advantages of short-pitching the stator coils of an ac machine. Figure 4.1a shows a single full-pitch coil in a two-pole machine. Figure 4.1b shows a fractional-pitch coil for which the coil sides are β radians apart, rather than π radians (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>180</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"180" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>) as is the case for the full-pitch coil.</para>
+    <para id="id6129008">For an air-gap radial flux distribution of the form</para>
+    <para id="id6129013">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>B</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>r</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow>
+                      <m:munder>
+                        <m:mo stretchy="false">∑</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mtext>n   odd</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:munder>
+                      <m:msub>
+                        <m:mi>B</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>n</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:mi fontstyle="italic">nθ</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{r} } = Sum cSub { size 8{"n   odd"} }  {B rSub { size 8{n} } } "cos"nθ} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id6129102">where n = 1 corresponds to the fundamental space harmonic, n = 3 to the third space harmonic, and so on, the flux linkage of each coil is the integral of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> over the surface spanned by that coil. Thus for the nth space harmonic, the ratio of the maximum fractional-pitch coil flux linkage to that of the full-pitch coil is</para>
+    <para id="id6128746">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msubsup>
+                            <m:mo stretchy="false">∫</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mi>β</m:mi>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi>β</m:mi>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msubsup>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>B</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>n</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mtext>cos</m:mtext>
+                            <m:mi fontstyle="italic">nθ</m:mi>
+                            <m:mi fontstyle="italic">dθ</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msubsup>
+                              <m:mo stretchy="false">∫</m:mo>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mo stretchy="false">−</m:mo>
+                                      <m:mi>π</m:mi>
+                                    </m:mrow>
+                                    <m:mo stretchy="false">/</m:mo>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mi>π</m:mi>
+                                    <m:mo stretchy="false">/</m:mo>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msubsup>
+                            <m:msub>
+                              <m:mi>B</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>n</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                          <m:mtext>cos</m:mtext>
+                          <m:mi fontstyle="italic">nθ</m:mi>
+                          <m:mi fontstyle="italic">dθ</m:mi>
+                        </m:mrow>
+                      </m:mfrac>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:msubsup>
+                            <m:mo stretchy="false">∫</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mi>β</m:mi>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi>β</m:mi>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msubsup>
+                          <m:mrow>
+                            <m:mtext>cos</m:mtext>
+                            <m:mi fontstyle="italic">nθ</m:mi>
+                            <m:mi fontstyle="italic">dθ</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:msubsup>
+                            <m:mo stretchy="false">∫</m:mo>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mi>π</m:mi>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mi>π</m:mi>
+                                  <m:mo stretchy="false">/</m:mo>
+                                  <m:mn>2</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msubsup>
+                          <m:mrow>
+                            <m:mtext>cos</m:mtext>
+                            <m:mi fontstyle="italic">nθ</m:mi>
+                            <m:mi fontstyle="italic">dθ</m:mi>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mo stretchy="false">∣</m:mo>
+                  </m:mrow>
+                  <m:mtext>sin</m:mtext>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mrow>
+                    <m:mi fontstyle="italic">nβ</m:mi>
+                    <m:mo stretchy="false">/</m:mo>
+                    <m:mn>2</m:mn>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mo stretchy="false">∣</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ {  { Int rSub { size 8{ - β/2} }  rSup { size 8{β/2} }  {B rSub { size 8{n} } "cos"nθ dθ} }  over  { Int rSub { size 8{ - π/2} }  rSup { size 8{π/2} }  {B rSub { size 8{n} } } "cos"nθ dθ} } = {  { Int rSub { size 8{ - β/2} }  rSup { size 8{β/2} }  {"cos"nθ dθ} }  over  { Int rSub { size 8{ - π/2} }  rSup { size 8{π/2} }  {"cos"nθ dθ} } } =  \lline "sin" \( nβ/2 \)  \lline } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id6415622">It is common, for example, to fractional-pitch the coils of an ac machine by 30 electrical degrees (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>β</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>5π</m:mn><m:mn>6</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>150</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β= {  {5π}  over  {6} } ="150" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>). For n =1, 3, 5 calculate the fractional reduction in flux linkage due to short pitching.</para>
+    <figure id="id4885409">
+      <media id="id1171352638049" alt=""><image src="../../media/graphics1-48ee.png" mime-type="image/png" height="257" width="438"/></media>
+    </figure>
+    <para id="id4885433">Figure 4.1 (a) full-pitch coil and (b) fractional-pitch coil.</para>
+    <para id="id4885446">4.8 A six-pole, 60-Hz synchronous machine has a rotor winding with a total of 138 series turns and a winding factor 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> = 0.935. The rotor length is 1.97m, the rotor radius is 58cm, and the air-gap length = 3.15 cm.</para>
+    <para id="id4885515">a. What is the rated operating speed in r/min?</para>
+    <para id="id4885520">b. Calculate the rotor-winding current required to achieve a peak fundamental air-gap flux density of 1.23 T.</para>
+    <para id="id4885529">c. Calculate the corresponding flux per pole.</para>
+    <para id="id4885534">4.9 Assume that a phase winding of the synchronous machine of Problem 4.8 consists of one full-pitch, 11-turn coil per pole pair, with the coils connected in series to form the phase winding. If the machine is operating at rated speed and under the operating conditions of Problem 4.8, calculate the rms generated voltage per phase.</para>
+    <para id="id5930795">4.10The synchronous machine of Problem 4.8 has a three-phase winding with 45 series turns per phase and a winding factor 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> = 0.928. For the flux condition and rated speed of Problem 4.8, calculate the rms-generated voltage per phase.</para>
+    <para id="id5930864">4.11The three-phase synchronous machine of Problem 4.8 is to be moved to an application which requires that its operating frequency be reduced from 60 to 50 Hz. This application requires that, for the operating condition considered in Problem 4.8, the rms generated voltage equal 13.0 kV line-to-line. As a result, the machine armature must be rewound with a different number of turns. Assuming a winding factor of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> = 0.928, calculate the required number of series turns per phase.</para>
+    <para id="id5930938">4.12 Figure 4.2 shows a two-pole rotor revolving inside a smooth stator which carries a coil of 110 turns. The rotor produces a sinusoidal space distribution of flux at the stator surface; the peak value of the flux-density wave being 0.85 T when the current in the rotor is 15 A. The magnetic circuit is linear. The inside diameter of the stator is 11 cm, and its axial length is 0.17 m. The rotor is driven at a speed of 50 r/sec.</para>
+    <figure id="id5930957">
+      <media id="id1171352735599" alt=""><image src="../../media/graphics2-b0a6.png" mime-type="image/png" height="231" width="235"/></media>
+    </figure>
+    <para id="id5930981">Figure 4.2 Elementary generator.</para>
+    <para id="id5930993">a. The rotor is excited by a current of 15 A. Taking zero time as the instant when the axis of the rotor is vertical, find the expression for the instantaneous voltage generated in the open-circuited stator coil.</para>
+    <para id="id5827230">b. The rotor is now excited by a 50-Hz sinusoidal alternating currrent whose peak value is 15 A. Consequently, the rotor current reverses every half revolution; it is timed to be at its maximum just as the axis of the rotor is vertical (i.e., just as it becomes aligned with that of the stator coil). Taking zero time as the instant when the axis of the rotor is vertical, find the expression for the instantaneous voltage generated in the open-circuited stator coil. This scheme is sometimes suggested as a dc generator without a commutator; the thought being that if alternative half cycles of the alternating voltage generated in part (a) are reversed by reversal of the polarity of the field (rotor) winding, then a pulsating direct voltage will be generated in the stator. Discuss whether or not this scheme will work.</para>
+    <para id="id5827251">4.13 A three-phase two-pole winding is excited by balanced three-phase 60-Hz currents as described by Eqs. 4.23 to 4.25. Although the winding distribution has been designed to minimize harmonics, there remains some third and fifth spatial harmonics. Thus the phase-a mmf can be written as</para>
+    <para id="id5827265">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:msub>
+                    <m:mi>A</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>cos</m:mtext>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>θ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mn>3θ</m:mn>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>5</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:msub>
+                    <m:mn>5θ</m:mn>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{F rSub { size 8{a} } =i rSub { size 8{a} }  \( A rSub { size 8{1} } "cos"θ rSub { size 8{a} } +A rSub { size 8{3} } "cos"3θ rSub { size 8{a} } +A rSub { size 8{5} } "cos"5θ rSub { size 8{a} }  \) } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id5827423">Similar expressions can be written for phases b (replace 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math> by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msup><m:mtext>120</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{a} }  - "120" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>) and c (replace 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math> by
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msup><m:mtext>120</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{a} } +"120" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>). Calculate the total three-phase mmf. What is the angular velocity and rotational direction of each component of the mmf?</para>
+    <para id="id5975188">4.14 The nameplate of a dc generator indicates that it will produce an output voltage of 24 V dc when operated at a speed of 1200 r/min. By what factor must the number of armature turns be changed such that, for the same field-flux per pole, the generator will produce an output voltage of 18 V dc at a speed of 1400 r/min?</para>
+    <para id="id5975203">4.15 The armature of a two-pole dc generator has a total of 320 series turns. When operated at a speed of 1800 r/min, the open-circuit generated voltage is 240 V. Calculate 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>φ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>P</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{φ rSub { size 8{P} } } {}</m:annotation></m:semantics></m:math>, the air-gap flux per pole.</para>
+    <para id="id5975273">4.16 The design of a four-pole, three-phase, 230-V, 60-Hz induction motor is to be based on a stator core of length 21 cm and inner diameter 9.52 cm. The stator winding distribution which has been selected has a winding factor 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> = 0.925. The armature is to be Y-connected, and thus the rated phase voltage will be 230/
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ sqrt {3} } {}</m:annotation></m:semantics></m:math> V.</para>
+    <para id="id5278734">a. The designer must pick the number of armature turns so that the flux density in the machine is large enough to make efficient use of the magnetic material without being so large as to result in excessive saturation. To achieve this objective, the machine is to be designed with a peak fundamental air-gap flux density of 1.25 T. Calculate the required number of series turns per phase.</para>
+    <para id="id5278748">b. For an air-gap length of 0.3 mm, calculate the self-inductance of an armature phase based upon the result of part (a) and using the inductance formulas of Appendix B. Neglect the reluctance of the rotor and stator iron and the armature leakage inductance.</para>
+    <para id="id5278760">4.17 A two-pole, 60-Hz, three-phase, laboratory-size synchronous generator has a rotor radius of 5.71 cm, a rotor length of 18.0 cm, and an air-gap length of 0.25 mm. The rotor field winding consists of 264 turns with a winding factor of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> = 0.95. The Y-connected armature winding consists of 45 turns per phase with a winding factor 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> = 0.93.</para>
+    <para id="id5278888">a. Calculate the flux per pole and peak fundamental air-gap flux density which will result in an open-circuit, 60-Hz armature voltage of 120 V rms/phase (line-to-neutral).</para>
+    <para id="id5278898">b. Calculate the dc field current required to achieve the operating condition of part (a).</para>
+    <para id="id5278907">c. Calculate the peak value of the field-winding to armature-phase-winding mutual inductance.</para>
+    <para id="id5278916">4.18 Write a MATLAB script which calculates the required total series field- and armature-winding turns for a three-phase, Y-connected synchronous motor given the following information:</para>
+    <para id="id5826679">Rotor radius, R (meters)</para>
+    <para id="id5826683">Air-gap length, g (meters)</para>
+    <para id="id5826687">Electrical frequency, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>e</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{e} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id5826746">Field-winding factor, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id5826805">Rotor length, l (meters)</para>
+    <para id="id5826809">Number of poles, poles</para>
+    <para id="id5826813">Peak fundamental air-gap flux density, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>peak</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{ ital "peak"} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id5826878">Armature-winding factor, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id4918192">Rated rms open-circuit line-to-line terminal voltage, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>rated</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{ ital "rated"} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id4918258">Field-current at rated-open-circuit terminal voltage, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id4918318">4.19 A four-pole, 60-Hz synchronous generator has a rotor length of 5.2 m, diameter of 1.24 m, and air-gap length of 5.9 cm. The rotor winding consists of a series connection of 63 turns per pole with a winding factor of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> = 0.91. The peak value of the fundamental air-gap flux density is limited to 1.1 T and the rotor winding current to 2700 A. Calculate the maximum torque (N.m) and power output (MW) which can be supplied by this machine.</para>
+    <para id="id6136062">4.20 Thermal considerations limit the field-current of the laboratory-size synchronous generator of Problem 4.17 to a maximum value of 2.4 A. If the peak fundamental air-gap flux density is limited to a maximum of 1.3 T, calculate the maximum torque (N.m) and power (kW) which can be produced by this generator.</para>
+    <para id="id6136077">4.21 Figure 4.3 shows in cross section a machine having a rotor winding f and two identical stator windings a and b whose axes are in quadrature. The self-inductance of each stator winding is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aa</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aa"} } } {}</m:annotation></m:semantics></m:math> and of the rotor is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ff</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "ff"} } } {}</m:annotation></m:semantics></m:math>. The air gap is uniform. The mutual inductance between a stator winding depends on the angular position of the rotor and may be assumed to be of the form</para>
+    <para id="id6136214">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>M</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>af</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mi>M</m:mi>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:msub>
+                    <m:mi>θ</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "af"} } =M"cos"θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>M</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>bf</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mi>M</m:mi>
+                  </m:mrow>
+                  <m:mtext>sin</m:mtext>
+                  <m:msub>
+                    <m:mi>θ</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "bf"} } =M"sin"θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id4880908">where M is the maximum value of the mutual inductance. The resistance of each stator winding is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id4880974">a. Derive a general expression for the torque T in terms of the angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>, the inductance parameters, and the instantaneous currents 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math>. Does this expression apply at standstill? When the rotor is revolving?</para>
+    <para id="id5265751">b. Suppose the rotor is stationary and constant direct currents 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math> = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{b} } =I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mn>2I</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{f} } =2I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> are supplied to the windings in the directions indicated by the dots and crosses in Fig. 4.45. If the rotor is allowed to move, will it rotate continuously or will it tend to come to rest? If the latter, at what value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> ?</para>
+    <figure id="id4884249">
+      <media id="id1171352653100" alt=""><image src="../../media/graphics3-8861.png" mime-type="image/png" height="261" width="266"/></media>
+    </figure>
+    <para id="id4884273">Figure 4.3 Elementary cylindrical-rotor, two-phase synchronous machine.</para>
+    <para id="id4884286">c. The rotor winding is now excited by a constant direct current If while the stator windings carry balanced two-phase currents </para>
+    <para id="id4884296">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>cos</m:mtext>
+                  <m:mi fontstyle="italic">ωt</m:mi>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>b</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>sin</m:mtext>
+                  <m:mi fontstyle="italic">ωt</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{a} } = sqrt {2} I rSub { size 8{a} } "cos"ωt"            "i rSub { size 8{b} } = sqrt {2} I rSub { size 8{a} } "sin"ωt} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id4884416">The rotor is revolving at synchronous speed so that its instantaneous angular position is given by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mi fontstyle="italic">ωt</m:mi><m:mo stretchy="false">−</m:mo><m:mi>δ</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } =ωt - δ} {}</m:annotation></m:semantics></m:math>, where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math> is a phase angle describing the position of the rotor at t = 0. The machine is an elementary two-phase synchronous machine. Derive an expression for the torque under these conditions.</para>
+    <para id="id6121392">d. Under the conditions of part (c), derive an expression for the instantaneous terminal voltages of stator phases a and b.</para>
+    <para id="id6121401">4.22 Consider the two-phase synchronous machine of Problem 4.21. Derive an expression for the torque acting on the rotor if the rotor is rotating at constant angular velocity, such that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mi fontstyle="italic">ωt</m:mi><m:mo stretchy="false">+</m:mo><m:mi>δ</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } =ωt+δ} {}</m:annotation></m:semantics></m:math>, and the phase currents become unbalanced such that </para>
+    <para id="id6121490">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>cos</m:mtext>
+                  <m:mi fontstyle="italic">ωt</m:mi>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>b</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>I</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msup>
+                      <m:mi>I</m:mi>
+                      <m:mi>'</m:mi>
+                    </m:msup>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mtext>sin</m:mtext>
+                  <m:mi fontstyle="italic">ωt</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{a} } = sqrt {2} I rSub { size 8{a} } "cos"ωt"             "i rSub { size 8{b} } = sqrt {2}  \( I rSub { size 8{a} } + { {I}} sup { ' } \) "sin"ωt} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id5823726">What are the instantaneous and time-averaged torque under this condition?</para>
+    <para id="id5823731">4.23 Figure 4.4 shows in schematic cross section a salient-pole synchronous machine having two identical stator windings a and b on a laminated steel core. The salient-pole rotor is made of steel and carries a field winding f connected to slip rings.</para>
+    <para id="id5823745">Because of the nonuniform air gap, the self- and mutual inductances are functions of the angular position 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> of the rotor. Their variation with θ0 can be approximated as:</para>
+    <para id="id5823821">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>aa</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>L</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:msub>
+                        <m:mi>L</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:msub>
+                    <m:mn>2θ</m:mn>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aa"} } =L rSub { size 8{0} } +L rSub { size 8{2} } "cos"2θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>bb</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>L</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:msub>
+                        <m:mi>L</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:msub>
+                    <m:mn>2θ</m:mn>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "bb"} } =L rSub { size 8{0} }  - L rSub { size 8{2} } "cos"2θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>M</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>ab</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>L</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mtext>sin</m:mtext>
+                  <m:msub>
+                    <m:mi>θ</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "ab"} } =L rSub { size 8{2} } "sin"θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <figure id="id5185799">
+      <media id="id1171352689814" alt=""><image src="../../media/graphics4-2b2a.png" mime-type="image/png" height="260" width="256"/></media>
+    </figure>
+    <para id="id5185823">Figure 4.4 Schematic two-phase, salient-pole synchronous machine.</para>
+    <para id="id5185835">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> are positive constants. The mutual inductance between the rotor and the stator windings are functions of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id6120635">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>M</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>af</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mi>M</m:mi>
+                  </m:mrow>
+                  <m:mtext>cos</m:mtext>
+                  <m:msub>
+                    <m:mi>θ</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "af"} } =M"cos"θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>M</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>bf</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mi>M</m:mi>
+                  </m:mrow>
+                  <m:mtext>sin</m:mtext>
+                  <m:msub>
+                    <m:mi>θ</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>0</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "bf"} } =M"sin"θ rSub { size 8{0} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id5273703">where M is also a positive constant. The self-inductance of the field winding, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ff</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "ff"} } } {}</m:annotation></m:semantics></m:math>, is constant, independent of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5273831">Consider the operating condition in which the field winding is excited by direct current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> and the stator windings are connected to a balanced two-phase voltage source of frequency 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>ω</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω} {}</m:annotation></m:semantics></m:math>. With the rotor revolving at synchronous speed, its angular position will be given by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi fontstyle="italic">ωt</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } =ωt} {}</m:annotation></m:semantics></m:math>. </para>
+    <para id="id6426363">Under this operating condition, the stator currents will be of the form</para>
+    <para id="id6426368">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>a</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>cos</m:mtext>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mrow>
+                    <m:mi fontstyle="italic">ωt</m:mi>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:mi>δ</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                  <m:mtext/>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>b</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>a</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mtext>sin</m:mtext>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mrow>
+                    <m:mi fontstyle="italic">ωt</m:mi>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:mi>δ</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{a} } = sqrt {2} I rSub { size 8{a} } "cos" \( ωt+δ \) "                 "i rSub { size 8{b} } = sqrt {2} I rSub { size 8{a} } "sin" \( ωt+δ \) } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id6130361">a. Derive an expression for the electromagnetic torque acting on the rotor.</para>
+    <para id="id6130366">b. Can the machine be operated as a motor and/or a generator? Explain.</para>
+    <para id="id6130372">c. Will the machine continue to run if the field current If is reduced to zero? Support you answer with an expression for the torque and an explanation as to why such operation is or is not possible.</para>
+    <para id="id6130391">4.24 A three-phase linear ac motor has an armature winding of wavelength 25 cm. A three-phase balanced set of currents at a frequency of 100 Hz is applied to the armature.</para>
+    <para id="id6130403">a. Calculate the linear velocity of the armature mmf wave.</para>
+    <para id="id6130408">b. For the case of a synchronous rotor, calculate the linear velocity of the rotor.</para>
+    <para id="id6130417">c. For the case of an induction motor operating at a slip of 0.045, calculate the linear velocity of the rotor.</para>
+    <para id="id6130426">4.25 The linear-motor armature of Problem 4.24 has a total active length of 7 wavelengths, with a total of 280 turns per phase with a winding factor 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{k rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> = 0.91. For an air-gap length of 0.93 cm, calculate the rms magnitude of the balanced three-phase currents which must be supplied to the armature to achieve a peak space-fundamental air-gap flux density of 1.45 T.</para>
+    <para id="id6130499">4.26 A two-phase linear permanent-magnet synchronous motor has an air-gap of length 1.0 mm, a wavelength of 12 cm, and a pole width of 4 cm. The rotor is 5 wavelengths in length. The permanent magnets on the rotor are arranged to produce an air-gap magnetic flux distribution that is uniform over the width of a pole but which varies sinusoidally in space in the direction of rotor travel. The peak density of this air-gap flux is 0.97 T.</para>
+    <para id="id6130515">a. Calculate the net flux per pole.</para>
+    <para id="id6130520">b. Each armature phase consists of 10 turns per pole, with all the poles connected in series. Assuming that the armature winding extends many wavelengths past either end of the rotor, calculate the peak flux linkages of the armature winding.</para>
+    <para id="id6130531">c. If the rotor is traveling at a speed of 6.3 m/sec, calculate the rms voltage induced in the armature winding.</para>
+  </content>
+</document>

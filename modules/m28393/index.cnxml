@@ -1,0 +1,429 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>PROBLEMS - chapter 5</title>
+  <metadata>
+  <md:content-id>m28393</md:content-id><md:title>PROBLEMS - chapter 5</md:title>
+  <md:abstract/>
+  <md:uuid>45f520e7-8d11-40f8-98cb-655bb6b1ee93</md:uuid>
+</metadata>
+
+<content>
+    <para id="id9469022">PROBLEMS</para>
+    <para id="id8083130">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <para id="id7456033">5.1 The full-load torque angle of a synchronous motor at rated voltage and frequency is 35 electrical degrees. Neglect the effects of armature resistance and leakage reactance. If the field current is held constant, how would the full-load torque angle be affected by the following changes in operating condition?</para>
+    <para id="id7732522">a. Frequency reduced 10 percent, load torque and applied voltage constant.</para>
+    <para id="id8731160">b. Frequency reduced 10 percent, load power and applied voltage constant.</para>
+    <para id="id9470197">c. Both frequency and applied voltage reduced 10 percent, load torque constant.</para>
+    <para id="id8552554">d. Both frequency and applied voltage reduced 10 percent, load power constant.</para>
+    <para id="id9911409">5.2 Design calculations show the following parameters for a three-phase, cylindrical-rotor synchronous generator:</para>
+    <para id="id8571873">Phase-a self-inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aa</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aa"} } } {}</m:annotation></m:semantics></m:math> = 4.83 mH</para>
+    <para id="id6962537">Armature leakage inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">a1</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{a1} } } {}</m:annotation></m:semantics></m:math> = 0.33 mH</para>
+    <para id="id8252356">Calculate the phase-phase mutual inductance and the machine synchronous inductance.</para>
+    <para id="id8217209">5.3 The open-circuit terminal voltage of a three-phase, 60-Hz synchronous generator is found to be 15.4 kV rms line-to-line when the field current is 420 A.</para>
+    <para id="id8122894">a. Calculate the stator-to-rotor mutual inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id8377705">b. Calculate the open-circuit terminal voltage if the field current is held constant while the generator speed is reduced so that the frequency of the generated voltage is 50 Hz.</para>
+    <para id="id8485805">5.4 A 460-V, 50-kW, 60-Hz, three-phase synchronous motor has a synchronous reactance of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow><m:mtext>.</m:mtext><m:mtext>15</m:mtext><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{S} } =4 "." "15" %OMEGA } {}</m:annotation></m:semantics></m:math> and an armature-to-field mutual inductance, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math> = 83 mH. The motor is operating at rated terminal voltage and an input power of 40 kW. Calculate the magnitude and phase angle of the line-toneutral generated voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math> and the field current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> if the motor is operating at (a) 0.85 power factor lagging, (b) unity power factor, and (c) 0.85 power factor leading.</para>
+    <para id="id8571883">5.5 The motor of Problem 5.4 is supplied from a 460-V, three-phase source through a feeder whose impedance is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Z rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> = 0.084 + j0.82 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>. Assuming the system (as measured at the source) to be operating at an input power of 40 kW, calculate the magnitude and phase angle of the line-to-neutral generated voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math>and the field current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> for power factors of (a) 0.85 lagging, (b) unity, and (c) 0.85 leading.</para>
+    <para id="id7732184">5.6 A 50-Hz, two-pole, 750 kVA, 2300 V, three-phase synchronous machine has a synchronous reactance of 7.75 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math> and achieves rated open-circuit terminal voltage at a field current of 120 A.</para>
+    <para id="id7751181">a. Calculate the armature-to-field mutual inductance.</para>
+    <para id="id8517132">b. The machine is to be operated as a motor supplying a 600 kW load at its rated terminal voltage. Calculate the internal voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math> and the corresponding field current if the motor is operating at unity power factor.</para>
+    <para id="id9325688">c. For a constant load power of 600 kW, write a MATLAB script to plot the terminal current as a function of field current. For your plot, let the field current vary between a minimum value corresponding to a machine loading of 750 kVA at leading power factor and a maximum value corresponding to a machine loading of 750 kVA at lagging power factor. What value of field current produces the minimum terminal current? Why?</para>
+    <para id="id8211900">5.7 The manufacturer's data sheet for a 26-kV, 750-MVA, 60-Hz, three-phase synchronous generator indicates that it has a synchronous reactance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{S} } } {}</m:annotation></m:semantics></m:math> = 2.04 and a leakage reactance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">a1</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{a1} } } {}</m:annotation></m:semantics></m:math> = 0.18, both in per unit on the generator base. Calculate (a) the synchronous inductance in mH, (b) the armature leakage inductance in mH, and (c) the armature phase inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>aa</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{ ital "aa"} } } {}</m:annotation></m:semantics></m:math> in mH and per unit.</para>
+    <para id="id3362669">5.8 The following readings are taken from the results of an open- and a shortcircuit test on an 800-MVA, three-phase, Y-connected, 26-kV, two-pole, 60-Hz turbine generator driven at synchronous speed:</para>
+    <figure id="id4102628">
+      <media id="id1168341924846" alt=""><image src="../../media/graphics1-d7df.png" mime-type="image/png" height="105" width="530"/></media>
+    </figure>
+    <para id="id8694925">The number in parentheses are extrapolations based upon the measured data. Find (a) the short-circuit ratio, (b) the unsaturated value of the synchronous reactance in ohms per phase and per unit, and (c) the saturated synchronous reactance in per unit and in ohms per phase.</para>
+    <para id="id8503543">5.9 The following readings are taken from the results of an open- and a short-circuit test on a 5000-kW, 4160-V, three-phase, four-pole, 1800-rpm synchronous motor driven at rated speed:</para>
+    <figure id="id9486030">
+      <media id="id1168345626405" alt=""><image src="../../media/graphics2-03d1.png" mime-type="image/png" height="109" width="517"/></media>
+    </figure>
+    <para id="id8416600">The armature resistance is 11 m
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>/phase. The armature leakage reactance is estimated to be 0.12 per unit on the motor rating as base. Find (a) the short-circuit ratio, (b) the unsaturated value of the synchronous reactance in ohms per phase and per unit, and (c) the saturated synchronous reactance in per unit and in ohms per phase.</para>
+    <para id="id3429860">5.10 Write a MATLAB script which automates the calculations of Problems 5.8 and 5.9. The following minimum set of data is required:</para>
+    <list id="id3405175" list-type="bulleted">
+      <item>AFNL: The field current required to achieve rated open-circuit terminal voltage.</item>
+      <item>The corresponding terminal voltage on the air gap line.</item>
+      <item>AFSC: The field current required to achieve rated short-circuit current on the short-circuit characteristic.</item>
+    </list>
+    <para id="id9471249">Your script should calculate (a) the short-circuit ratio, (b) the unsaturated value of the synchronous reactance in ohms per phase and per unit, and (c) the saturated synchronous reactance in per unit and in ohms per phase.</para>
+    <para id="id7016388">5.11 Consider the motor of Problem 5.9.</para>
+    <para id="id8189278">a. Compute the field current required when the motor is operating at rated voltage, 4200 kW input power at 0.87 power factor leading. Account for saturation under load by the method described in the paragraph relating to Eq. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>a</m:mi><m:mi>,</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>rated</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{s} } = {  {V rSub { size 8{a, ital "rated"} } }  over  { { {I}} sup { ' } rSub { size 8{a} } } } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id9034820">b. In addition to the data given in Problem 5.9, additional points on the open-circuit characteristic are given below:</para>
+    <figure id="id8795524">
+      <media id="id1168351367736" alt=""><image src="../../media/graphics3-2091.png" mime-type="image/png" height="65" width="491"/></media>
+    </figure>
+    <para id="id4931695">If the circuit breaker supplying the motor of part (a) is tripped, leaving the motor suddenly open-circuited, estimate the value of the motor terminal voltage following the trip (before the motor begins to slow down and before any protection circuitry reduces the field current).</para>
+    <para id="id4931699">5.12 Using MATLAB, plot the field current required to achieve unity-power-factor operation for the motor of Problem 5.9 as the motor load varies from zero to full load. Assume the motor to be operating at rated terminal voltage.</para>
+    <para id="id5462664">5.13 Loss data for the motor of Problem 5.9 are as follows:</para>
+    <para id="id3445321">Open-circuit core loss at 4160 V = 37 kW</para>
+    <para id="id4449848">Friction and windage loss = 46 kW</para>
+    <para id="id4710771">Field-winding resistance at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mtext>75</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup><m:mi>C</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"75" rSup { size 8{0} } C} {}</m:annotation></m:semantics></m:math> = 0.279 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id8078694">Compute the output power and efficiency when'the motor is operating at rated input power, unity power factor, and rated voltage. Assume the field-winding to be operating at a temperature of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mtext>125</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup><m:mi>C</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"125" rSup { size 8{0} } C} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id3319621">5.14 The following data are obtained from tests on a 145-MVA, 13.8-kV, threephase, 60-Hz, 72-pole hydroelectric generator. Open-circuit characteristic:</para>
+    <figure id="id9286862">
+      <media id="id1168342041478" alt=""><image src="../../media/graphics4-01be.png" mime-type="image/png" height="67" width="600"/></media>
+    </figure>
+    <para id="id8544371">Short-circuit test:</para>
+    <para id="id8544375"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>f</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{f} } } {}</m:annotation></m:semantics></m:math> = 710 A, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math> = 6070 A</para>
+    <para id="id3275842">a. Draw (or plot using MATLAB) the open-circuit saturation curve, the air-gap line, and the short-circuit characteristic.</para>
+    <para id="id8199794">b. Find AFNL and AFSC. (Note that if you use MATLAB for part (a), you can use the MATLAB function 'polyfit' to fit a second-order polynomial to the open-circuit saturation curve. You can then use this fit to find AFNL.)</para>
+    <para id="id8163821">c. Find (i) the short-circuit ratio, (ii) the unsaturated value of the synchronous reactance in ohms per phase and per unit and (iii) the saturated synchronous reactance in per unit and in ohms per phase.</para>
+    <para id="id3317535">5.15 What is the maximum per-unit reactive power that can be supplied by a synchronous machine operating at its rated terminal voltage whose synchronous reactance is 1.6 per unit and whose maximum field current is limited to 2.4 times that required to achieve rated terminal voltage under open-circuit conditions?</para>
+    <para id="id8250170">5.16 A 25-MVA, 11.5 kV synchronous machine is operating as a synchronous condenser, as discussed in Appendix D (section D.4.1). The generator short-circuit ratio is 1.68 and the field current at rated voltage, no load is 420 A. Assume the generator to be connected directly to an 11.5 kV source.</para>
+    <para id="id8225676">a. What is the saturated synchronous reactance of the generator in per unit and in ohms per phase?</para>
+    <para id="id4410480">The generator field current is adjusted to 150 A.</para>
+    <para id="id8796632">b. Draw a phasor diagram, indicating the terminal voltage, internal voltage, and armature current.</para>
+    <para id="id6341306">c. Calculate the armature current magnitude (per unit and amperes) and its relative phase angle with respect to the terminal voltage.</para>
+    <para id="id2907643">d. Under these conditions, does the synchronous condenser appear inductive or capacitive to the 11.5 kV system?</para>
+    <para id="id7658151">e. Repeat parts (b) through (d) for a field current of 700 A.</para>
+    <para id="id8189980">5.17 The synchronous condenser of Problem 5.16 is connected to a 11.5 kV system through a feeder whose series reactance is 0.12 per unit on the machine base. Using MATLAB, plot the voltage (kV) at the synchronous-condenser terminals as the synchronous-condenser field current is varied between 150 A and 700 A.</para>
+    <para id="id9215125">5.18 A synchronous machine with a synchronous reactance of 1.28 per unit is operating as a generator at a real power loading of 0.6 per unit connected to a system with a series reactance of 0.07 per unit. An increase in its field current is observed to cause a decrease in armature current.</para>
+    <para id="id8835761">a. Before the increase, was the generator supplying or absorbing reactive power from the power system?</para>
+    <para id="id8835766">b. As a result of this increase in excitation, did the generator terminal voltage increase or decrease?</para>
+    <para id="id8502557">c. Repeat parts (a) and (b) if the synchronous machine is operating as a motor.</para>
+    <para id="id7240424">5.19 Superconducting synchronous machines are designed with superconducting fields windings which can support large current densities and create large magnetic flux densities. Since typical operating magnetic flux densities exceed the saturation flux densities of iron, these machines are typically designed without iron in the magnetic circuit; as a result, these machines exhibit no saturation effects and have low synchronous reactances.</para>
+    <para id="id5340118">Consider a two-pole, 60-Hz, 13.8-kV, 10-MVA superconducting generator which achieves rated open-circuit armature voltage at a field current of 842 A. It achieves rated armature current into a three-phase terminal short circuit for a field current of 226 A.</para>
+    <para id="id7733029">a. Calculate the per-unit synchronous reactance. Consider the situation in which this generator is connected to a 13.8 kV distribution feeder of negligible impedance and operating at an output power of 8.75 MW at 0.9 pf lagging. Calculate:</para>
+    <para id="id2856998">b. the field current in amperes, the reactive-power output in MVA, and the rotor angle for this operating condition.</para>
+    <para id="id3240859">c. the resultant rotor angle and reactive-power output in MVA if the field current is reduced to 842 A while the shaft-power supplied by the prime mover to the generator remains constant.</para>
+    <para id="id7762270">5.20For a synchronous machine with constant synchronous reactance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{S} } } {}</m:annotation></m:semantics></m:math> operating at a constant terminal voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{t} } } {}</m:annotation></m:semantics></m:math> and a constant excitation voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math>, show that the locus of the tip of the armature-current phasor is a circle. On a phasor diagram with terminal voltage shown as the reference phasor, indicate the position of the center of this circle and its radius. Express the coordinates of the center and the radius of the circle in terms of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{t} } ,E rSub { size 8{ ital "af"} } ,X rSub { size 8{S} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id8910888">5.21 A four-pole, 60-Hz, 24-kV, 650-MVA synchronous generator with a synchronous reactance of 1.82 per unit is operating on a power system which can be represented by a 24-kV infinite bus in series with a reactive impedance of j0.21 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>. The generator is equipped with a voltage regulator that adjusts the field excitation such that the generator terminal voltage remains at 24 kV independent of the generator loading.</para>
+    <para id="id3479945">a. The generator output power is adjusted to 375 MW.</para>
+    <para id="id8929778">(i) Draw a phasor diagram for this operating condition.</para>
+    <para id="id8929783">(ii) Find the magnitude (in kA) and phase angle (with respect to the generator terminal voltage) of the terminal current.</para>
+    <para id="id9010925">(iii) Determine the generator terminal power factor.</para>
+    <para id="id9010930">(iv) Find the magnitude (in per unit and kV) of the generator excitation voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id7654976">b. Repeat part (a) if the generator output power is increased to 600 MW.</para>
+    <para id="id7654982">5.22 The generator of Problem 5.21 achieves rated open-circuit armature voltage at a field current of 850 A. It is operating on the system of Problem 5.21 with its voltage regulator set to maintain the terminal voltage at 0.99 per unit (23.8 kV).</para>
+    <para id="id8922909">a. Use MATLAB to plot the generator field current (in A) as a function of load (in MW) as the load on the generator output power is varied from zero to full load.</para>
+    <para id="id9020386">b. Plot the corresponding reactive output power in MVAR as a function of output load.</para>
+    <para id="id9020391">c. Repeat the plots of parts (a) and (b) if the voltage regulator is set to regulate the terminal voltage to 1.01 per unit (24.2 kV).</para>
+    <para id="id9015914">5.23 The 145 MW hydroelectric generator of Problem 5.14 is operating on a 13.8-kV power system. Under normal operating procedures, the generator is operated under automatic voltage regulation set to maintain its terminal voltage at 13.8 kV. In this problem you will investigate the possible consequences should the operator forget to switch over to the automatic voltage regulator and instead leave the field excitation constant at AFNL, the value corresponding to rated open-circuit voltage. For the purposes of this problem, neglect the effects of saliency and assume that the generator can be represented by the saturated synchronous reactance found in Problem 5.14.</para>
+    <para id="id3455795">a. If the power system is represented simply by a 13.8 kV infinite (ignoring the effects of any equivalent impedance), can the generator be loaded to full load? If so, what is the power angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math> corresponding to full load? If not, what is the maximum load that can be achieved?</para>
+    <para id="id8905337">b. Repeat part (a) with the power system now represented by a 13.8 kV infinite bus in series with a reactive impedance of j0.14 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id9703751">5.24 Repeat Problem 5.23 assuming that the saturated direct-axis synchronous inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{d} } } {}</m:annotation></m:semantics></m:math> is equal to that found in Problem 5.14 and that the saturated quadrature-axis synchronous reactance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math> is equal to 75 percent of this value. Compare your answers to those found in Problem 5.23.</para>
+    <para id="id9018527">5.25 Write a MATLAB script to plot a set of per-unit power-angle curves for a salient-pole synchronous generator connected to an infinite bus (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>bus</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{ ital "bus"} } } {}</m:annotation></m:semantics></m:math> = 1.0 per unit). The generator reactances are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{d} } } {}</m:annotation></m:semantics></m:math> = 1.27 per unit and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math> = 0.95 per unit. Assuming 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{E rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math> = 1.0 per unit, plot the following curves:</para>
+    <para id="id9021454">a. Generator connected directly to the infinite bus.</para>
+    <para id="id9021460">b. Generator connected to the infinite bus through a reactance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>bus</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "bus"} } } {}</m:annotation></m:semantics></m:math> = 0.1 per unit.</para>
+    <para id="id5354306">c. Generator connected directly to the infinite bus. Neglect saliency effects, setting 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{d} } =X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id7015581">d. Generator connected to the infinite bus through a reactance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>bus</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "bus"} } } {}</m:annotation></m:semantics></m:math> = 0.1 per unit. Neglect saliency effects, setting 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } =X rSub { size 8{d} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id9009911">5.26 Draw the steady-state, direct- and quadrature-axis phasor diagram for a salient-pole synchronous motor with reactances 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{d} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math> and armature resistance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>. From this phasor diagram, show that the torque angle δ between the generated voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>E</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>af</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {E}} rSub { size 8{ ital "af"} } } {}</m:annotation></m:semantics></m:math> (which lies along the quadrature axis) and the terminal voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{t} } } {}</m:annotation></m:semantics></m:math> is given by</para>
+    <para id="id8210804">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mtext>tan</m:mtext>
+                  <m:mrow>
+                    <m:mi>δ</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>q</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>cos</m:mtext>
+                        <m:mrow>
+                          <m:mi>φ</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>a</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>sin</m:mtext>
+                        <m:mi>φ</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>V</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>a</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>q</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>sin</m:mtext>
+                        <m:mrow>
+                          <m:mi>φ</m:mi>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>a</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>cos</m:mtext>
+                        <m:mi>φ</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{"tan"δ= {  {I rSub { size 8{a} } X rSub { size 8{q} } "cos"φ+I rSub { size 8{a} } R rSub { size 8{a} } "sin"φ}  over  {V rSub { size 8{t} } +I rSub { size 8{a} } X rSub { size 8{q} } "sin"φ - I rSub { size 8{a} } R rSub { size 8{a} } "cos"φ} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id3690717">Here 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>φ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{φ} {}</m:annotation></m:semantics></m:math> is the phase angle of the armature current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{t} } } {}</m:annotation></m:semantics></m:math>, considered to be negative when 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>I</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {I}} rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math> lags 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mover accent="true"><m:mi>V</m:mi><m:mo stretchy="false">ˆ</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { hat  {V}} rSub { size 8{t} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id9174274">5.27 Repeat Problem 5.26 for synchronous generator operation, in which case the equation for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math> becomes</para>
+    <para id="id7664827">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mtext>tan</m:mtext>
+                  <m:mrow>
+                    <m:mi>δ</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>q</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>cos</m:mtext>
+                        <m:mrow>
+                          <m:mi>φ</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>a</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>sin</m:mtext>
+                        <m:mi>φ</m:mi>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>V</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>t</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>a</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>q</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>sin</m:mtext>
+                        <m:mrow>
+                          <m:mi>φ</m:mi>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>a</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:msub>
+                          <m:mi>R</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>a</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mtext>cos</m:mtext>
+                        <m:mi>φ</m:mi>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{"tan"δ= {  {I rSub { size 8{a} } X rSub { size 8{q} } "cos"φ+I rSub { size 8{a} } R rSub { size 8{a} } "sin"φ}  over  {V rSub { size 8{t} }  - I rSub { size 8{a} } X rSub { size 8{q} } "sin"φ+I rSub { size 8{a} } R rSub { size 8{a} } "cos"φ} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id9284332">5.28 What maximum percentage of its rated output power will a salient-pole motor deliver without loss of synchronism when operating at its rated terminal voltage with zero field excitation (
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+       = 0) if 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{d} } } {}</m:annotation></m:semantics></m:math> = 0.90 per unit and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math> = 0.65 per unit? Compute the per-unit armature current and reactive power for this operating condition.</para>
+    <para id="id7658792">5.29 If the synchronous motor of Problem 5.28 is now operated as a synchronous generator connected to an infinite bus of rated voltage, find the minimum per-unit field excitation (where 1.0 per unit is the field current required to achieve rated open-circuit voltage) for which the generator will remain synchronized at (a) half load and (b) full load.</para>
+    <para id="id9938099">5.30 A salient-pole synchronous generator with saturated synchronous reactances 
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+       =1.57 per unit and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math> = 1.34 per unit is connected to an infinite bus of rated voltage through an external impedance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>bus</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "bus"} } } {}</m:annotation></m:semantics></m:math> = 0.11 per unit. The generator is supplying its rated MVA at 0.95 power factor lagging, as measured at the generator terminals.</para>
+    <para id="id8111251">a. Draw a phasor diagram, indicating the infinite-bus voltage, the armature current, the generator terminal voltage, the excitation voltage, and the rotor angle (measured with respect to the infinite bus).</para>
+    <para id="id8111259">b. Calculate the per-unit terminal and excitation voltages, and the rotor angle in degrees.</para>
+    <para id="id7713530">5.31 A salient-pole synchronous generator with saturated synchronous reactances 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>d</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{d} } } {}</m:annotation></m:semantics></m:math> = 0.78 per unit and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{q} } } {}</m:annotation></m:semantics></m:math> = 0.63 per unit is connected to a rated-voltage infinite bus through an external impedance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>bus</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "bus"} } } {}</m:annotation></m:semantics></m:math> = 0.09 per unit.</para>
+    <para id="id8173453">a. Assuming the generator to be supplying only reactive power</para>
+    <para id="id7659295">(i) Find minimum and maximum per-unit field excitations (where 1.0 per unit is the field current required to achieve rated open-circuit voltage) such that the generator does not exceed its rated terminal current.</para>
+    <para id="id7659303">(ii) Using MATLAB, plot the armature current as a function of field excitation as the field excitation is varied between the limits determined in part (i).</para>
+    <para id="id7659310">b. Now assuming the generator to be supplying 0.25 per unit rated real power, on the same axes add a plot of the per-unit armature current as a function of field excitation as the field current is varied in the range for which the per-unit armature current is less than 1.0 per unit.</para>
+    <para id="id7659319">c. Repeat part (b) for generator output powers of 0.50 and 0.75 per unit. The final result will be a plot of V-curves for this generator in this configuration.</para>
+    <para id="id7659326">5.32 A two-phase permanent-magnet ac motor has a rated speed of 3000 r/min and a six-pole rotor. Calculate the frequency (in Hz) of the armature voltage required to operate at this speed.</para>
+    <para id="id7659335">5.33 A 5-kW, three-phase, permanent-magnet synchronous generator produces an open-circuit voltage of 208 V line-to-line, 60-Hz, when driven at a speed of 1800 r/min. When operating at rated speed and supplying a resistive load, its terminal voltage is observed to be 192 V line-to-line for a power output of 4.5 kW.</para>
+    <para id="id8583746">a. Calculate the generator phase current under this operating condition.</para>
+    <para id="id8583751">b. Assuming the generator armature resistance to be negligible, calculate the generator 60-Hz synchronous reactance.</para>
+    <para id="id8583758">c. Calculate the generator terminal voltage which will result if the motor generator load is increased to 5 kW (again purely resistive) while the speed is maintained at 1800 r/min.</para>
+    <para id="id8583765">5.34 Small single-phase permanent-magnet ac generators are frequently used to generate the power for lights on bicycles. For this application, these generators are typically designed with a significant amount of leakage inductance in their armature winding. A simple model for these generators is an ac voltage source 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>e</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mi>t</m:mi><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">ωK</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>cos</m:mtext><m:mi fontstyle="italic">ωt</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{e rSub { size 8{a} }  \( t \) =ωK rSub { size 8{a} } "cos"ωt} {}</m:annotation></m:semantics></m:math> in series with the armature leakage inductance La and the armature resistance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>a</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{a} } } {}</m:annotation></m:semantics></m:math>. Here ω is the electrical frequency of the generated voltage which is determined by the speed of the generator as it rubs against the bicycle wheel.</para>
+    <para id="id8513895">Assuming that the generator is running a light bulb which can be modeled as a resistance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>b</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{b} } } {}</m:annotation></m:semantics></m:math>, write an expression for the minimum frequency 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math> which must be achieved in order to insure that the light operates at constant brightness, independent of the speed of the bicycle.</para>
+  </content>
+</document>

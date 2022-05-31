@@ -1,0 +1,953 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Chapter 8: Variable - Reluctance  Machines and Stepping Motors</title>
+  <metadata>
+  <md:content-id>m28341</md:content-id><md:title>Chapter 8: Variable - Reluctance  Machines and Stepping Motors</md:title>
+  <md:abstract/>
+  <md:uuid>aca020e8-9b38-4dfb-b56a-cc8308a4b395</md:uuid>
+</metadata>
+
+<content>
+    <para id="id7731820">Variable - Reluctance Machines </para>
+    <para id="id7731830">and Stepping Motors </para>
+    <para id="id7731837">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <list id="id7731845" list-type="bulleted">
+      <item>Variable-reluctance machines (VRMs) are perhaps the simplest of electrical machines. They consist of a stator with excitation windings and a magnetic rotor with saliency. Rotor conductors are not required because torque is produced by the tendency of the rotor to align with the stator- produced flux wave in such a fashion as to maximize the stator flux linkages that result from a given applied stator current. Torque production in these machines can be evaluated by using the techniques of Chapter 3 and the fact that the stator winding inductances are functions of the angular position of the rotor. </item>
+      <item>Although the concept of the VRM has been around for a long time, only in the past few decades have these machines begun to see widespread use in engineering applications. This is due in large part to the fact that although they are simple in construction, they are somewhat complicated to control. The position of the rotor must be known in order to properly energize the phase windings to produce torque. It is the widespread availability and low cost of micro and power electronics that has made the VRM competitive with other motor technologies in a wide range of applications. </item>
+      <item>By sequentially exciting the phases of a VRM, the rotor will rotate in a step- wise fashion, rotating through a specific angle per step. Stepper motors are designed to take advantage of this characteristic. Such motors often combine the use of a variable-reluctance geometry with permanent magnets to produce increased torque and precision position accuracy.</item>
+    </list>
+    <para id="id7731894">8.1 BASICS OF VRM ANALYSIS </para>
+    <list id="id7731902" list-type="bulleted">
+      <item>VRMs can be categorized into two types: singly- salient and doubly-salient. In both cases, their most noticeable features are that there are no windings or permanent magnets on their rotors and that their only source of excitation consists of stator windings. </item>
+      <item>To produce torque, VRMs must be designed such that the stator-winding inductances vary with the position of the rotor. </item>
+      <item>Figure 8.1a shows a cross-sectional view of a singly-salient VRM, which can be seen to consist of a nonsalient stator and a two-pole salient rotor, both constructed of high-permeability magnetic material. In the figure, a two-phase stator winding is shown although any number of phases is possible.</item>
+      <item>Figure 8.2a shows the form of the variation of the stator inductances as a function of rotor angle θm for a singly-salient VRM of the form of Fig. 8.1 a. Notice that the inductance of each stator phase winding varies with rotor position such that the inductance is maximum when the rotor axis is aligned with the magnetic axis of that phase and minimum when the two axes are perpendicular. The mutual inductance between the phase windings is zero when the rotor is aligned with the magnetic axis of either phase but otherwise varies periodically with rotor position. </item>
+      <item>Figure 8.lb shows the cross-sectional view of a two-phase doubly-salient VRM in which both the rotor and stator have salient poles. In this machine, the stator has four poles, each with a winding. However, the windings on opposite poles are of the same phase; they may be connected either in series or in parallel. Thus this machine is quite similar to that of Fig. 8.1a in that there is a two-phase stator winding and a two-pole salient rotor. Similarly, the phase inductance of this configuration varies from a maximum value when the rotor axis is aligned with the axis of that phase to a minimum when they are perpendicular.</item>
+      <item>Unlike the singly-salient machine of Fig. 8.1 a, under the assumption of negligible iron reluctance the mutual inductances between the phases of the doubly-salient VRM of Fig. 8.1 b will be zero, with the exception of a small, essentially-constant component associated with leakage flux. In addition, the saliency of the stator enhances the difference between the maximum and minimum inductances, which in turn enhances the torque-producing characteristics of the doubly-salient machine. Figure 8.2b shows the form of the variation of the phase inductances for the doubly-salient VRM of Fig. 8.lb. </item>
+      <item>The relationship between flux linkage and current for the singly-salient VRM is of the form</item>
+    </list>
+    <para id="id7731992"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mtd></m:mtr></m:mtable></m:mfenced><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd><m:mtd><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow><m:mfenced open="[" close="]"><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mtd></m:mtr></m:mtable></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left [ matrix {
+λ rSub { size 8{1} }  {} ##
+λ rSub { size 8{2} } 
+}  right ]= left [ matrix {
+L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \)  {} # L rSub { size 8{"12"} }  \( θ rSub { size 8{m} }  \)  {} ##
+L rSub { size 8{"12"} }  \( θ rSub { size 8{m} }  \)  {} # L rSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) {}
+}  right ] left [ matrix {
+i rSub { size 8{1} }  {} ##
+i rSub { size 8{2} } 
+}  right ]} {}</m:annotation></m:semantics></m:math>(8.1)</para>
+    <para id="id5801088">Here 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> are the self-inductances of phases 1 and 2, respectively, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"12"} }  \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> is the mutual inductances. Note that, by symmetry</para>
+    <para id="id5801309"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) =L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  - "90" rSup { size 8{0} }  \) } {}</m:annotation></m:semantics></m:math>(8.2)</para>
+    <figure id="id7732796">
+      <media id="id1166421252391" alt=""><image src="../../media/graphics1-356d.png" mime-type="image/png" height="336" width="366"/></media>
+    </figure>
+    <figure id="id7732822">
+      <media id="id5055951" alt=""><image src="../../media/graphics2-6999.png" mime-type="image/png" height="327" width="354"/></media>
+    </figure>
+    <para id="id7732846">Figure 8.1 Basic two-phase VRMs: (a) singly-salient</para>
+    <para id="id7732855">and (b) doubly-salient.</para>
+    <figure id="id7732862">
+      <media id="id7099877" alt=""><image src="../../media/graphics3-d30f.png" mime-type="image/png" height="347" width="416"/></media>
+    </figure>
+    <para id="id7732886">Figure 8.2 Plots of inductance versus 0m for (a) the singly-salient</para>
+    <para id="id7732896">VRM of Fig. 8.1a and (b) the doubly-salient VRM of Fig. 8.1b.</para>
+    <list id="id7732901" list-type="bulleted">
+      <item>These inductances are periodic with a period of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>180</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"180" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> because rotation of the rotor through 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>180</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"180" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> from any given angular position results in no change in the magnetic circuit of the machine. </item>
+      <item>The electromagnetic torque of this system can be determined from the coenergy as</item>
+    </list>
+    <para id="id7733029"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup><m:mo stretchy="false">(</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } = {  { partial  { {W}} sup { ' } rSub { size 8{ ital "fld"} }  \( i rSub { size 8{1} } ,i rSub { size 8{2} } ,θ rSub { size 8{m} }  \) }  over  { partial θ rSub { size 8{m} } } } } {}</m:annotation></m:semantics></m:math>(8.3)</para>
+    <para id="id7732324">where the partial derivative is taken while holding currents 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> constant. Here, the coenergy can be found,</para>
+    <para id="id7732433"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">+</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:mi>L</m:mi><m:mmultiscripts><m:mtext/><m:mprescripts/><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle><m:none/></m:mmultiscripts><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} } = {  {1}  over  {2} } L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) i rSub { size 8{1} }  rSup { size 8{2} } +L rSub { size 8{"12"} }  \( θ rSub { size 8{m} }  \) i rSub { size 8{1} } i rSub { size 8{2} } + {  {1}  over  {2} } L"" lSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) i rSub { size 8{2} }  rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>(8.4)</para>
+    <para id="id7732661">Thus, combining Eqs. 8.3 and 8.4 gives the torque as</para>
+    <para id="id8266874"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">+</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } = {  {1}  over  {2} } i rSub { size 8{1} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } +i rSub { size 8{1} } i rSub { size 8{2} }  {  { ital "dL" rSub { size 8{"12"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } + {  {1}  over  {2} } i rSub { size 8{2} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation></m:semantics></m:math>(8.5)</para>
+    <list id="id8267161" list-type="bulleted">
+      <item>For the double-salient VRM of Fig. 8. lb, the mutual-inductance term 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" rSub { size 8{"12"} }  \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is zero and the torque expression of Eq. 8.5 simplifies to</item>
+    </list>
+    <para id="id8267268"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } = {  {1}  over  {2} } i rSub { size 8{1} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } + {  {1}  over  {2} } i rSub { size 8{2} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation></m:semantics></m:math>(8.6)</para>
+    <para id="id5916433">Substitution of Eq. 8.2 then gives</para>
+    <para id="id5916437"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } = {  {1}  over  {2} } i rSub { size 8{1} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } + {  {1}  over  {2} } i rSub { size 8{2} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  - "90" rSup { size 8{0} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation></m:semantics></m:math>(8.7)</para>
+    <list id="id5916669" list-type="bulleted">
+      <item>Equations 8.6 and 8.7 illustrate an important characteristic of VRMs in which mutual-inductance effects are negligible. In such machines the torque expression consists of a sum of terms, each of which is proportional to the square of an individual phase current. As a result, the torque depends only on the magnitude of the phase currents and not on their polarity. Thus the electronics which supply the phase currents to these machines can be unidirectional; i.e., bidirectional currents are not required. </item>
+      <item>Since the phase currents are typically switched on and off by solid-state switches such as transistors or thyristors and since each switch need only handle currents in a single direction, this means that the motor drive requires only half the number of switches (as well as half the corresponding control electronics) that would be required in a corresponding bidirectional drive. The result is a drive system which is less complex and may be less expensive. </item>
+      <item>The assumption of negligible mutual inductance is valid for the doubly-salient VRM of Fig.8.1b both due to symmetry of the machine geometry and due to the assumption of negligible iron reluctance. In practice, even in situations where symmetry might suggest that the mutual inductances are zero or can be ignored because they are independent of rotor position (e.g., the phases are coupled through leakage fluxes), significant nonlinear and mutual-inductance effects can arise due to saturation of the machine iron. </item>
+      <item>At the design and analysis stage, the winding flux-current relationships and the motor torque can be determined by using numerical-analysis packages which can account for the nonlinearity of the machine magnetic material. Once a machine has been constructed, measurements can be made, both to validate the various assumptions and approximations which were made as well as to obtain an accurate measure of actual machine performance. </item>
+      <item>The symbol Ps is used to indicate the number of stator poles and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> to indicate the number of rotor poles, and the corresponding machine is called a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{s} } /P rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> machine. </item>
+      <item>Example 8.1 examines a 4/2 VRM.</item>
+    </list>
+    <para id="id5772394">A 4/2 VRM is shown in Fig. 8.3. Its dimensions are </para>
+    <para id="id5772399">R = 3.8 cm 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>α</m:mi><m:mo stretchy="false">=</m:mo><m:mi>β</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>60</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mi>π</m:mi><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α=β="60" rSup { size 8{o} } =π/3} {}</m:annotation></m:semantics></m:math> rad </para>
+    <para id="id5772489">g = 2.54 x 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10" rSup { size 8{ - 2} } } {}</m:annotation></m:semantics></m:math> cm D = 13.0 cm</para>
+    <para id="id5772550">and the poles of each phase winding are connected in series such that there are a total of N=100 turns (50 turns per pole) in each phase winding. Assume the rotor and stator to be of infinite magnetic permeability.</para>
+    <figure id="id5772561">
+      <media id="id8140177" alt=""><image src="../../media/graphics4-1ebf.png" mime-type="image/png" height="271" width="388"/></media>
+    </figure>
+    <para id="id5772585">Figure 8.3 4/2 VRM for Example 8.1.</para>
+    <para id="id5772594">a. Neglecting leakage and fringing fluxes, plot the phase-1 inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math>as a function of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>. </para>
+    <para id="id7782560">b. Plot the torque, assuming (i)
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } =I rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> = 0 and (ii) 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> = 0 and
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{2} } =I rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id7782801">c. Calculate the net torque (in N. m) acting on the rotor when both windings are excited such that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } =i rSub { size 8{2} } ={}} {}</m:annotation></m:semantics></m:math>5 A and at angles (i)
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>, (ii) 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ="45" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>, (iii) 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>75</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } ="75" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id7726602">Solution </para>
+    <para id="id7726606">a. The maximum inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } } {}</m:annotation></m:semantics></m:math> for phase 1 occurs when the rotor axis is aligned with the phase-1 magnetic axis. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } } {}</m:annotation></m:semantics></m:math> is equal to </para>
+    <para id="id7726713">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>L</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mtext>max</m:mtext>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>N</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:msub>
+                        <m:mi>μ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>o</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mi>α</m:mi>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>RD</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                    <m:mn>2g</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } = {  {N rSup { size 8{2} } μ rSub { size 8{o} } α ital "RD"}  over  {2g} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7726805">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math>RD is the cross-sectional area of the air gap and 2g is the total gap length in the magnetic circuit. For the values given,</para>
+    <para id="id7726856">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:msub>
+                    <m:mi>L</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mtext>max</m:mtext>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msub>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>N</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:msub>
+                        <m:mi>μ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>o</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mi>α</m:mi>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:mtext>RD</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:mrow>
+                    <m:mn>2g</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } = {  {N rSup { size 8{2} } μ rSub { size 8{o} } α ital "RD"}  over  {2g} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7738101">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow/>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mtext>100</m:mtext>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mn>4π</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>7</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:mi>π</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mn>3</m:mn>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>3</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mn>8</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>2</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mn>0</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>13</m:mtext>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mtext>54</m:mtext>
+                        <m:mo stretchy="false">×</m:mo>
+                        <m:msup>
+                          <m:mtext>10</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mn>4</m:mn>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ {}= {  { \( "100" \)  rSup { size 8{2} }  \( 4π times "10" rSup { size 8{ - 7} }  \)  \( π/3 \)  \( 3 "." 8 times "10" rSup { size 8{ - 2} }  \)  \( 0 "." "13" \) }  over  {2 times  \( 2 "." "54" times "10" rSup { size 8{ - 4} }  \) } } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7738323">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow/>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>0</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>128</m:mtext>
+                  <m:mi>H</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ {}=0 "." "128"H} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7738382">Neglecting fringing, the inductance 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math>will vary linearly with the air-gap cross-sectional area as shown in Fig. 8.4a. Note that this idealization predicts that the inductance is zero when there is no overlap when in fact there will be some small value of inductance, as shown in Fig. 8.2.</para>
+    <figure id="id7738457">
+      <media id="id8595222" alt=""><image src="../../media/graphics5-fe4b.png" mime-type="image/png" height="572" width="489"/></media>
+    </figure>
+    <para id="id7738481">Figure 8.4 (a) 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> versus 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>, (b) 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>versus 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>, and (c) torque versus 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5779078">b. From Eq. 8.7, the torque consists of two terms</para>
+    <para id="id5779090">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>T</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>mech</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:msubsup>
+                    <m:mi>i</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msubsup>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:msub>
+                              <m:mtext>dL</m:mtext>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>11</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>m</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi fontstyle="italic">dθ</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>m</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:msubsup>
+                    <m:mi>i</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mn>2</m:mn>
+                      </m:mrow>
+                    </m:mstyle>
+                  </m:msubsup>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:mstyle fontstyle="italic">
+                        <m:mrow>
+                          <m:msub>
+                            <m:mtext>dL</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mtext>11</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mo stretchy="false">(</m:mo>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>θ</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>m</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">−</m:mo>
+                        <m:msup>
+                          <m:mtext>90</m:mtext>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>o</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                      </m:mrow>
+                      <m:mo stretchy="false">)</m:mo>
+                    </m:mrow>
+                    <m:msub>
+                      <m:mi fontstyle="italic">dθ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>m</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } = {  {1}  over  {2} } i rSub { size 8{1} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } + {  {1}  over  {2} } i rSub { size 8{2} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  - "90" rSup { size 8{o} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7806300">and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" rSub { size 8{"11"} } /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> can be seen to be the stepped waveform of Fig.8.4b whose maximum values are given by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">±</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">/</m:mo><m:mi>α</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ +- L rSub { size 8{"max"} } /α} {}</m:annotation></m:semantics></m:math> (with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>α</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α} {}</m:annotation></m:semantics></m:math> expressed in radians!). Thus the torque is as shown in Fig. 8.4c.</para>
+    <para id="id7806507">c. The peak torque due to each of the windings is given by</para>
+    <para id="id7806512">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>T</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mtext>max</m:mtext>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfenced open="[" close="]">
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>L</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>max</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mn>2α</m:mn>
+                      </m:mfrac>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mi>i</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msup>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfenced open="[" close="]">
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                          <m:mtext>.</m:mtext>
+                          <m:mtext>128</m:mtext>
+                        </m:mrow>
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                          <m:mo stretchy="false">(</m:mo>
+                          <m:mrow>
+                            <m:mi>π</m:mi>
+                            <m:mo stretchy="false">/</m:mo>
+                            <m:mn>3</m:mn>
+                          </m:mrow>
+                          <m:mo stretchy="false">)</m:mo>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mfenced>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msup>
+                      <m:mn>5</m:mn>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msup>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>1</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>53</m:mtext>
+                  <m:mi>N</m:mi>
+                  <m:mtext>.</m:mtext>
+                  <m:mi>m</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{"max"} } = left [ {  {L rSub { size 8{"max"} } }  over  {2α} }  right ]i rSup { size 8{2} } = left [ {  {0 "." "128"}  over  {2 \( π/3 \) } }  right ]5 rSup { size 8{2} } =1 "." "53" N "." m} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7806674">(i) From the plot in Fig. 8.4c, at 
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      , the torque contribution from phase 2 is clearly zero. Although the phase-1 contribution appears to be indeterminate, in an actual machine the torque change from 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mtext>max</m:mtext><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:mrow><m:mtext>  to  </m:mtext><m:mo stretchy="false">−</m:mo><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mtext>max</m:mtext><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mi>,</m:mi><m:mtext>at  </m:mtext><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{"max"1} } ,"  to  " - T rSub { size 8{"max"1} } ,"at  "θ rSub { size 8{m} } =0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>would have a finite slope and the torque would be zero at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ=0 rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>. Thus the net torque from phases 1 and 2 at this position is zero. </para>
+    <para id="id7808436">Notice that the torque at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0} {}</m:annotation></m:semantics></m:math> is zero independent of the current levels in phases 1 and 2. This is a problem with the 4/2 configuration of Fig. 8.3 since the rotor can get "stuck" at this position (as well as at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">±</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow><m:mrow><m:mi>,</m:mi><m:mo stretchy="false">±</m:mo><m:msup><m:mtext>180</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } = +- "90" rSup { size 8{o} } , +- "180" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>), and there is no way that electrical torque can be produced to move it. </para>
+    <para id="id7808595">(ii) At 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } ="45" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> both phases are providing torque. That of phase 1 is negative while that of phase 2 is positive. Because the phase currents are equal, the torques are thus equal and opposite and the net torque is zero. However, unlike the case of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>, the torque at this point can be made either positive or negative simply by appropriate selection of the phase currents. </para>
+    <para id="id7808741">(iii) At 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>75</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } ="75" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> phase 1 produces no torque while phase 2 produces a positive torque of magnitude 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mtext>max</m:mtext><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{"max"2} } } {}</m:annotation></m:semantics></m:math>. Thus the net torque at this position is positive and of magnitude 1.53N.m. Notice that there is no combination of phase currents that will produce a negative torque at this position since the phase-1 torque is always zero while that of phase 2 can be only positive (or zero).</para>
+    <list id="id5780202" list-type="bulleted">
+      <item>Example 8.1 illustrates a number of important considerations for the design of VRMs. Clearly these machines must be designed to avoid the occurrence of rotor positions for which none of the phases can produce torque. This is of concern in the design of 4/2 machines which will always have such positions if they are constructed with uniform, symmetric air gaps. </item>
+      <item>It is also clear that to operate VRMs with specified torque characteristics, the phase currents must be applied in a fashion consistent with the rotor position. For example, positive torque production from each phase winding in Example 8.1 can be seen from Fig.8.4c to occur only for specific values of θm. Thus operation of VRMs must include some sort of rotor-position sensing as well as a controller which determines both the sequence and the waveform of the phase currents to achieve the desired operation. This is typically implemented by using electronic switching devices (transistors, thyristors, gate-turn-off devices, etc.) under the supervision of a microprocessor-based controller. </item>
+      <item>Although a 4/2 VRM such as in Example 8.1 can be made to work, as a practical matter it is not particularly useful because of undesirable characteristics such as its zero-torque positions and the fact that there are angular locations at which it is not possible to achieve a positive torque. </item>
+      <item>The analysis of VRMs is conceptually straightforward. In the case of linear machine iron (no magnetic saturation), finding the torque is simply a matter of finding the stator-phase inductances (self and mutual) as a function of rotor position, expressing the coenergy in terms of these inductances, and then calculating the derivative of the coenergy with respect to angular position (holding the phase currents constant when taking the derivative). The electric terminal voltage for each of the phases can be found from the sum of the time derivative of the phase flux linkage and the iR drop across the phase resistance. </item>
+      <item>In the case of nonlinear machine iron (where saturation effects are important), the coenergy can be found by appropriate integration of the phase flux linkages, and the torque can again be found from the derivative of the coenergy with respect to the angular position of the rotor. </item>
+      <item>Although VRMs are simple in concept and construction, their operation is some what complicated and requires sophisticated control and motor-drive electronics to achieve useful operating characteristics.</item>
+    </list>
+    <para id="id5780402">8.2 PRACTICAL VRM CONFIGURATIONS </para>
+    <list id="id5780409" list-type="bulleted">
+      <item>Practical VRM drive systems (the motor and its inverter) are designed to meet operating criteria such as </item>
+    </list>
+    <list id="id5780420" list-type="bulleted">
+      <item>Low cost. </item>
+      <item>Constant torque independent of rotor angular position. </item>
+      <item>A desired operating speed range. </item>
+      <item>High efficiency. </item>
+      <item>A large torque-to-mass ratio.</item>
+      <item>A compromise must be made between the variety of options available to the designer. Because VRMs require some sort of electronics and control to operate, often the designer is concerned with optimizing a characteristic of the complete drive system, and this will impose additional constraints on the motor design. </item>
+      <item>VRMs can be built in a wide variety of configurations. In Fig. 8.1, two forms of a 4/2 machine are shown: a singly-salient machine in Fig. 8.1a and a doubly-salient machine in Fig. 8. lb. Although both types of design can be made to work, a doubly-salient design is often the superior choice because it can generally produce a larger torque for a given frame size. </item>
+      <item>This can be seen qualitatively (under the assumption of a high-permeability, nonsaturating magnetic structure) by reference to Eq. 8.7, which shows that the torque is a function of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>, the derivative of the phase inductance with respect to angular position of the rotor. Clearly, all else being equal, the machine with the largest derivative will produce the largest torque. </item>
+      <item>This derivative can be thought of as being determined by the ratio of the maximum to minimum phase inductances 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } /L rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math>. </item>
+    </list>
+    <para id="id5836460"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">≃</m:mo><m:mfrac><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi fontstyle="italic">Δθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi fontstyle="italic">Δθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mfenced open="[" close="]"><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mfenced></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } }  simeq  {  {L rSub { size 8{"max"} }  - L rSub { size 8{"min"} } }  over  {Δθ rSub { size 8{m} } } } = {  {L rSub { size 8{"max"} } }  over  {Δθ rSub { size 8{m} } } }  left [1 -  {  {L rSub { size 8{"min"} } }  over  {L rSub { size 8{"max"} } } }  right ]} {}</m:annotation></m:semantics></m:math>(8.8)</para>
+    <para id="id5836664">Where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi fontstyle="italic">Δθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is the angular displacement of the rotor between the positions of maximum and minimum phase inductance. From Eq. 8.8, for a given 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } } {}</m:annotation></m:semantics></m:math>and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi fontstyle="italic">Δθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>, the largest value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } /L rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math>will give the largest torque. Because of its geometry, a doubly-salient structure will typically have a lower minimum inductance and thus a larger value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } /L rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math>; hence it will produce a larger torque for the same rotor structure. </para>
+    <list id="id7809272" list-type="bulleted">
+      <item>For this reason doubly-salient machines are the predominant type of VRM, and hence only doubly-salient VRMs are considered. In general, doubly-salient machines can be constructed with two or more poles on each of the stator and rotor. It should be pointed out that once the basic structure of a VRM is determined, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"max"} } } {}</m:annotation></m:semantics></m:math>is fairly well determined by such quantities as the number of turns, air-gap length, and basic pole dimensions. The challenge to the VRM designer is to achieve a small value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math>. This is a difficult task because 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math> is dominated by leakage fluxes and other quantities which are difficult to calculate and analyze. </item>
+      <item>The geometry of a symmetric 4/2 VRM with a uniform air gap gives rise to rotor positions for which no torque can be developed for any combination of excitation of the phase windings. These torque zeros can be seen to occur at rotor positions where all the stator phases are simultaneously at a position of either maximum or minimum inductance. </item>
+    </list>
+    <figure id="id7809458">
+      <media id="id8944365" alt=""><image src="../../media/graphics6-d570.png" mime-type="image/png" height="327" width="373"/></media>
+    </figure>
+    <para id="id7809481">Figure 8.5 Cross-sectional view of a 6/4 three-phase VRM.</para>
+    <list id="id7809491" list-type="bulleted">
+      <item>Figure 8.5 shows a fundamental feature of the 6/4 machine is that no such simultaneous alignment of phase inductances is possible. As a result, this machine does not have any zero-torque positions. This is a significant point because it eliminates the possibility that the rotor might get stuck in one of these positions at standstill, requiring that it be mechanically moved to a new position before it can be started. In addition to the fact that there are not positions of simultaneous alignment for the 6/4 VRM, it can be seen that there also are no rotor positions at which only a torque of a single sign (either positive or negative) can be produced. Hence by proper control of the phase currents, it should be possible to achieve constant-torque, independent of rotor position. </item>
+      <item>In the case of a symmetric VRM with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math> stator poles and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> rotor poles, a simple test can be used to determine if zero-torque positions exist. If the ratio 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{s} } /P rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math>(or alternatively 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{r} } /P rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math> if 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> is larger than 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math>) is an integer, there will be zero-torque positions. For example, for a 6/4 machine the ratio is 1.5, and there will be no zero- torque positions. However, the ratio is 2.0 for a 6/3 machine, and there will be zero- torque positions. </item>
+      <item>In some instances, design constraints may dictate that a machine with an integral pole ratio is desirable. In these cases, it is possible to eliminate the zero-torque positions by constructing a machine with an asymmetric rotor. The rotor radius can be made to vary with angle as shown in grossly exaggerated fashion in Fig. 8.6a. This design, which also requires that the width of the rotor pole be wider than that of the stator, will not produce zero torque at positions of alignment because
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is not zero at these points, as can be seen with reference to Fig. 8.6b.</item>
+    </list>
+    <figure id="id5836141">
+      <media id="id5568737" alt=""><image src="../../media/graphics7-ded5.png" mime-type="image/png" height="266" width="288"/></media>
+    </figure>
+    <figure id="id5836168">
+      <media id="id2414178" alt=""><image src="../../media/graphics8-ce0b.png" mime-type="image/png" height="177" width="406"/></media>
+    </figure>
+    <para id="id5836192">Figure 8.6 A 4/2 VRM with nonuniform air gap: (a) exaggerated</para>
+    <para id="id5836201">schematic view and (b) plots of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>versus 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <list id="id5894526" list-type="bulleted">
+      <item>An alternative procedure for constructing an integral-pole-ratio VRM without zero-torque positions is to construct a stack of two or more VRMs in series, aligned such that each of the VRMs is displaced in angle from the others and with all rotors sharing a common shaft. In this fashion, the zero-torque positions of the individual machines will not align, and thus the complete machine will not have any torque zeros. For example, a series stack of two two-phase, 4/2 VRMs such as that of Example 8.1 (Fig. 8.3) with a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"45" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> angular displacement between the individual VRMs will result in a four-phase VRM without zero-torque positions. </item>
+      <item>Generally VRMs are wound with a single coil on each pole. Although it is possible to control each of these windings separately as individual phases, it is common practice to combine them into groups of poles which are excited simultaneously. For example, the 4/2 VRM of Fig. 8.3 is shown connected as a two-phase machine. As shown in Fig. 8.5, a 6/4 VRM is commonly connected as a three-phase machine with opposite poles connected to the same phase and in such a fashion that the windings drive flux in the same direction through the rotor.</item>
+      <item>In some cases, VRMs are wound with a parallel set of windings on each phase. This configuration, known as a bifilar winding, in some cases can result in a simple inverter configuration and thus a simple, inexpensive motor drive.</item>
+      <item>When a given phase is excited, the torque is such that the rotor is pulled to the nearest position of maximum flux linkage. As excitation is removed from that phase and the next phase is excited, the rotor "follows" as it is then pulled to a new maximum flux-linkage position. Thus, the rotor speed is determined by the frequency of the phase currents. </item>
+      <item>However, unlike the case of a synchronous machine, the relationship between the rotor speed and the frequency and sequence of the phase winding excitation can be quite complex, depending on the number of rotor poles and the number of stator poles and phases.</item>
+      <item>EXAMPLE 8.2 </item>
+    </list>
+    <para id="id5894653">Consider a four-phase, 8/6 VRM. If the stator phases are excited sequentially, with a total time of To sec required to excite the four phases (i.e., each phase is excited for a time of To/4 sec), find the angular velocity of the stator flux wave and the corresponding angular velocity of the rotor. Neglect any system dynamics and assume that the rotor will instantaneously track the stator excitation. </para>
+    <para id="id5894675">Solution </para>
+    <para id="id5894679">Figure 8.7 shows in schematic form an 8/6 VRM. The details of the pole shapes are not of importance for this example and thus the rotor and stator poles are shown simply as arrows indicating their locations. The figure shows the rotor aligned with the stator phase-1 poles. This position corresponds to that which would occur if there were no load on the rotor and the stator phase-1 windings were excited, since it corresponds to a position of maximum phase-1 flux linkage.</para>
+    <figure id="id5894694">
+      <media id="id5190378" alt=""><image src="../../media/graphics9-8ff8.png" mime-type="image/png" height="230" width="270"/></media>
+    </figure>
+    <para id="id5894718">Figure 8.7 Schematic view of a four-phase 8/6 VRM. Pole locations are indicated by arrows.</para>
+    <para id="id5894728">Consider next that the excitation on phase 1 is removed and phase 2 is excited. At this point, the stator flux wave has rotated 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"45" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> in the clockwise direction. Similarly, as the excitation on phase 2 is removed and phase 3 is excited, the stator flux wave will move an additional 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"45" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> clockwise. Thus the angular velocity 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math> of the stator flux wave can be calculated quite simply as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>π</m:mi><m:mo stretchy="false">/</m:mo><m:mn>4</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{π/4} {}</m:annotation></m:semantics></m:math> rad divided by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{o} } } {}</m:annotation></m:semantics></m:math>/4 sec, or 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mi>π</m:mi><m:mo stretchy="false">/</m:mo><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{s} } =π/T rSub { size 8{o} } } {}</m:annotation></m:semantics></m:math>rad/sec. </para>
+    <para id="id5919134">Note, however, that this is not the angular velocity of the rotor itself. As the phase-1 excitation is removed and phase 2 is excited, the rotor will move in such a fashion as to maximize the phase-2 flux linkages. In this case, Fig. 8.7 shows that the rotor will move 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>15</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"15" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> counterclockwise since the nearest rotor poles to phase 2 are actually 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>15</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"15" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> ahead of the phase-2 poles. Thus the angular velocity of the rotor can be calculated as 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>π</m:mi></m:mrow><m:mo stretchy="false">/</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ - π/"12"} {}</m:annotation></m:semantics></m:math> rad (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>15</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"15" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>, with the minus sign indicating counterclockwise rotation) divided by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{o} } } {}</m:annotation></m:semantics></m:math>/4 see, or 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>π</m:mi></m:mrow><m:mo stretchy="false">/</m:mo><m:mo stretchy="false">(</m:mo></m:mrow></m:mrow><m:msub><m:mn>3T</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{m} } = - π/ \( 3T rSub { size 8{o} }  \) } {}</m:annotation></m:semantics></m:math>rad/sec. </para>
+    <para id="id5919500">In this case, the rotor travels at one-third the angular velocity of the stator excitation and in the opposite direction.</para>
+    <list id="id5919507" list-type="bulleted">
+      <item>Example 8.2 illustrates the complex relationship that can exist between the excitation frequency of a VRM and the "synchronous" rotor frequency. This relationship is directly analogous to that between two mechanical gears for which the choice of different gear shapes and configurations gives rise to a wide range of speed ratios. It is difficult to derive a single rule which will describe this relationship for the immense variety of VRM configurations which can be envisioned. </item>
+      <item>Further variations on VRM configurations are possible if the main stator and rotor poles are subdivided by the addition of individual teeth (which can be thought of as a set of small poles excited simultaneously by a single winding). The basic concept is illustrated in Fig. 8.8, which shows a schematic view of three poles of a three-phase VRM with a total of six main stator poles. Such a machine, with the stator and rotor poles subdivided into teeth, is known as a castleated VRM. </item>
+      <item>In Fig. 8.8 each stator pole has been divided into four subpoles by the addition of four teeth of width 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>6</m:mn><m:msup><m:mfrac><m:mn>3</m:mn><m:mn>7</m:mn></m:mfrac><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{6 {  {3}  over  {7} }  rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> (indicated by the angle β in the figure), with a slot of the same width between each tooth. The same tooth/slot spacing is chosen for the rotor, resulting in a total of 28 teeth on the rotor. Notice that this number of rotor teeth and the corresponding value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>β</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β} {}</m:annotation></m:semantics></m:math> were chosen so that when the rotor teeth are aligned with those of the phase- 1 stator pole, they are not aligned with those of phases 2 and 3. In this fashion, successive excitation of the stator phases will result in a rotation of the rotor. </item>
+      <item>Castleation further complicates the relationship between the rotor speed and the frequency and sequence of the stator-winding excitation. For example, from Fig. 8.8</item>
+    </list>
+    <figure id="id5762959">
+      <media id="id4392155" alt=""><image src="../../media/graphics10-3467.png" mime-type="image/png" height="239" width="385"/></media>
+    </figure>
+    <para id="id5762983">Figure 8.8 Schematic view of a three-phase castleated VRM with</para>
+    <para id="id5762992">six stator poles and four teeth per pole and 28 rotor poles.</para>
+    <para id="id5762998">it can be seen that for this configuration, when the excitation of phase 1 is removed and phase 2 is excited (corresponding to a rotation of the stator flux wave by
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>60</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"60" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>in the clockwise direction), the rotor will rotate by an angle of
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mfrac><m:mn>2β</m:mn><m:mn>3</m:mn></m:mfrac><m:mo stretchy="false">=</m:mo><m:mn>4</m:mn></m:mrow><m:msup><m:mfrac><m:mn>2</m:mn><m:mn>7</m:mn></m:mfrac><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {2β}  over  {3} } =4 {  {2}  over  {7} }  rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> in the counterclockwise direction. </para>
+    <list id="id5919655" list-type="bulleted">
+      <item>The technique of castleation can be used to create VRMs capable of operating at low speeds (and hence producing high torque for a given stator power input) and with very precise rotor position accuracy. The machine of Fig. 8.8 can be rotated precisely by angular increments of
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>2β</m:mn><m:mo stretchy="false">/</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{2β/3} {}</m:annotation></m:semantics></m:math>. The use of more teeth can further increase the position resolution of these machines. Such machines can be found in applications where low speed, high torque, and precise angular resolution are required. This castleated configuration is one example of a class of VRMs commonly referred to as stepping motors because of their capability to produce small steps in angular resolution. </item>
+    </list>
+    <para id="id5763233">8.3 CURRENT WAVEFORMS FOR </para>
+    <para id="id5763240">TORQUE PRODUCTION </para>
+    <list id="id5763248" list-type="bulleted">
+      <item>The torque produced by a VRM in which saturation and mutual-inductance effects can be neglected is determined by the summation of terms consisting of the derivatives of the phase inductances with respect to the rotor angular position, each multiplied by the square of the corresponding phase current. The torque of the two-phase, 4/2 VRM of Fig. 8.1b is given by</item>
+    </list>
+    <para id="id5763287"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">+</m:mo><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac></m:mrow><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } = {  {1}  over  {2} } i rSub { size 8{1} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } + {  {1}  over  {2} } i rSub { size 8{2} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"22"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } = {  {1}  over  {2} } i rSub { size 8{1} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } + {  {1}  over  {2} } i rSub { size 8{2} }  rSup { size 8{2} }  {  { ital "dL" rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  - "90" rSup { size 8{0} }  \) }  over  {dθ rSub { size 8{m} } } } } {}</m:annotation></m:semantics></m:math>(8.9)</para>
+    <figure id="id5759252">
+      <media id="id2142431" alt=""><image src="../../media/graphics11-e84d.png" mime-type="image/png" height="299" width="489"/></media>
+    </figure>
+    <para id="id5759276">Figure 8.9 Idealized inductance and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> curves for a three-phase 6/4 VRM with</para>
+    <para id="id5759354"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>40</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"40" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> rotor and stator poles.</para>
+    <list id="id5759410" list-type="bulleted">
+      <item>For each phase of a VRM, the phase inductance is periodic in rotor angular position, and thus the area under the curve of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>calculated over a complete period of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> is zero, i.e.,</item>
+    </list>
+    <para id="id5759571"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mn>2π</m:mn><m:mtext>/Pr</m:mtext></m:mrow></m:mrow></m:mstyle></m:msubsup><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mrow><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi>L</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>2π</m:mn><m:mo stretchy="false">/</m:mo><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">−</m:mo><m:mi>L</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mn>0</m:mn><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ Int rSub { size 8{0} }  rSup { size 8{2π"/Pr"} }  { {  { ital "dL" \( θ rSub { size 8{m} }  \) }  over  {dθ rSub { size 8{m} } } } } dθ rSub { size 8{m} } =L \( 2π/P rSub { size 8{r} }  \)  - L \( 0 \) =0} {}</m:annotation></m:semantics></m:math>(8.10)</para>
+    <para id="id5837016">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>r</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{r} } } {}</m:annotation></m:semantics></m:math> is the number of rotor poles. </para>
+    <list id="id5837070" list-type="bulleted">
+      <item>The average torque produced by a VRM can be found by integrating the torque equation (Eq.8.9) over a complete period of rotation. Clearly, if the stator currents are held constant, Eq. 8.10 shows that the average torque will be zero. Thus, to produce a time-averaged torque, the stator currents must vary with rotor position. The desired average output torque for a VRM depends on the nature of the application. For example, motor operation requires a positive time-averaged shaft torque. Similarly, braking or generator action requires negative time-averaged torque. </item>
+      <item>Positive torque is produced when a phase is excited at angular positions with positive 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>for that phase, and negative torque is produced by excitation at positions at which 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is negative. Consider a three-phase, 6/4 VRM (similar to that shown in Fig. 8.5) with 40 ° rotor and stator poles. The inductance versus rotor position for this machine will be similar to the idealized representation shown in Fig. 8.9. </item>
+      <item>Operation of this machine as a motor requires a net positive torque. Alternatively, it can be operated as a generator under conditions of net negative torque. Noting that </item>
+    </list>
+    <figure id="id5837277">
+      <media id="id7580108" alt=""><image src="../../media/graphics12-44c3.png" mime-type="image/png" height="166" width="469"/></media>
+    </figure>
+    <para id="id5837301">Figure 8.10 Individual phase torques and total torque for the motor of Fig. 8.9. Each</para>
+    <para id="id5837311">phase is excited with a constant current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> only at positions where
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } &gt;0} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5837444">positive torque is generated when excitation is applied at rotor positions at which 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is positive, we see that a control system is required that determines rotor position and applies the phase-winding excitations at the appropriate time. It is, in fact, the need for this sort of control that makes VRM drive systems more complex than might perhaps be thought, considering only the simplicity of the VRM itself. </para>
+    <list id="id5789272" list-type="bulleted">
+      <item>One of the reasons that VRMs have found application in a wide variety of situations is because the widespread availability and low cost of microprocessors and power electronics have brought the cost of the sensing and control required to successfully operate VRM drive systems down to a level where these systems can be competitive with competing technologies. Although the control of VRM drives is more complex than that required for dc, induction, and permanent-magnet ac motor systems, in many applications the overall VRM drive system turns out to be less expensive and more flexible than the competition. </item>
+      <item>Assuming that the appropriate rotor-position sensor and control system is available, the question still remains as to how to excite the armature phases. From Fig. 8.9, one possible excitation scheme would be to apply a constant current to each phase at those angular positions at which 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL"/dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is positive and zero current otherwise. </item>
+      <item>If this is done, the resultant torque waveform will be that of Fig. 8.10. Note that because the torque waveforms of the individual phases overlap, the resultant torque will not be constant but rather will have a pulsating component on top of its average value. In general, such pulsating torques are to be avoided both because they may produce damaging stresses in the VRM and because they may result in the generation of excessive vibration and noise. </item>
+      <item>Consideration of Fig.8.9 shows that there are alternative excitation strategies which can reduce the torque pulsations of Fig. 8.10. Perhaps the simplest strategy is to excite each phase for only 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>30</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"30" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> of angular position instead of the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>40</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"40" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> which resulted in Fig. 8.9. Thus, each phase would simply be turned off as the next phase is turned on, and there would be no torque overlap between phases. </item>
+      <item>Although this strategy would be an ideal solution to the problem, as a practical matter it is not possible to implement. The problem is that because each phase winding has a self-inductance, it is not possible to instantaneously switch on or off the phasecurrents. </item>
+      <item>For a VRM with independent (uncoupled) phases, 2 the voltage- current relationship of the jth phase is given by</item>
+    </list>
+    <para id="id5789524"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi fontstyle="italic">dλ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{j} } =R rSub { size 8{j} } i rSub { size 8{j} } + {  {dλ rSub { size 8{j} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(8.11)</para>
+    <para id="id5789636">where</para>
+    <para id="id5789641"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>jj</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ rSub { size 8{i} } =L rSub { size 8{ ital "jj"} }  \( θ rSub { size 8{m} }  \) i rSub { size 8{j} } } {}</m:annotation></m:semantics></m:math>(8.12)</para>
+    <para id="id5789753">Thus,</para>
+    <para id="id5789757"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:mi>d</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow><m:mo stretchy="false">[</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>jj</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">]</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{j} } =R rSub { size 8{j} } i rSub { size 8{j} } + {  {d}  over  { ital "dt"} }  \[ L rSub { size 8{ ital "jj"} }  \( θ rSub { size 8{m} }  \) i rSub { size 8{j} }  \] } {}</m:annotation></m:semantics></m:math>(8.13)</para>
+    <para id="id7805343">Equation 8.13 can be rewritten as</para>
+    <para id="id7805347"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfenced open="{" close="}"><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:mi>d</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow><m:mo stretchy="false">[</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>jj</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">]</m:mo></m:mrow></m:mfenced></m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>jj</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>di</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{j} } = left lbrace R rSub { size 8{j} } + {  {d}  over  { ital "dt"} }  \[ L rSub { size 8{ ital "jj"} }  \( θ rSub { size 8{m} }  \)  \]  right rbrace i rSub { size 8{j} } +L rSub { size 8{ ital "jj"} }  \( θ rSub { size 8{m} }  \)  {  { ital "di" rSub { size 8{j} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(8.14)</para>
+    <para id="id7805560">or</para>
+    <para id="id7805564"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfenced open="[" close="]"><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dL</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>jj</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow><m:mfrac><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mfenced></m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>jj</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>di</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{j} } = left [R rSub { size 8{j} } + {  { ital "dL" rSub { size 8{ ital "jj"} }  \( θ rSub { size 8{m} }  \) }  over  {d \( θ rSub { size 8{m} }  \) } }  {  {dθ rSub { size 8{m} } }  over  { ital "dt"} }  right ]i rSub { size 8{j} } +L rSub { size 8{ ital "jj"} }  \( θ rSub { size 8{m} }  \)  {  { ital "di" rSub { size 8{j} } }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(8.15)</para>
+    <list id="id7805818" list-type="bulleted">
+      <item>Eqs. 8.13 through 8.15 are mathematically complex, they clearly indicate that some time is required to build up currents in the phase windings following application of voltage to that phase. A similar analysis can be done for conditions associated with removal of the phase currents. The delay time associated with current build up can limit the maximum achievable torque while the current decay time can result in negative torque if current is still flowing when 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> reverses sign. </item>
+      <item>It is clear that it is not possible to readily apply phase currents of arbitrary waveshapes. Winding inductances (and their time derivatives) significantly affect the current waveforms that can be achieved for a given applied voltage. </item>
+      <item>Figure 8.12a shows the cross- sectional view of a 4/2 VRM similar to that of Fig. 8.3 with the exception that the rotor pole angle has been increased from 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>60</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"60" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> to 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>75</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"75" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>, with the result that the rotor pole overhangs that of the stator by 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>15</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"15" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>. As can be seen from Fig. 8.12b, this results in a region of constant inductance separating the positive and negative 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dL" \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> regions, which in turn provides additional time for the phase current to be turned off before the region of negative torque production is reached. </item>
+    </list>
+    <figure id="id5761311">
+      <media id="id8951856" alt=""><image src="../../media/graphics13-9eea.png" mime-type="image/png" height="296" width="293"/></media>
+    </figure>
+    <figure id="id5761338">
+      <media id="id2195802" alt=""><image src="../../media/graphics14-594f.png" mime-type="image/png" height="151" width="515"/></media>
+    </figure>
+    <para id="id5761362">Figure 8.12 A 4/2 VRM with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>15</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"15" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> rotor overhang: (a) cross-sectional view and (b) plots of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">/</m:mo><m:msub><m:mi fontstyle="italic">dθ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"11"} }  \( θ rSub { size 8{m} }  \) /dθ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> versus 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5891894">8.4 NONLINEAR ANALYSIS </para>
+    <list id="id5891902" list-type="bulleted">
+      <item>To obtain the maximum benefit from the magnetic material, practical VRMs are operated with the magnetic flux density high enough so that the magnetic material is in saturation under normal operating conditions. </item>
+      <item>The actual operating flux density is determined by trading off such quantities as cost, efficiency, and torque-to-mass ratio. However, because the VRM and its drive electronics are quite closely interrelated, VRMs design typically involves additional trade-offs that in turn affect the choice of operating flux density.</item>
+    </list>
+    <figure id="id5891928">
+      <media id="id2626259" alt=""><image src="../../media/graphics15-dcf3.png" mime-type="image/png" height="241" width="584"/></media>
+    </figure>
+    <para id="id5891952">Figure 8.13 Plots of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ} {}</m:annotation></m:semantics></m:math> versus i for a VRM with (a)linear and (b) nonlinear magnetics.</para>
+    <list id="id5892006" list-type="bulleted">
+      <item>A representation of the flux-linkage versus current characteristic of a VRM is shown in Fig. 8.13. This representation consists of a series of plots of the flux linkage versus current at various rotor angles. In this figure, the curves correspond to a machine with a two-pole rotor such as in Fig. 8.1, and hence a plot of curves from 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0 rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> to 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> is sufficient to completely characterize the machine. </item>
+      <item>Figure 8.13a shows the set of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ} {}</m:annotation></m:semantics></m:math>-i characteristics which would be measured in a machine with linear magnetics, i.e., constant magnetic permeability and no magnetic saturation. For each rotor angle, the curve is a straight line whose slope corresponds to the inductance
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>L</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L \( θ rSub { size 8{m} }  \) } {}</m:annotation></m:semantics></m:math>at that angular position. In fact, a plot of L(
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>) versus
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> such as in Fig. 8.2 is an equivalent representation to that of Fig. 8.13a. </item>
+      <item>In practice, VRMs do operate with their magnetic material in saturation and their 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ} {}</m:annotation></m:semantics></m:math>-i characteristics take on the form of Fig. 8.13b. Note that saturation effects are maximum at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>(for which the rotor and stator poles are aligned) and minimal for higher angles as the rotor approaches the nonaligned position. </item>
+      <item>Saturation has two important, somewhat contradictory effects on VRM performance. On the one hand, saturation limits flux densities for a given current level and thus tends to limit the amount of torque available from the VRM. On the other hand, it can be shown that saturation tends to lower the required inverter volt-ampere rating</item>
+    </list>
+    <figure id="id5892483">
+      <media id="id7100391" alt=""><image src="../../media/graphics16-b730.png" mime-type="image/png" height="233" width="516"/></media>
+    </figure>
+    <para id="id7727025">Figure 8.14 (a) Flux-linkage-current trajectory for the (a) linear and (b) nonlinear</para>
+    <para id="id7727035">machines of Fig. 8.13.</para>
+    <para id="id7727039">for a given VRM output power and thus tends to make the inverter smaller and less costly. A well-designed VRM system will be based on a trade-off between the two effects. </para>
+    <list id="id7727047" list-type="bulleted">
+      <item>These effects of saturation can be investigated by considering the two machines of Figs. 8.13a and b operating at the same rotational speed and under the same operating condition. Assume a somewhat idealized condition in which the phase-1 current is instantaneously switched on to a value 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } = - "90" rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math> (the unaligned position for phase 1) and is instantaneously switched off at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0 rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> (the aligned position). </item>
+      <item>Because of rotor symmetry, the flux linkages for negative rotor angles are identical to those for positive angles. Thus, the flux linkage-current trajectories for one current cycle can be determined from Figs.8.13a and b and are shown for the two machines in Figs.8.14a and b. </item>
+      <item>As each trajectory is traversed, the power input to the winding is given by its volt-ampere product </item>
+    </list>
+    <para id="id5764320"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>p</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>in</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>iv</m:mtext></m:mrow></m:mstyle></m:mrow><m:mo stretchy="false">=</m:mo><m:mi>i</m:mi></m:mrow><m:mfrac><m:mi fontstyle="italic">dλ</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{p rSub { size 8{ ital "in"} } = ital "iv"=i {  {dλ}  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(8.16)</para>
+    <para id="id5764415">The net electric energy input to the machine (the energy that is converted to mechanical work) in a cycle can be determined by integrating Eq. 8.16 around the trajectory </para>
+    <para id="id5764461"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mtext>Net work</m:mtext><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">∫</m:mo><m:msub><m:mi>p</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>in</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">∮</m:mo><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>id</m:mtext></m:mrow></m:mstyle><m:mi>λ</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Net work"= Int {p rSub { size 8{ ital "in"} } }  ital "dt"= lInt { ital "id"λ} } {}</m:annotation></m:semantics></m:math>(8.17)</para>
+    <para id="id7727241">This can be seen graphically as the area enclosed by the trajectory, labeled Wnet in Figs.8.14a and b. Note that the saturated machine converts less useful work per cycle than the unsaturated machine. As a result, to get a machine of the same power output, the saturated machine will have to be larger than a corresponding (hypothetical) unsaturated machine. This analysis demonstrates the effects of saturation in lowering torque and power output. </para>
+    <list id="id7727262" list-type="bulleted">
+      <item>The peak energy input to the winding from the inverter can also be calculated.: </item>
+    </list>
+    <para id="id7727272"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>Peak energy</m:mtext><m:mo stretchy="false">=</m:mo><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>id</m:mtext></m:mrow></m:mstyle><m:mi>λ</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"Peak energy"= Int rSub { size 8{0} }  rSup { size 8{λ rSub { size 6{"max"} } } }  { ital "id"λ} } {}</m:annotation></m:semantics></m:math>(8.18)</para>
+    <para id="id7727366">This is the total area under the 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ} {}</m:annotation></m:semantics></m:math>-i curve, shown in Fig. 8.14a and b as the sum of the areas labeled 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>rec</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "rec"} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>net</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "net"} } } {}</m:annotation></m:semantics></m:math>. </para>
+    <list id="id7727525" list-type="bulleted">
+      <item>The energy represented by the area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>net</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "net"} } } {}</m:annotation></m:semantics></m:math> corresponds to useful output energy, it is clear that the energy represented by the area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>rec</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "rec"} } } {}</m:annotation></m:semantics></m:math> corresponds to energy input that is required to make the VRM operate (i.e., it goes into creating the magnetic fields in the VRM). This energy produced no useful work; rather it must be recycled back into the inverter at the end of the trajectory.</item>
+      <item>The inverter volt-ampere rating is determined by the average power per phase processed by the inverter as the motor operates, equal to the peak energy input to the VRM divided by the time T between cycles. Similarly, the average output power per phase of the VRM is given by the net energy input per cycle divided by T. The ratio of the inverter volt-ampere rating to power output is </item>
+    </list>
+    <para id="id7727661"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mtext>Inverter volt</m:mtext><m:mo stretchy="false">−</m:mo><m:mtext>ampere rating</m:mtext></m:mrow><m:mtext>Net output area</m:mtext></m:mfrac><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mtext>area </m:mtext><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>rec</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>net</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mtext>area </m:mtext><m:mo stretchy="false">(</m:mo><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>net</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {"Inverter volt" - "ampere rating"}  over  {"Net output area"} } = {  {"area " \( W rSub { size 8{ ital "rec"} } +W rSub { size 8{ ital "net"} }  \) }  over  {"area " \( W rSub { size 8{ ital "net"} }  \) } } } {}</m:annotation></m:semantics></m:math> (8.19)</para>
+    <list id="id7787082" list-type="bulleted">
+      <item>The inverter volt-ampere rating determines its cost and size. Thus, for a given power output from a VRM, a smaller ratio of inverter volt-ampere rating to output power means that the inverter will be both smaller and cheaper. Comparison of Figs. 8.14a and b shows that this ratio is smaller in the machine which saturates; the effect of saturation is to lower the amount of energy which must be recycled each cycle and hence the volt-ampere rating of the inverter required to supply the VRM. </item>
+    </list>
+    <para id="id7787099">8.5 STEPPING MOTORS </para>
+    <list id="id7787107" list-type="bulleted">
+      <item>When the phases of a VRM are energized sequentially in an appropriate step-wise fashion, the VRM will rotate a specific angle for each step. Motors designed specifically to take advantage of this characteristic are referred to as stepping motors or stepper motors. Frequently stepping motors are designed to produce a large number of steps per revolution, for example 50, 100, or 200 steps per revolution (corresponding to a rotation of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>7</m:mn><m:mtext>.</m:mtext><m:msup><m:mn>2</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup><m:mi>,</m:mi><m:mn>3</m:mn><m:mtext>.</m:mtext><m:msup><m:mn>6</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{7 "." 2 rSup { size 8{0} } , 3 "." 6 rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:msup><m:mn>8</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." 8 rSup { size 8{o} } } {}</m:annotation></m:semantics></m:math>per step). </item>
+      <item>An important characteristic of the stepping motor is its compatibility with digital- electronic systems. These systems are common in a wide variety of applications and continue to become more powerful and less expensive. Typical applications include paper-feed and print-head-positioning motors in printers and plotters, drive and head-positioning motors in disk drives and CD players, and worktable and tool positioning in numerically controlled machining equipment. In many applications, position information can be obtained simply by keeping count of the pulses sent to the motor, in which case position sensors and feedback control are not required. </item>
+      <item>The angular resolution of a VRM is determined by the number of rotor and stator teeth and can be greatly enhanced by techniques such as castleation. Stepping motors come in a wide variety of designs and configurations. In addition to variable-reluctance configurations, these include permanent-magnet and hybrid configurations. The use of permanent magnets in combination with a variable-reluctance geometry can significantly enhance the torque and positional accuracy of a stepper motor. </item>
+      <item>The VRM configurations discussed in Sections 8.1 through 8.3 consist of a single rotor and stator with multiple phases. A stepping motor of this configuration is called a single-stack, variable-reluctance stepping motor. An alternate form of variable- reluctance stepping motor is known as a multistack variable-reluctance stepping motor. In this configuration, the motor can be considered to be made up of a set of axially displaced, single-phase VRMs mounted on a single shaft. </item>
+      <item>Figure 8.16 shows a multistack variable-reluctance stepping motor. This type of motor consists of a series of stacks, each axially displaced, of identical geometry and each excited by a single phase winding, as shown in Fig. 8.17. The motor of Fig. 8.16 has three stacks and three phases, although motors with additional phases and stacks are common. For an ns-stack motor, the rotor or stator (but not both) on each stack is displaced by 1 / ns times the pole-pitch angle. In Fig. 8.16, the rotor poles are aligned, but the stators are offset in angular displacement by one-third of the pole pitch. By successively exciting the individual phases, the rotor can be turned in increments of this displacement angle.</item>
+      <item>A schematic diagram of a two-phase stepping motor with a permanent-magnet, two-pole rotor is shown in Fig. 8.18. Note that this machine is in fact a two-phase synchronous machine, similar for example to the three-phase permanent-magnet ac machine of Fig.5.29. The distinction between such a stepping motor and a synchronous motor arises not from the construction of the motor but rather from how the motor is operated. The synchronous motor is typically intended to drive a load at a specified speed, and the stepping motor is typically intended to control the position of a load.</item>
+    </list>
+    <figure id="id7787346">
+      <media id="id6560692" alt=""><image src="../../media/graphics17-2ba7.png" mime-type="image/png" height="365" width="480"/></media>
+    </figure>
+    <para id="id7787370">Figure 8.16 Cutaway view of a three-phase, three-stack variable-reluctance stepping</para>
+    <para id="id7787385">motor. ( Warner Electric.)</para>
+    <list id="id7787394" list-type="bulleted">
+      <item>The rotor of the stepping motor of Fig.8.18 assumes the angles
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0,</m:mn></m:mrow><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup><m:mi>,</m:mi><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } =0, "45" rSup { size 8{0} }  ,"90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> ... as the windings are excited in the sequence: </item>
+    </list>
+    <para id="id7787487">1. Positive current in phase 1 alone. </para>
+    <para id="id7787494">2. Equal-magnitude positive currents in phase 1 and phase 2. </para>
+    <para id="id7787501">3. Positive current in phase 2 alone. </para>
+    <para id="id7787508">4. Equal-magnitude negative current in phase 1 and positive current in phase 2. </para>
+    <para id="id7787516">5. Negative current in phase 1 alone. </para>
+    <para id="id7787522">6. And so on. </para>
+    <para id="id7787529">Note that if a ferromagnetic rotor were substituted for the permanent-magnet rotor, the rotor would move in a similar fashion. </para>
+    <list id="id7787536" list-type="bulleted">
+      <item>The stepping motor of Fig.8.18 can also be used for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>steps by exciting the coils singly. In the latter case, only a permanent-magnet rotor can be used. This can be seen from the torque-angle curves for the two types of rotors shown in Fig.8.19. Whereas the permanent-magnet rotor produces peak torque when the excitation is shifted 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>, the ferromagnetic rotor produces zero torque and may move in either direction. </item>
+      <item>The rotor position in the permanent-magnet stepping motor of Fig.8.18 is defined by the winding currents with no ambiguity and depends on the direction of the phase </item>
+    </list>
+    <figure id="id7787665">
+      <media id="id7412089" alt=""><image src="../../media/graphics18-cc92.png" mime-type="image/png" height="292" width="295"/></media>
+    </figure>
+    <para id="id8239702">Figure 8.17 Diagram of one stack and phase of a multiphase, multistack variable-reluctance stepping motor, such as that in Fig. 8.16. For an 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>n</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math>-stack motor, the rotor or stator (but not both) on each stack is displaced by 1/
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>n</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>s</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n rSub { size 8{s} } } {}</m:annotation></m:semantics></m:math> times the pole pitch.</para>
+    <figure id="id8239816">
+      <media id="id6315130" alt=""><image src="../../media/graphics19-176a.png" mime-type="image/png" height="273" width="285"/></media>
+    </figure>
+    <para id="id8239840">Figure 8.18 Schematic diagram of a two-phase permanent-magnet stepping motor.</para>
+    <figure id="id8239857">
+      <media id="id1166412651425" alt=""><image src="../../media/graphics20-e394.png" mime-type="image/png" height="367" width="478"/></media>
+    </figure>
+    <para id="id8239881">Figure 8.19 Torque-angle curves for the stepping motor of Fig. 8.18:</para>
+    <para id="id8239891">(a) permanent-magnet rotor and (b) variable-reluctance rotor.</para>
+    <para id="id8239896">currents. </para>
+    <list id="id8239900" list-type="bulleted">
+      <item>Reversing the phase currents will cause the rotor to reverse its orientation. This is in contrast to VRM configuration with a ferromagnetic rotor, in which two rotor positions are equally stable for any particular set of phase currents, and hence the rotor position cannot be determined uniquely. </item>
+      <item>Permanent-magnet stepping motors are also unlike their VRM counterparts in that torque tending to align the rotor with the stator poles will be generated even when there is no excitation applied to the phase windings. Thus the rotor will have preferred unexcited rest positions, a fact which can be used to advantage in some applications. </item>
+    </list>
+    <list id="id8239925" list-type="bulleted">
+      <item>Stable equilibrium positions of an unloaded stepping motor satisfy the conditions that there is zero torque, i.e., </item>
+    </list>
+    <para id="id8239935"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "mech"} } =0} {}</m:annotation></m:semantics></m:math>(8.20)</para>
+    <para id="id8240005">and that there is positive restoring torque, i.e.,</para>
+    <para id="id8240010"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mrow><m:msub><m:mo stretchy="false">∣</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>i</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial T rSub { size 8{ ital "mech"} } }  over  { partial θ rSub { size 8{m} } } }  \rline  rSub { size 8{i rSub { size 6{1} } ,i rSub { size 6{2} } } } &lt;0} {}</m:annotation></m:semantics></m:math>(8.21)</para>
+    <list id="id8240140" list-type="bulleted">
+      <item>In practice, there will of course be a finite load torque tending to perturb the stepping motor from these idealized positions. For open-loop control systems (i.e., control systems in which there is no mechanism for position feedback), a high-degree of position control can be achieved by designing the stepping motor to produce large restoring torque (i.e., a large magnitude of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:mo stretchy="false">∂</m:mo></m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ partial T rSub { size 8{ ital "mech"} } / partial θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>). In such a stepping motor, load torques will result in only a small movement of the rotor from the idealized positions which satisfies Eqs.8.20 and 8.21. </item>
+      <item>Carefully controlled combinations of phase currents can enhance the resolution of a stepper motor. This technique, referred to as microstepping, can be used to achieve increased step resolution of a wide variety of stepper motors. Microstepping can be used to produce extremely fine position resolution. The increased resolution comes, however, at the expense of an increase in complexity of the stepping-motor drive electronics and control algorithms, which must accurately control the distribution of current to multiple phases simultaneously.</item>
+    </list>
+    <list id="id8240366" list-type="bulleted">
+      <item>The hybrid stepping motor combines characteristics of the variable-reluctance and permanent-magnet stepping motors. A photo of a hybrid stepping motor is shown in Fig. 8.20, and a schematic view of a hybrid stepping motor is shown in Fig. 8.21. The hybrid-stepping-motor rotor configuration appears much like that of a multistack variable-reluctance stepping motor. In the rotor of Fig. 8.21 a, two identical rotor stacks are displaced axially along the rotor and displaced in angle by one-half the rotor pole pitch, while the stator pole structure is continuous along the length of the rotor. Unlike the multistack variable-reluctance stepping motor, in the hybrid stepping motor, the rotor stacks are separated by an axially-directed permanent magnet. As a result, in Fig. 8.21 a one end of the rotor can be considered to have a north magnetic pole and</item>
+    </list>
+    <figure id="id7495457">
+      <media id="id6554007" alt=""><image src="../../media/graphics21-3fb0.png" mime-type="image/png" height="207" width="539"/></media>
+    </figure>
+    <para id="id7495481">Figure 8.20 Disassembled 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:msup><m:mn>8</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." 8 rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>/step hybrid stepping motor. (Oriental Motor.)</para>
+    <figure id="id7495554">
+      <media id="id1166424351959" alt=""><image src="../../media/graphics22-13f7.png" mime-type="image/png" height="268" width="481"/></media>
+    </figure>
+    <para id="id7495578">Figure 8.21 Schematic view of a hybrid stepping motor. (a) Two-stack rotor showing the axially-directed permanent magnet and the pole pieces displaced by one-half the pole pitch. (b) End view from the rotor north poles and showing the rotor south poles at the far end (shown crosshatched). Phase 1 of the stator is energized to align the rotor as shown.</para>
+    <para id="id7495594">the other end a south magnetic pole. Figure 8.2 lb shows a schematic end view of a hybrid stepping motor. The stator has four poles with the phase-1 winding wound on the vertical poles and the phase-2 winding wound on the horizontal poles. The rotor is shown with its north-pole end at the near end of the motor and the south-pole end (shown crosshatched) at the far end. </para>
+    <list id="id7495604" list-type="bulleted">
+      <item>In Fig. 8.21b, phase 1 is shown excited such that the top stator pole is a south pole while the bottom pole is a north pole. This stator excitation interacts with the permanent-magnet flux of the rotor to align the rotor with a pole on its north-pole end vertically upward and a pole on its south-pole end vertically downward, as shown in the figure. Note that if the stator excitation is removed, there will still be a permanent- magnet torque tending to maintain the rotor in the position shown. </item>
+      <item>To turn the rotor, excitation is removed from phase 1, and phase 2 is excited. If phase 2 is excited such that the fight-hand stator pole is a south pole and the left-hand one is a north pole, the rotor will rotate 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>30</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"30" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> counterclockwise. Similarly, if the opposite excitation is applied to the phase-2 winding, a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>30</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"30" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> rotation in the clockwise direction will occur. Thus, by alternately applying phase-1 and phase-2 excitation of the appropriate polarity, the rotor can be made to rotate in either direction by a specified angular increment. </item>
+      <item>Practical hybrid stepping motors are generally built with more rotor poles than are indicated in the schematic motor of Fig. 8.21, in order to give much better angular resolution. Correspondingly, the stator poles are often castleated (see Fig.8.8) to further increase the angular resolution. In addition, they may be built with more than two stacks per rotor. </item>
+      <item>The hybrid stepping motor design offers advantages over the permanent-magnet design discussed earlier. It can achieve small step sizes easily and with a simple magnet structure while a purely permanent-magnet motor would require a multipole permanent magnet. In comparison with the variable-reluctance stepping motor, the hybrid design may require less excitation to achieve a given torque because some of the excitation is supplied by the permanent magnet. In addition, the hybrid stepping motor will tend to maintain its position when the stator excitation is removed, as does the permanent-magnet design.</item>
+    </list>
+  </content>
+</document>

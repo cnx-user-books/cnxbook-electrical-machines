@@ -1,0 +1,774 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>PROBLEMS - chapter 3</title>
+  <metadata>
+  <md:content-id>m28362</md:content-id><md:title>PROBLEMS - chapter 3</md:title>
+  <md:abstract/>
+  <md:uuid>c7dd3d0a-16ca-43d7-a89b-a6e1c0b8070f</md:uuid>
+</metadata>
+
+<content>
+    <para id="id3230942">PROBLEMS</para>
+    <para id="id8041813">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <para id="id5212259">3.1 An inductor has an inductance which is found experimentally to be of the form</para>
+    <para id="id8249011">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>L</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:msub>
+                      <m:mn>2L</m:mn>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:mrow>
+                        <m:mi>x</m:mi>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{L= {  {2L rSub { size 8{0} } }  over  {1+x/x rSub { size 8{0} } } } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id3724162">where L0 = 30 mH, x0 = 0.87 mm, and x is the displacement of a movable element. Its winding resistance is measured and found to equal 110 m
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id4306578">a. The displacement x is held constant at 0.90 mm, and the current is increased from 0 to 6.0 A. Find the resultant magnetic stored energy in the inductor.</para>
+    <para id="id7918000">b. The current is then held constant at 6.0 A, and the displacement is increased to 1.80 mm. Find the corresponding change in magnetic stored energy.</para>
+    <para id="id7992728">3.2 Repeat Problem 3.1, assuming that the inductor is connected to a voltage source which increases from 0 to 0.4 V (part [a]) and then is held constant at 0.4 V (part [b]). For both calculations, assume that all electric transients can be ignored.</para>
+    <para id="id3374655">3.3 The inductor of Problem 3.1 is driven by a sinusoidal current source of the form</para>
+    <para id="id7789751">i(t) = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mtext>sin</m:mtext><m:mi fontstyle="italic">ωt</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } "sin"ωt} {}</m:annotation></m:semantics></m:math></para>
+    <para id="id7984671">where I0 = 5.5 A and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>100</m:mtext></m:mrow><m:mi>π</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω="100"π} {}</m:annotation></m:semantics></m:math> (50 Hz). With the displacement held fixed at x = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>, calculate (a) the time-averaged magnetic stored energy (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math>) in the inductor and (b) the time-averaged power dissipated in the winding resistance.</para>
+    <para id="id7301414">3.4 An actuator with a rotating vane is shown in Fig. 3.1. You may assume that the permeability of both the core and the vane are infinite (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">→</m:mo><m:mo stretchy="false">∞</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rightarrow  infinity } {}</m:annotation></m:semantics></m:math>). The total air-gap length is 2g and shape of the vane is such that the effective area of the air gap can be assumed to be of the form</para>
+    <para id="id5114288">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mfenced open="[" close="]">
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:msup>
+                        <m:mfenced open="[" close="]">
+                          <m:mfrac>
+                            <m:mn>4θ</m:mn>
+                            <m:mi>π</m:mi>
+                          </m:mfrac>
+                        </m:mfenced>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{g} } =A rSub { size 8{0} }  left [1 -  left [ {  {4θ}  over  {π} }  right ] rSup { size 8{2} }  right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id4380384">(valid only in the range 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">∣</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">∣</m:mo></m:mrow><m:mo stretchy="false">≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ lline θ rline  &lt;=  {  {π}  over  {6} } } {}</m:annotation></m:semantics></m:math>). The actuator dimensions are g = 0.8 mm, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow/><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>0</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>mm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {}=6 "." 0 ital "mm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>, and N = 650 turns.</para>
+    <para id="id3238673">a. Assuming the coil to be carrying current i, write an expression for the magnetic stored energy in the actuator as a function of angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math> for 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">∣</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">∣</m:mo></m:mrow><m:mo stretchy="false">≤</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>6</m:mn></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ lline θ rline  &lt;=  {  {π}  over  {6} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <figure id="id3005726">
+      <media id="id3727679" alt=""><image src="../../media/graphics1-0f0a.png" mime-type="image/png" height="299" width="376"/></media>
+    </figure>
+    <para id="id8334842">Figure 3.1 Actuator with rotating vane for</para>
+    <para id="id3127115">Problem 3.7. (a) Side view. (b) End view.</para>
+    <figure id="id8472237">
+      <media id="id4946026" alt=""><image src="../../media/graphics2-759e.png" mime-type="image/png" height="154" width="346"/></media>
+    </figure>
+    <para id="id8587448">Figure 3.2 An RC circuit for Problem 3.8.</para>
+    <para id="id3822374">b. Find the corresponding inductance L(
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math>). Use MATLAB to plot this inductance as a function of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id4317938">3.5 An RC circuit is connected to a battery, as shown in Fig. 3.2. Switch S is initially closed and is opened at time t = 0.</para>
+    <para id="id5638332">a. Find the capacitor voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math>(t) for t 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &gt;= {}} {}</m:annotation></m:semantics></m:math> 0</para>
+    <para id="id3129301">b. What are the initial and final (t = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">∞</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ infinity } {}</m:annotation></m:semantics></m:math>) values of the stored energy in the capacitor? (Hint: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math> =
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mn>1</m:mn><m:mn>2</m:mn></m:mfrac><m:mtext>.</m:mtext><m:mfrac><m:msup><m:mi>q</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mi>C</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {1}  over  {2} }  "."  {  {q rSup { size 8{2} } }  over  {C} } } {}</m:annotation></m:semantics></m:math>, where q = C
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.) What is the energy stored in the capacitor as a function of time?</para>
+    <para id="id3051193">c. What is the power dissipated in the resistor as a function of time? What is the total energy dissipated in the resistor?</para>
+    <para id="id7844605">3.6 An RL circuit is connected to a battery, as shown in Fig. 3.3. Switch S is initially closed and is opened at time t = 0.</para>
+    <para id="id3382034">a. Find the inductor current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>L</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{L} } } {}</m:annotation></m:semantics></m:math>(t) for t 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &gt;= {}} {}</m:annotation></m:semantics></m:math> 0. (Hint: Note that while the switch is closed, the diode is reverse-biased and can be assumed to be an open circuit. Immediately after the switch is opened, the diode becomes forward-biased and can be assumed to be a short circuit.)</para>
+    <para id="id5240252">b. What are the initial and final (t = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">∞</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ infinity } {}</m:annotation></m:semantics></m:math>) values of the stored energy in the inductor? What is the energy stored in the inductor as a function of time?</para>
+    <para id="id3173745">c. What is the power dissipated in the resistor as a function of time? What is the total energy dissipated in the resistor?</para>
+    <para id="id3213655">3.7 The L/R time constant of the field winding of an 500-MVA synchronous generator is 4.8 s. At normal operating conditions, the field winding is known to be dissipating 1.3 MW. Calculate the corresponding magnetic stored energy.</para>
+    <figure id="id3206962">
+      <media id="id3406556" alt=""><image src="../../media/graphics3-bd40.png" mime-type="image/png" height="156" width="339"/></media>
+    </figure>
+    <para id="id4219094">Figure 3.23 An RL circuit for Problem 3.9.</para>
+    <figure id="id3132595">
+      <media id="id4428299" alt=""><image src="../../media/graphics4-4e98.png" mime-type="image/png" height="239" width="300"/></media>
+    </figure>
+    <para id="id3161207">Figure 3.4 Plunger actuator for Problem 3.12.</para>
+    <para id="id5199877">3.8 The inductance of a phase winding of a three-phase salient-pole motor is measured to be of the form</para>
+    <para id="id5252452">L(<media id="id3514388" alt=""><image src="graphics5.wmf" mime-type="image/wmf" height="25" width="21"/></media>) = <!--Sorry, this media type is not supported.--> + 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mtext>cos</m:mtext><m:msub><m:mn>2θ</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{2} } "cos"2θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id5016653">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is the angular position of the rotor.</para>
+    <para id="id5927864">a. How many poles are on the rotor of this motor?</para>
+    <para id="id2961466">b. Assuming that all other winding currents are zero and that this phase is excited by a constant current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>, find the torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "nd"} }  \( θ \) } {}</m:annotation></m:semantics></m:math> acting on the rotor.</para>
+    <para id="id6407130">3.9 Cylindrical iron-clad solenoid actuators of the form shown in Fig. 3.4 are used for tripping circuit breakers, for operating valves, and in other applications in which a relatively large force is applied to a member which moves a relatively short distance. When the coil current is zero, the plunger drops against a stop such that the gap g is 2.25 cm. When the coil is energized by a direct current of sufficient magnitude, the plunger is raised until it hits another stop set so that g is 0.2 cm. The plunger is supported so that it can move freely in the vertical direction. The radial air gap between the shell and the plunger can be assumed to be uniform and 0.05 cm in length. For this problem neglect the magnetic leakage and fringing in the air gaps. The exciting coil has 1300 turns and carries a constant current of 2.3 A. Assume that the mmf in the iron can be neglected and use MATLAB to</para>
+    <para id="id8842701">a. plot the flux density in the variable gap between the yoke and the plunger for the range of travel of the plunger,</para>
+    <para id="id5211154">b. plot the corresponding values of the total energy stored in the magnetic field in 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>J, and</para>
+    <para id="id3172454">c. plot the corresponding values of the coil inductance in 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>H.</para>
+    <para id="id8572100">3.10 Consider the plunger actuator of Fig. 3.4. Assume that the plunger is initially fully opened (g = 2.25 cm) and that a battery is used to supply a current of 2.5 A to the winding.</para>
+    <para id="id8473048">a. If the plunger is constrained to move very slowly (i.e., slowly compared to the electrical time constant of the actuator), reducing the gap g from 2.25 to 0.20 cm, how much mechanical work in joules will be supplied to the plunger?</para>
+    <para id="id8572054">b. For the conditions of part (a), how much energy will be supplied by the battery (in excess of the power dissipated in the coil)?</para>
+    <figure id="id7981563">
+      <media id="id3414378" alt=""><image src="../../media/graphics6-733c.png" mime-type="image/png" height="207" width="344"/></media>
+    </figure>
+    <para id="id8345389">Figure 3.5 Electromagnet lifting an iron slab (Problem 3.14).</para>
+    <para id="id4381643">3.11 As shown in Fig.3.5, an N-turn electromagnet is to be used to lift a slab of iron of mass M. The surface roughness of the iron is such that when the iron and the electromagnet are in contact, there is a minimum air gap of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>g</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{g rSub { size 8{"min"} } } {}</m:annotation></m:semantics></m:math> = 0.18 mm in each leg. The electromagnet cross-sectional area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> = 32 cm and coil resistance is 2.8 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>. Calculate the minimum coil voltage which must be used to lift a slab of mass 95 kg against the force of gravity. Neglect the reluctance of the iron.</para>
+    <para id="id3370790">3.12 Data for the magnetization curve of the iron portion of the magnetic circuit of the plunger actuator of Problem 3.12 are given below:</para>
+    <figure id="id4347590">
+      <media id="id2500251" alt=""><image src="../../media/graphics7-9828.png" mime-type="image/png" height="74" width="567"/></media>
+    </figure>
+    <para id="id3555308">a. Use the MATLAB polyfit function to obtain a 3'rd-order fit of reluctance and total flux versus mmf for the iron portions of the magnetic circuit.</para>
+    <para id="id8579258">Your fits will be of the form:</para>
+    <para id="id3209159">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>R</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msubsup>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msubsup>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>a</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>4</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{ ital "iron"} } =a rSub { size 8{1} } F rSub { size 8{ ital "iron"} }  rSup { size 8{3} } +a rSub { size 8{2} } F rSub { size 8{ ital "iron"} }  rSup { size 8{2} } +a rSub { size 8{3} } F rSub { size 8{ ital "iron"} } +a rSub { size 8{4} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id8029743">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>φ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>b</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msubsup>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>b</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msubsup>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>2</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msubsup>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>b</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>3</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>F</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>iron</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">+</m:mo>
+                    <m:msub>
+                      <m:mi>b</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>4</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{φ rSub { size 8{ ital "iron"} } =b rSub { size 8{1} } F rSub { size 8{ ital "iron"} }  rSup { size 8{3} } +b rSub { size 8{2} } F rSub { size 8{ ital "iron"} }  rSup { size 8{2} } +b rSub { size 8{3} } F rSub { size 8{ ital "iron"} } +b rSub { size 8{4} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id3041060">List the coefficients.</para>
+    <para id="id8330638">b. (i) Using MATLAB and the functional forms found in part (a), plot the magnetization curve for the complete magnetic circuit (flux linkages 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ} {}</m:annotation></m:semantics></m:math> versus winding current i) for a variable-gap length of g = 0.2 cm. On the same axes, plot the magnetization curve corresponding to the assumption that the iron is of infinite permeability. The maximum current in your plot should correspond to a flux in the magnetic circuit of 600 mWb.</para>
+    <para id="id8589245">(ii) Calculate the magnetic field energy and coenergy for each of these cases corresponding to a winding current of 2.0 A.</para>
+    <para id="id8579545">c. Repeat part (b) for a variable-gap length of g = 2.25 cm. In part (ii), calculate the magnetic field energy and coenergy corresponding to a winding current of 20 A.</para>
+    <para id="id3004936">3.13 An inductor is made up of a 525-turn coil on a core of 14
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> cross-sectional area and gap length 0.16 mm. The coil is connected directly to a 120-V 60-Hz voltage source. Neglect the coil resistance and leakage inductance. Assuming the coil reluctance to be negligible, calculate the time-averaged force acting on the core tending to close the air gap. How would this force vary if the air-gap length were doubled?</para>
+    <figure id="id6370253">
+      <media id="id4703138" alt=""><image src="../../media/graphics8-8e6f.png" mime-type="image/png" height="206" width="267"/></media>
+    </figure>
+    <para id="id7990985">Figure 3.6 Conductor in a slot (Problem 3.17).</para>
+    <para id="id8470365">3.14 Figure 3.6 shows the general nature of the slot-leakage flux produced by current i in a rectangular conductor embedded in a rectangular slot in iron. Assume that the iron reluctance is negligible and that the slot leakage flux goes straight across the slot in the region between the top of the conductor and the top of the slot.</para>
+    <para id="id5251528">a. Derive an expression for the flux density 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{S} } } {}</m:annotation></m:semantics></m:math> in the region between the top of the conductor and the top of the slot.</para>
+    <para id="id5192520">b. Derive an expression for the slot-leakage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ϕ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>S</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ϕ rSub { size 8{S} } } {}</m:annotation></m:semantics></m:math> sits crossing the slot above the conductor, in terms of the height x of the slot above the conductor, the slot width s, and the embedded length l perpendicular to the paper.</para>
+    <para id="id5254886">c. Derive an expression for the force f created by this magnetic field on a conductor of length l. In what direction does this force act on the conductor?</para>
+    <para id="id3238032">d. When the conductor current is 850 A, compute the force per meter on a conductor in a slot 2.5 cm wide.</para>
+    <para id="id4621777">3.15 A long, thin solenoid of radius r0 and height h is shown in Fig.3.7. The magnetic field inside such a solenoid is axially directed, essentially uniform and equal to H = N i/h. The magnetic field outside the solenoid can be shown to be negligible. Calculate the radial pressure in newtons per square meter acting on the sides of the solenoid for constant coil current i = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <figure id="id7852260">
+      <media id="id4090197" alt=""><image src="../../media/graphics9-8e64.png" mime-type="image/png" height="197" width="164"/></media>
+    </figure>
+    <para id="id5014352">Figure 3.7 Solenoid coil (Problem 3.18).</para>
+    <para id="id3168762">3.16 An electromechanical system in which electric energy storage is in electric fields can be analyzed by techniques directly analogous to those derived in this chapter for magnetic field systems. Consider such a system in which it is possible to separate the loss mechanism mathematically from those of energy storage in electric fields. Then the system can be represented as in Fig. 3.8. For a single electric terminal, Eq. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dW</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>elec</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dW</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>mech</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">+</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>dW</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "dW" rSub { size 8{ ital "elec"} } = ital "dW" rSub { size 8{ ital "mech"} } + ital "dW" rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math> applies, where</para>
+    <para id="id5212370">dWelec = vi dt = v dq</para>
+    <para id="id3558031">where v is the electric terminal voltage and q is the net charge associated with electric energy storage. Thus, by analogy to Eq.3.16,</para>
+    <para id="id8586468">d Wfld = v dq - ffld dx</para>
+    <para id="id8029348">a. Derive an expression for the electric stored energy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math> (q, x) analogous to that for the magnetic stored energy in Eq. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">=</m:mo><m:mrow><m:msubsup><m:mo stretchy="false">∫</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:msub><m:mi>λ</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:msubsup><m:mrow><m:mi>i</m:mi><m:mo stretchy="false">(</m:mo><m:mi>λ</m:mi><m:mi>,</m:mi><m:msub><m:mi>x</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mrow><m:mi fontstyle="italic">dλ</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "fld"} }  \( λ rSub { size 8{0} } ,x rSub { size 8{0} }  \) = Int rSub { size 8{0} }  rSup { size 8{λ rSub { size 6{0} } } }  {i \( λ,x rSub { size 8{0} }  \) } dλ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id8474952">b. Derive an expression for the force of electric origin ffld analogous to that of Eq. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">(</m:mo><m:mi>λ</m:mi><m:mi>,</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>x</m:mi></m:mrow></m:mfrac></m:mrow><m:msub><m:mo stretchy="false">∣</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{ ital "fld"} } = {  { partial W rSub { size 8{ ital "fld"} }  \( λ,x \) }  over  { partial x} }  \rline  rSub { size 8{λ} } } {}</m:annotation></m:semantics></m:math>. State clearly which variable must be held constant when the derivative is taken.</para>
+    <para id="id3395046">c. By analogy to the derivation of Eqs.3.34 to 3.41, derive an expression for the coenergy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup><m:mo stretchy="false">(</m:mo><m:mi>v</m:mi><m:mi>,</m:mi><m:mi>x</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} }  \( v,x \) } {}</m:annotation></m:semantics></m:math> and the corresponding force of electric origin.</para>
+    <figure id="id7982163">
+      <media id="id8291684" alt=""><image src="../../media/graphics10-20d1.png" mime-type="image/png" height="131" width="339"/></media>
+    </figure>
+    <para id="id4230385">Figure 3.8 Lossless electric energy storage system.</para>
+    <figure id="id5203209">
+      <media id="id4923775" alt=""><image src="../../media/graphics11-4054.png" mime-type="image/png" height="111" width="355"/></media>
+    </figure>
+    <para id="id5260757">Figure 3.9 Capacitor plates (Problem 3.20).</para>
+    <para id="id3346351">3.17 A capacitor (Fig.3.9) is made of two conducting plates of area A separated in air by a spacing x. The terminal voltage is v, and the charge on the plates is q. The capacitance C, defined as the ratio of charge to voltage, is</para>
+    <para id="id8377512">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>C</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfrac>
+                      <m:mi>q</m:mi>
+                      <m:mi>v</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>ε</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mi>A</m:mi>
+                    </m:mrow>
+                    <m:mi>x</m:mi>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{C= {  {q}  over  {v} } = {  {ε rSub { size 8{0} } A}  over  {x} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id4768727">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ε</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ε rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> is the dielectric constant of free space (in SI units 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>ε</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ε rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 8.85x
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mtext>12</m:mtext></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10" rSup { size 8{ - "12"} } } {}</m:annotation></m:semantics></m:math> F/m).</para>
+    <para id="id3486544">a. Using the results of Problem 3.16, derive expressions for the energy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math>(q, x) and the coenergy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math>(v, x).</para>
+    <para id="id8475569">b. The terminals of the capacitor are connected to a source of constant voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>. Derive an expression for the force required to maintain the plates separated by a constant spacing x = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>δ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{δ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id3246148">3.18 Figure 3.10 shows in schematic form an electrostatic voltmeter, a capacitive system consisting of a fixed electrode and a moveable electrode. The moveable electrode is connected to a vane which rotates on a pivot such that the air gap between the two electrodes remains fixed as the vane rotates. The capacitance of this system is given by</para>
+    <para id="id5164730">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>C</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>θ</m:mi>
+                  <m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>ε</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>Rd</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mrow>
+                          <m:mi>α</m:mi>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mo stretchy="false">∣</m:mo>
+                        </m:mrow>
+                        <m:mi>θ</m:mi>
+                        <m:mo stretchy="false">∣</m:mo>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:mi>g</m:mi>
+                    </m:mfrac>
+                  </m:mrow>
+                  <m:mtext/>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mo stretchy="false">∣</m:mo>
+                  <m:mi>θ</m:mi>
+                  <m:mrow>
+                    <m:mo stretchy="false">∣</m:mo>
+                    <m:mo stretchy="false">≤</m:mo>
+                    <m:mi>α</m:mi>
+                  </m:mrow>
+                  <m:mo stretchy="false">)</m:mo>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{C \( θ \) = {  {ε rSub { size 8{0} }  ital "Rd" \( α -  \lline θ \lline  \) }  over  {g} } "     " \(  \lline θ \lline  &lt;= α \) } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id3503828">A torsional spring is connected to the moveable vane, producing a torque </para>
+    <para id="id7280060">Tspring = - K (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">−</m:mo><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ - θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>)</para>
+    <figure id="id5029992">
+      <media id="id4417328" alt=""><image src="../../media/graphics12-a992.png" mime-type="image/png" height="276" width="299"/></media>
+    </figure>
+    <para id="id4383919">Figure 3.10 Schematic electrostatic voltmeter (Problem 3.21).</para>
+    <para id="id4185987">a. For 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>0</m:mn><m:mo stretchy="false">≤</m:mo><m:mi>θ</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mi>α</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0 &lt;= θ &lt;= α} {}</m:annotation></m:semantics></m:math>, using the results of Problem 3.16, derive an expression for the electromagnetic torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "nd"} } } {}</m:annotation></m:semantics></m:math> in terms of the applied voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dc</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{ ital "dc"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5015686">b. Find an expression for the angular position of the moveable vane as a function of the applied voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dc</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{ ital "dc"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id6914300">c. For a system with</para>
+    <para id="id3124684">R = 12 cm, d = 4 cm, g = 0.2 mm</para>
+    <para id="id5101145"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>α</m:mi><m:mo stretchy="false">−</m:mo><m:mfrac><m:mi>π</m:mi><m:mn>3</m:mn></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{α -  {  {π}  over  {3} } } {}</m:annotation></m:semantics></m:math> rad , 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 0 rad ,  K=3.65 N.m/rad</para>
+    <para id="id3078246">Plot the vane position in degrees as a function of applied voltage for 0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dc</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= V rSub { size 8{ ital "dc" &lt;= {}} } } {}</m:annotation></m:semantics></m:math> 1500V.</para>
+    <para id="id3556081">3.19 The two-winding magnetic circuit of Fig. 3.11 has a winding on a fixed yoke and a second winding on a moveable element. The moveable element is constrained to motion such that the lengths of both air gaps remain equal.</para>
+    <figure id="id2932724">
+      <media id="id4137442" alt=""><image src="../../media/graphics13-2f2e.png" mime-type="image/png" height="273" width="302"/></media>
+    </figure>
+    <para id="id4318575">Figure 3.11 Two-winding magnetic circuit for Problem 3.22.</para>
+    <para id="id3225321">a. Find the self-inductances of windings 1 and 2 in terms of the core dimensions and the number of turns.</para>
+    <para id="id5139526">b. Find the mutual inductance between the two windings.</para>
+    <para id="id3119522">c. Calculate the coenergy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math>(
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mi>,</m:mi><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } ,i rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>).</para>
+    <para id="id5041738">d. Find an expression for the force acting on the moveable element as a function of the winding currents.</para>
+    <para id="id8349789">3.20 Two coils, one mounted on a stator and the other on a rotor, have self- and mutual inductances of</para>
+    <para id="id4084841"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"11"} } } {}</m:annotation></m:semantics></m:math> = 3.5 mH  
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"22"} } } {}</m:annotation></m:semantics></m:math> = 1.8 mH 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"12"} } } {}</m:annotation></m:semantics></m:math> = 2.1cos
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math> mH</para>
+    <para id="id3080734">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math> is the angle between the axes of the coils. The coils are connected in series and carry a current</para>
+    <para id="id2927036">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>i</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msqrt>
+                      <m:mn>2</m:mn>
+                    </m:msqrt>
+                  </m:mrow>
+                  <m:mi>I</m:mi>
+                  <m:mtext>sin</m:mtext>
+                  <m:mi fontstyle="italic">ωt</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{i= sqrt {2} I"sin"ωt} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id5266776">a. Derive an expression for the instantaneous torque T on the rotor as a function of the angular position 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id3537152">b. Find an expression for the time-averaged torque 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>avg</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "avg"} } } {}</m:annotation></m:semantics></m:math> as a function of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id4347143">c. Compute the numerical value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>avg</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "avg"} } } {}</m:annotation></m:semantics></m:math> for I = 10 A and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math> = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id2967438">d. Sketch curves of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>avg</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "avg"} } } {}</m:annotation></m:semantics></m:math> versus 0 for currents I = 5, 7.07, and 10 A.</para>
+    <para id="id3411730">e. A helical restraining spring which tends to hold the rotor at 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ="90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> is now attached to the rotor. The restraining torque of the spring is proportional to the angular deflection from 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>90</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ="90" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math> and is -0.1 N. m when the rotor is turned to 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mn>0</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ=0 rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>. Show on the curves of part (d) how you could find the angular position of the rotor-plus-spring combination for coil currents I = 5, 7.07, and 10 A. From your curves, estimate the rotor angle for each of these currents.</para>
+    <para id="id4382403">f. Write a MATLAB script to plot the angular position of the rotor as a function of rms current for 0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= I &lt;= {}} {}</m:annotation></m:semantics></m:math> 10 A. (Note that this problem illustrates the principles of the dynamometer-type ac ammeter.)</para>
+    <para id="id5241577">3.21 Two windings, one mounted on a stator and the other on a rotor, have self- and mutual inductances of</para>
+    <para id="id3347344"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>11</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"11"} } } {}</m:annotation></m:semantics></m:math> = 4.5H 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>22</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"22"} } } {}</m:annotation></m:semantics></m:math> = 2.5H 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>12</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{"12"} } } {}</m:annotation></m:semantics></m:math>= 2.8cosθ H</para>
+    <para id="id3079050">where 0 is the angle between the axes of the windings. The resistances of the windings may be neglected. Winding 2 is short-circuited, and the current in winding 1 as a function of time is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> = 10sin
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>ω</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω} {}</m:annotation></m:semantics></m:math>t A.</para>
+    <para id="id5214098">a. Derive an expression for the numerical value in newton-meters of the instantaneous torque on the rotor in terms of the angle 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>θ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id3152691">b. Compute the time-averaged torque in newton-meters when 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>θ</m:mi><m:mo stretchy="false">=</m:mo><m:msup><m:mtext>45</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ="45" rSup { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5214900">c. If the rotor is allowed to move, will it rotate continuously or will it tend to come to rest? If the latter, at what value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>θ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{θ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> ?</para>
+    <para id="id3140426">3.22 A loudspeaker is made of a magnetic core of infinite permeability and circular symmetry, as shown in Figs. 3.12a and b. The air-gap length g is much less than the radius r0 of the central core. The voice coil is constrained to move only in the x direction and is attached to the speaker cone, which is not shown in the figure. A constant radial magnetic field is produced in the air gap by a direct current in coil l, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } =I rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>. An audio-frequency signal 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>cos</m:mtext><m:mi fontstyle="italic">ωt</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{2} } =I rSub { size 8{2} } "cos"ωt} {}</m:annotation></m:semantics></m:math> is then applied to the voice coil. Assume the voice coil to be of negligible thickness and composed of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> turns uniformly distributed over its height h. Also assume that its displacement is such that it remains in the air gap (0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= x &lt;= {}} {}</m:annotation></m:semantics></m:math> l-h).</para>
+    <para id="id4968425">a. Calculate the force on the voice coil, using the Lorentz Force Law (Eq. 3.1).</para>
+    <para id="id3408742">b. Calculate the self-inductance of each coil.</para>
+    <figure id="id3567394">
+      <media id="id4990724" alt=""><image src="../../media/graphics14-9b3a.png" mime-type="image/png" height="264" width="586"/></media>
+    </figure>
+    <para id="id5250371">Figure 3.12 Loudspeaker for Problem 3.25.</para>
+    <para id="id4243569">c. Calculate the mutual inductance between the coils. (Hint: Assume that current is applied to the voice coil, and calculate the flux linkages of coil 1. Note that these flux linkages vary with the displacement x.)</para>
+    <para id="id5152659">d. Calculate the force on the voice coil from the coenergy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id4600002">3.23 The magnetic structure of Fig. 3.13 is a schematic view of a system designed to support a block of magnetic material (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">→</m:mo><m:mo stretchy="false">∞</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rightarrow  infinity } {}</m:annotation></m:semantics></m:math>) of mass M against the force of gravity. The system includes a permanent magnet and a winding. Under normal conditions, the force is supplied by the permanent magnet alone. The function of the winding is to counteract the field produced by the magnet so that the mass can be removed from the device. The system is designed such that the air gaps at each side of the mass remain constant at length 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>g</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{g rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>/2. Assume that the permanent magnet can be represented by a linear characteristic of the form</para>
+    <para id="id3061404"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{m} } =μ rSub { size 8{R} }  \( H rSub { size 8{m} }  - H rSub { size 8{C} }  \) } {}</m:annotation></m:semantics></m:math>and that the winding direction is such that positive winding current reduces the air-gap flux produced by the permanent magnet. Neglect the effects of magnetic fringing.</para>
+    <figure id="id7967679">
+      <media id="id5061777" alt=""><image src="../../media/graphics15-d430.png" mime-type="image/png" height="274" width="357"/></media>
+    </figure>
+    <para id="id4272055">Figure 3.13 Magnetic support system for Problem 3.27.</para>
+    <para id="id3388467">a. Assume the winding current to be zero. (i) Find the force fnd acting on the mass in the x direction due to the permanent magnet alone as a function of x (0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= x &lt;= {}} {}</m:annotation></m:semantics></m:math> h). (ii) Find the maximum mass 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{"max"} } } {}</m:annotation></m:semantics></m:math> that can be supported against gravity for 0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:mi>x</m:mi><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= x &lt;= {}} {}</m:annotation></m:semantics></m:math> h.</para>
+    <para id="id5250819">b. For M = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{"max"} } } {}</m:annotation></m:semantics></m:math>/2, find the minimum current required to ensure that the mass will fall out of the system when the current is applied.</para>
+    <para id="id4631052">3.24 Winding 1 in the loudspeaker of Problem 3.22 (Fig.3.12) is replaced by a permanent magnet as shown in Fig.3.14. The magnet can be represented by the linear characteristic 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>R</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{m} } =μ rSub { size 8{R} }  \( H rSub { size 8{m} }  - H rSub { size 8{c} }  \) } {}</m:annotation></m:semantics></m:math>.</para>
+    <figure id="id5274026">
+      <media id="id4364022" alt=""><image src="../../media/graphics16-1c04.png" mime-type="image/png" height="235" width="276"/></media>
+    </figure>
+    <para id="id5278711">Figure 3.14 Central core of loudspeaker of Fig. 3.37 </para>
+    <para id="id5249552">with winding 1 replaced by a permanent magnet (Problem 3.28).</para>
+    <figure id="id6325593">
+      <media id="id3391138" alt=""><image src="../../media/graphics17-ab99.png" mime-type="image/png" height="380" width="441"/></media>
+    </figure>
+    <para id="id3212326">Figure 3.15 Permanent-magnet system for Problem 3.29.</para>
+    <para id="id2972260">a. Assuming the voice coil current to be zero, (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> = 0), calculate the magnetic flux density in the air gap.</para>
+    <para id="id4298064">b. Calculate the flux linkage of the voice coil due to the permanent magnet as a function of the displacement x.</para>
+    <para id="id3220508">c. Calculate the coenergy 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math>(
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>,x) assuming that the voice coil current is sufficiently small so that the component of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msubsup><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mi>'</m:mi></m:msubsup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ { {W}} sup { ' } rSub { size 8{ ital "fld"} } } {}</m:annotation></m:semantics></m:math> due to the voice coil self inductance can be ignored.</para>
+    <para id="id7953221">d. Calculate the force on the voice coil.</para>
+    <para id="id3199058">3.25 Figure 3.15 shows a circularly symmetric system in which a moveable plunger (constrained to move only in the vertical direction) is supported by a spring of spring constant K = 5.28 N/m. The system is excited by a samarium-cobalt permanent-magnet in the shape of a washer of outer radius 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{3} } } {}</m:annotation></m:semantics></m:math>, inner radius 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>, and thickness 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>t</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{t rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>. The system dimensions are:</para>
+    <para id="id5190640"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> = 2.1 cm, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> = 4 cm, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{3} } } {}</m:annotation></m:semantics></m:math> = 4.5 cm</para>
+    <para id="id4230922">h = 1 cm, g = 1 mm, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>t</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{t rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> = 3 mm</para>
+    <para id="id5192273">The equilibrium position of the plunger is observed to be x = 1.0 mm.</para>
+    <para id="id3529070">a. Find the magnetic flux density 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>g</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{g} } } {}</m:annotation></m:semantics></m:math> in the fixed gap and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{x} } } {}</m:annotation></m:semantics></m:math> in the variable gap.</para>
+    <para id="id5134665">b. Calculate the x-directed magnetic force pulling down on the plunger.</para>
+    <para id="id4619322">c. The spring force is of the form 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>spring</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{ ital "spring"} } } {}</m:annotation></m:semantics></m:math>= K (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> - x). Find 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id3062690">3.26 The plunger of a solenoid is connected to a spring. The spring force is given by f = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>K</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{K rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>(0.9a - x), where x is the air-gap length. The inductance of the solenoid is of the form L = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>(1 - x/a), and its winding resistance is R. The plunger is initially stationary at position x = 0.9a when a dc voltage of magnitude 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> is applied to the solenoid.</para>
+    <para id="id3085307">a. Find an expression for the force as a function of time required to hold the plunger at position a/2.</para>
+    <para id="id3551723">b. If the plunger is then released and allowed to come to equilibrium, find the equilibrium position 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>. You may assume that this position falls in the range 0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= X rSub { size 8{0} }  &lt;= {}} {}</m:annotation></m:semantics></m:math> a.</para>
+    <para id="id3234161">3.27 Consider the solenoid system of Problem 3.26. Assume the following parameter values:</para>
+    <para id="id7611734"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>L</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{L rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 4.0mH a = 2.2cm R = 1.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>K</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{K rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>=3.5 N/cm</para>
+    <para id="id5140891">The plunger has mass M = 0.2 kg. Assume the coil to be connected to a dc source of magnitude 4 A. Neglect any effects of gravity.</para>
+    <para id="id4396012">a. Find the equilibrium displacement 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id3548272">b. Write the dynamic equations of motion for the system.</para>
+    <para id="id5029299">c. Linearize these dynamic equations for incremental motion of the system around its equilibrium position.</para>
+    <para id="id3550142">d. If the plunger is displaced by an incremental distance E from its equilibrium position 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> and released with zero velocity at time t = 0, find (i) The resultant motion of the plunger as a function of time, and (ii) The corresponding time-varying component of current induced across the coil terminals.</para>
+    <para id="id5136876">3.28 The solenoid of Problem 3.27 is now connected to a dc voltage source of magnitude 6V.</para>
+    <para id="id5133028">a. Find the equilibrium displacement 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id4628108">b. Write the dynamic equations of motion for the system.</para>
+    <para id="id3379491">c. Linearize these dynamic equations for incremental motion of the system around its equilibrium position.</para>
+  </content>
+</document>

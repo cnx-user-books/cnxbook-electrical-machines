@@ -1,0 +1,727 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>PROBLEMS - chapter 1</title>
+  <metadata>
+  <md:content-id>m28357</md:content-id><md:title>PROBLEMS - chapter 1</md:title>
+  <md:abstract/>
+  <md:uuid>3a4649bb-8e42-4501-9cc0-769fcd8d9573</md:uuid>
+</metadata>
+
+<content>
+    <para id="id8789609">PROBLEMS</para>
+    <para id="id12774413">This lecture note is based on the textbook # 1. Electric Machinery - A.E. Fitzgerald, Charles Kingsley, Jr., Stephen D. Umans- 6th edition- Mc Graw Hill series in Electrical Engineering. Power and Energy</para>
+    <para id="id13883537">1.1 A magnetic circuit with a single air gap is shown in Fig.1.1. The core dimensions are:</para>
+    <para id="id9530875">Cross-sectional area Ac = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mn>8x</m:mn><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle></m:msup><m:msup><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." 8x"10" rSup { size 8{ - 3} } m rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id13240663">Mean core length lc = 0.6 m</para>
+    <para id="id9014327">Gap length g = 2.3 x 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>3</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"10" rSup { size 8{ - 3} } } {}</m:annotation></m:semantics></m:math> m</para>
+    <para id="id13911454">N = 83 turns</para>
+    <figure id="id5763023">
+      <media id="id2191373" alt=""><image src="../../media/graphics1-27db.png" mime-type="image/png" height="180" width="290"/></media>
+    </figure>
+    <para id="id8328266">Figure 1.1 Magnetic circuit.</para>
+    <para id="id12577852">Assume that the core is of infinite permeability (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">→</m:mo><m:mo stretchy="false">∞</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rightarrow  infinity } {}</m:annotation></m:semantics></m:math>) and neglect the effects of fringing fields at the air gap and leakage flux. (a) Calculate the reluctance of the core 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> and that of the gap 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>g</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{g} } } {}</m:annotation></m:semantics></m:math>. For a current of i = 1.5 A, calculate (b) the total flux 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>φ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{φ} {}</m:annotation></m:semantics></m:math>, (c) the flux linkages ) 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>λ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ} {}</m:annotation></m:semantics></m:math> of the coil, and (d) the coil inductance L.</para>
+    <para id="id3535727">1.2 Repeat Problem 1.1 for a finite core permeability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>2500</m:mtext></m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ="2500"μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id11369387">1.3 Consider the magnetic circuit of Fig.1.1 with the dimensions of Problem1.1. Assuming infinite core permeability, calculate (a) the number of turns required to achieve an inductance of 12 mH and (b) the inductor current which will result in a core flux density of 1.0 T.</para>
+    <para id="id13881218">1.4 Repeat Problem 1.3 for a core permeability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>1300</m:mtext></m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ="1300"μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id11571821">1.5 The magnetic circuit of Problem 1.1 has a nonlinear core material whose permeability as a function of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is given by</para>
+    <para id="id11570068">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>μ</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>μ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>o</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mfenced open="[" close="]">
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:mfrac>
+                        <m:mtext>3499</m:mtext>
+                        <m:msqrt>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                            <m:mtext>.</m:mtext>
+                            <m:mtext>047</m:mtext>
+                            <m:mo stretchy="false">(</m:mo>
+                            <m:msub>
+                              <m:mi>B</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>m</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:msup>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>7</m:mn>
+                                    <m:mtext>.</m:mtext>
+                                    <m:mn>8</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msup>
+                          </m:mrow>
+                        </m:msqrt>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{μ=μ rSub { size 8{o} }  left [1+ {  {"3499"}  over  { sqrt {1+0 "." "047" \( B rSub { size 8{m} }  \)  rSup { size 8{7 "." 8} } } } }  right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id9572537">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is the material flux density.</para>
+    <para id="id5761070">a. Using MATLAB, plot a dc magnetization curve for this material (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> vs.
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>H</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{H rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math>) over the range 0
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow><m:mi>B</m:mi><m:mo stretchy="false">≤</m:mo><m:mrow/></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= B &lt;= {}} {}</m:annotation></m:semantics></m:math> 2.2 T.</para>
+    <para id="id4622547">b. Find the current required to achieve a flux density of 2.2 T in the core.</para>
+    <para id="id13912965">c. Again, using MATLAB, plot the coil flux linkages as a function of coil current as the current is varied from 0 to the value found in part (b).</para>
+    <para id="id13115934">1.6 The magnetic circuit of Fig.1.2 consists of a core and a moveable plunger of width 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>l</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>p</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{l rSub { size 8{p} } } {}</m:annotation></m:semantics></m:math>, each of permeability . The core has cross-sectional area Ac and mean length . The overlap area of the two air gaps Ag is a function of the plunger position x and can be assumed to vary as</para>
+    <para id="id4142258">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>c</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mfenced open="[" close="]">
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:mfrac>
+                        <m:mi>x</m:mi>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{g} } =A rSub { size 8{c} }  left [1 -  {  {x}  over  {X rSub { size 8{0} } } }  right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id11425878">You may neglect any fringing fields at the air gap and use approximations consistent with magnetic-circuit analysis.</para>
+    <para id="id13922197">a. Assuming that 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">→</m:mo><m:mo stretchy="false">∞</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rightarrow  infinity } {}</m:annotation></m:semantics></m:math>, derive an expression for the magnetic flux density in the air gap 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>g</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{g} } } {}</m:annotation></m:semantics></m:math> as a function of the winding current I and as the</para>
+    <figure id="id8801155">
+      <media id="id3149819" alt=""><image src="../../media/graphics2-3175.png" mime-type="image/png" height="191" width="327"/></media>
+    </figure>
+    <para id="id4238493">Figure 1.2 Magnetic circuit for Problem 1.6.</para>
+    <para id="id12506957">plunger position is varied (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mn>0</m:mn><m:mo stretchy="false">≤</m:mo><m:mi>x</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mn>0</m:mn></m:mrow><m:mtext>.</m:mtext><m:msub><m:mn>8X</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0 &lt;= x &lt;= 0 "." 8X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>). What is the corresponding flux density in the core?</para>
+    <para id="id8492420">b. Repeat part (a) for a finite permeability 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mi>μ</m:mi></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ} {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id5486629">1.7 The magnetic circuit of Fig.1.2 and Problem 1.6 has the following dimensions"</para>
+    <para id="id13464435">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>A</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mn>8</m:mn>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mn>2</m:mn>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:msup>
+                        <m:mtext>cm</m:mtext>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } =8 "." 2 ital "cm" rSup { size 8{2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>l</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>C</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mtext>23</m:mtext>
+                  </m:mrow>
+                  <m:mstyle fontstyle="italic">
+                    <m:mrow>
+                      <m:mtext>cm</m:mtext>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{l rSub { size 8{C} } ="23" ital "cm"} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id7031386"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>l</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>p</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>2</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>8</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{l rSub { size 8{p} } =2 "." 8 ital "cm"} {}</m:annotation></m:semantics></m:math> g = 0.8 mm</para>
+    <para id="id7100976"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 2.5 cm N = 430 turns</para>
+    <para id="id8706387">a. Assuming a constant permeability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>2800</m:mtext></m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ="2800"μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>, calculate the current required to achieve a flux density of 1.3T in the air gap when the plunger is fully retracted (x =0).</para>
+    <para id="id8712607">b. Repeat the calculation of part (a) for the case in which the core and plunger are composed of a nonlinear material whose permeability is given by</para>
+    <para id="id10342167">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mi>μ</m:mi>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msub>
+                      <m:mi>μ</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mn>0</m:mn>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                  </m:mrow>
+                  <m:mfenced open="[" close="]">
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:mfrac>
+                        <m:mtext>1199</m:mtext>
+                        <m:msqrt>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mn>1</m:mn>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                            <m:mtext>.</m:mtext>
+                            <m:mtext>05</m:mtext>
+                            <m:msubsup>
+                              <m:mi>B</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>m</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>8</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msubsup>
+                          </m:mrow>
+                        </m:msqrt>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{μ=μ rSub { size 8{0} }  left [1+ {  {"1199"}  over  { sqrt {1+0 "." "05"B rSub { size 8{m} }  rSup { size 8{8} } } } }  right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id10436348">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{m} } } {}</m:annotation></m:semantics></m:math> is the magnetic flux density in the material.</para>
+    <para id="id7388630">c. For the nonlinear material of part (b), use MATLAB to plot the air-gap flux density as a function of winding current for x = 0 and x = 0.5
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id7953681">1.8 An inductor of the form of Fig.1.1 has dimensions:</para>
+    <para id="id7326555">Cross-sectional area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>3</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>6</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } =3 "." 6 ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id12607639">Mean core length 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>l</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{l rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> = 15 cm</para>
+    <para id="id13078165">N - 75 turns</para>
+    <para id="id13366424">Assuming a core permeability of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>2100</m:mtext></m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ="2100"μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> and neglecting the effects of leakage flux and fringing fields, calculate the air-gap length required to achieve an inductance of 6.0 mH.</para>
+    <para id="id13557731">1.9 The magnetic circuit of Fig.1.3 consists of rings of magnetic material in a stack of height h. The rings have inner radius Ri and outer radius Ro. Assume that the iron is of infinite permeability (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">→</m:mo><m:mo stretchy="false">∞</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rightarrow  infinity } {}</m:annotation></m:semantics></m:math>) and neglect the effects of magnetic leakage and fringing. For:</para>
+    <para id="id10878152"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{i} } } {}</m:annotation></m:semantics></m:math> =3.4 cm</para>
+    <para id="id11918532"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 4.0 cm</para>
+    <para id="id13080862">h =2cm</para>
+    <para id="id12722458">g = 0.2 cm</para>
+    <para id="id12859427">calculate:</para>
+    <para id="id12607899">a. the mean core length 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>l</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{l rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> and the core cross-sectional area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id12819986">b. the reluctance of the core 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> and that of the gap 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>g</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{g} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id13600632">For N = 65 turns, calculate:</para>
+    <para id="id12730064">c. the inductance L.</para>
+    <para id="id12859368">d. current i required to operate at an air-gap flux density of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>g</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{g} } } {}</m:annotation></m:semantics></m:math> = 1.35T.</para>
+    <para id="id7222868">e. the corresponding flux linkages 
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+       of the coil.</para>
+    <figure id="id12914732">
+      <media id="id2549331" alt=""><image src="../../media/graphics3-268f.png" mime-type="image/png" height="243" width="299"/></media>
+    </figure>
+    <para id="id13497917">Figure 1.3 Magnetic circuit.</para>
+    <para id="id9899274">1.10 Repeat Problem 1.9 for a core permeability of 
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      .</para>
+    <para id="id3498148">1.11 Using MATLAB, plot the inductance of the inductor of Problem 1.9 as a function of relative core permeability as the core permeability varies for 
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+       = 100 to 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rSub { size 8{x} } } {}</m:annotation></m:semantics></m:math> = 10000. (Hint: Plot the inductance versus the log of the relative permeability.) What is the minimum relative core permeability required to insure that the inductance is within 5 percent of the value calculated assuming that the core permeability is infinite?</para>
+    <para id="id8814437">1.12 The inductor of Fig. 1.4 has a core of uniform circular cross-section of area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math>, mean length lc and relative permeability/Zr and an N-turn winding. Write an expression for the inductance L.</para>
+    <para id="id10808757">1.13 The inductor of Fig.1.27 has the following dimensions:</para>
+    <para id="id8337000"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> = 1.0 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id10807192"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>l</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{l rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math> = 15 cm</para>
+    <para id="id13933279">g = 0.8 mm</para>
+    <para id="id11701450">N = 480 turns</para>
+    <para id="id5489253">Neglecting leakage and fringing and assuming 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ rSub { size 8{x} } } {}</m:annotation></m:semantics></m:math> = 1000, calculate the inductance.</para>
+    <figure id="id13093084">
+      <media id="id5260105" alt=""><image src="../../media/graphics4-4fb2.png" mime-type="image/png" height="185" width="382"/></media>
+    </figure>
+    <para id="id11709185">Figure 1.4 Inductor.</para>
+    <figure id="id7542642">
+      <media id="id2402076" alt=""><image src="../../media/graphics5-29eb.png" mime-type="image/png" height="253" width="346"/></media>
+    </figure>
+    <para id="id3615397">Figure 1.5 Pot-core inductor .</para>
+    <para id="id7338847">1.14 The inductor of Problem 1.13 is to be operated from a 60-Hz voltage source. (a) Assuming negligible coil resistance, calculate the rms inductor voltage corresponding to a peak core flux density of 1.5 T. (b) Under this operating condition, calculate the rms current and the peak stored energy.</para>
+    <para id="id7543111">1.15 Consider the magnetic circuit of Fig. 1.5. This structure, known as a pot-core, is typically made in two halves. The N-turn coil is wound on a cylindrical bobbin and can be easily inserted over the central post of the core as the two halves are assembled. Because the air gap is internal to the core, provided the core is not driven excessively into saturation, relatively little magnetic flux will "leak" from the core, making this a particularly attractive configuration for a wide variety of applications, both for inductors such as that of Fig. 1.27 and transformers.</para>
+    <para id="id13226541">Assume the core permeability to be 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>2500</m:mtext></m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ="2500"μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> and N = 200 turns. The following dimensions are specified:</para>
+    <para id="id10781251"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>= 1.5cm 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>= 4cm l = 2.5cm</para>
+    <para id="id7156208">h = 0.75cm g = 0.5mm</para>
+    <para id="id12567292">a. Find the value of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{3} } } {}</m:annotation></m:semantics></m:math> such that the flux density in the outer wall of the core is equal to that within the central cylinder.</para>
+    <para id="id8378718">b. Although the flux density in the radial sections of the core (the sections of thickness h) actually decreases with radius, assume that the flux density remains uniform. (i) Write an expression for the coil inductance and (ii) evaluate it for the given dimensions.</para>
+    <para id="id12805409">c. The core is to be operated at a peak flux density of 0.8 T at a frequency of 60 Hz. Find (i) the corresponding rms value of the voltage induced in the winding, (ii) the rms coil current, and (iii) the peak stored energy.</para>
+    <para id="id13574366">d. Repeat part (c) for a frequency of 50 Hz.</para>
+    <figure id="id13901680">
+      <media id="id2371897" alt=""><image src="../../media/graphics6-1f2a.png" mime-type="image/png" height="194" width="350"/></media>
+    </figure>
+    <para id="id12615287">Figure 1.6 Inductor.</para>
+    <para id="id6501680">1.16 A square voltage wave having a fundamental frequency of 60 Hz and equal positive and negative half cycles of amplitude E is applied to a 1000-turn winding surrounding a closed iron core of 1.25 x 10-3
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> cross section. Neglect both the winding resistance and any effects of leakage flux.</para>
+    <para id="id13481009">a. Sketch the voltage, the winding flux linkage, and the core flux as a function of time.</para>
+    <para id="id11354731">b. Find the maximum permissible value of E if the maximum flux density is not to exceed 1.15 T.</para>
+    <para id="id13249072">1.17 An inductor is to be designed using a magnetic core of the form of that of Fig.1.6. The core is of uniform cross-sectional area 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>5</m:mn></m:mrow><m:mtext>.</m:mtext><m:mn>0</m:mn><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{C} } =5 "." 0 ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math> and of mean length 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>C</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{C} } } {}</m:annotation></m:semantics></m:math>=25cm.</para>
+    <para id="id13198143">a. Calculate the air-gap length g and the number of turns N such that the inductance is 1.4 mH and so that the inductor can operate at peak currents of 6 A without saturating. Assume that saturation occurs when the peak flux density in the core exceeds 1.7 T and that, below saturation, the core has permeability 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:mtext>3200</m:mtext></m:mrow><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ="3200"μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id12078591">b. For an inductor current of 6 A, use Eq. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:munder><m:mo stretchy="false">∫</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mi>V</m:mi></m:mrow></m:mstyle></m:munder><m:mfenced open="[" close="]"><m:mfrac><m:msup><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mn>2μ</m:mn></m:mfrac></m:mfenced></m:mrow></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dV</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{W rSub { size 8{ ital "fld"} } = Int cSub { size 8{V} }  { left [ {  {B rSup { size 8{2} } }  over  {2μ} }  right ]}  ital "dV"} {}</m:annotation></m:semantics></m:math> to calculate (i) the magnetic stored energy in the air gap and ( ii ) the magnetic stored energy in the core. Show that the total magnetic stored energy is given by Eq. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>T</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fld</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mn>2</m:mn></m:mfrac></m:mrow><m:mfrac><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dL</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>θ</m:mi><m:mo stretchy="false">)</m:mo></m:mrow><m:mi fontstyle="italic">dθ</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{T rSub { size 8{ ital "fld"} } = {  {i rSup { size 8{2} } }  over  {2} }  {  { ital "dL" \( θ \) }  over  {dθ} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id12650883">1.18 Consider the inductor of Problem 1.17. Write a simple design program in the form of a MATLAB script to calculate the number of turns and air-gap length as a function of the desired inductance. The script should be written to request a value of inductance (in mH) from the user, with the output being the air-gap length in mm and the number of turns.</para>
+    <para id="id13095471">The inductor is to be operated with a sinusoidal current at 60 Hz, and it must be designed such that the peak core flux density will be equal to 1.7 T when the inductor current is equal to 4.5 A rms. Write your script to reject any designs for which the gap length is out of the range of 0.05 mm to 5.0 mm or for which the number of turns drops below 5.</para>
+    <para id="id8911961">Using your program find (a) the minimum and (b) the maximum inductances (to the nearest mH) which will satisfy the given constraints. For each of these values, find the required air-gap length and the number of turns as well as the rms voltage corresponding to the peak core flux.</para>
+    <figure id="id12047595">
+      <media id="id1166420990541" alt=""><image src="../../media/graphics7-8dc8.png" mime-type="image/png" height="144" width="386"/></media>
+    </figure>
+    <para id="id13400272">Figure 1.7 Toroidal winding.</para>
+    <para id="id13643960">1.19 A proposed energy storage mechanism consists of an N-turn coil wound around a large nonmagnetic (
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>μ</m:mi><m:mo stretchy="false">=</m:mo><m:msub><m:mi>μ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{μ=μ rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>) toroidal form as shown in Fig. 1.7. As can be seen from the figure, the toroidal form has a circular cross section of radius a and toroidal radius r, measured to the center of the cross section. The geometry of this device is such that the magnetic field can be considered to be zero everywhere outside the toroid. Under the assumption that a 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ &lt;= {}} {}</m:annotation></m:semantics></m:math> r, the H field inside the toroid can be considered to be directed around the toroid and of uniform magnitude</para>
+    <para id="id9847279">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>H</m:mi>
+                  <m:mo stretchy="false">=</m:mo>
+                  <m:mfrac>
+                    <m:mstyle fontstyle="italic">
+                      <m:mrow>
+                        <m:mtext>Ni</m:mtext>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mn>2πr</m:mn>
+                  </m:mfrac>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{H= {  { ital "Ni"}  over  {2πr} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id12969832">For a coil with N = 1000 turns, r = 10 m, and a = 0.45 m:</para>
+    <para id="id12709069">a. Calculate the coil inductance L.</para>
+    <para id="id13003245">b. The coil is to be charged to a magnetic flux density of 1.75 T. Calculate the total stored magnetic energy in the toms when this flux density is achieved.</para>
+    <para id="id12159388">c. If the coil is to be charged at a uniform rate (i.e., di/dt = constant), calculate the terminal voltage required to achieve the required flux density in 30 sec. Assume the coil resistance to be negligible.</para>
+    <para id="id11934267">1.20 Figure 1.8 shows an inductor wound on a laminated iron core of rectangular cross section. Assume that the permeability of the iron is infinite. Neglect magnetic leakage and fringing in the two air gaps (total gap length = g). The N-turn winding is insulated copper wire whose resistivity is ρ
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ %OMEGA } {}</m:annotation></m:semantics></m:math>.m. Assume that the fraction 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> of the winding space is available for copper; the rest of the space is used for insulation.</para>
+    <figure id="id3606387">
+      <media id="id3629846" alt=""><image src="../../media/graphics8-a65c.png" mime-type="image/png" height="188" width="305"/></media>
+    </figure>
+    <para id="id3981455">Figure 1.8 Iron-core inductor.</para>
+    <para id="id4694946">a. Calculate the cross-sectional area and volume of the copper in the winding space.</para>
+    <para id="id13258330">b. Write an expression for the flux density B in the inductor in terms of the current density 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cu</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J rSub { size 8{ ital "cu"} } } {}</m:annotation></m:semantics></m:math> in the copper winding.</para>
+    <para id="id13498989">c. Write an expression for the copper current density 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cu</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J rSub { size 8{ ital "cu"} } } {}</m:annotation></m:semantics></m:math> in terms of the coil current I, the number of turns N, and the coil geometry.</para>
+    <para id="id10667176">d. Derive an expression for the electric power dissipation in the coil in terms of the current density 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cu</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J rSub { size 8{ ital "cu"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id9597639">e. Derive an expression for the magnetic stored energy in the inductor in terms of the applied current density 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cu</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J rSub { size 8{ ital "cu"} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id8911279">f. From parts (d) and (e) derive an expression for the L/R time constant of the inductor. Note that this expression is independent of the number of turns in the coil and does not change as the inductance and coil resistance are changed by varying the number of turns.</para>
+    <para id="id12944997">1.21 The inductor of Fig. 1.8 has the following dimensions:</para>
+    <para id="id13305838">a = h = ω = 1.5cm b = 2cm g = 0.2cm</para>
+    <para id="id12930074">The winding factor (i.e., the fraction of the total winding area occupied by conductor) is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>f</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>w</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{f rSub { size 8{w} } } {}</m:annotation></m:semantics></m:math> = 0.55. The resistivity of copper is 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mn>1</m:mn><m:mtext>.</m:mtext><m:mtext>73</m:mtext><m:mi>x</m:mi><m:msup><m:mtext>10</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mn>8</m:mn></m:mrow></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">Ω</m:mo><m:mtext>.</m:mtext><m:mi>m</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{1 "." "73"x"10" rSup { size 8{ - 8} }  %OMEGA  "." m} {}</m:annotation></m:semantics></m:math>. When the coil is operated with a constant dc applied voltage of 35 V, the air-gap flux density is measured to be 1.4 T. Find the power dissipated in the coil, coil current, number of turns, coil resistance, inductance, time constant, and wire size to the nearest standard size. (Hint:Wire size can be found from the expression</para>
+    <para id="id12580203">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mstyle fontstyle="italic">
+                      <m:mrow>
+                        <m:mtext>AWG</m:mtext>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow>
+                      <m:mtext>36</m:mtext>
+                      <m:mo stretchy="false">−</m:mo>
+                      <m:mn>4</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mtext>.</m:mtext>
+                  <m:mtext>312</m:mtext>
+                  <m:mfenced open="[" close="]">
+                    <m:mfrac>
+                      <m:msub>
+                        <m:mi>A</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>wire</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mrow>
+                        <m:mn>1</m:mn>
+                        <m:mtext>.</m:mtext>
+                        <m:mrow>
+                          <m:mtext>267</m:mtext>
+                          <m:mo stretchy="false">×</m:mo>
+                          <m:msup>
+                            <m:mtext>10</m:mtext>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mn>8</m:mn>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msup>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mfrac>
+                  </m:mfenced>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{ ital "AWG"="36" - 4 "." "312" left [ {  {A rSub { size 8{ ital "wire"} } }  over  {1 "." "267" times "10" rSup { size 8{ - 8} } } }  right ]} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id12679246">where AWG is the wire size, expressed in terms of the American Wire Gauge, and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>wire</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{ ital "wire"} } } {}</m:annotation></m:semantics></m:math> is the conductor cross-sectional area measured in 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>.)</para>
+    <para id="id3341106">1.22 The magnetic circuit of Fig.1.9 has two windings and two air gaps. The core can be assumed to be of infinite permeability. The core dimensions are indicated in the figure.</para>
+    <para id="id8457194">a. Assuming coil 1 to be carrying a current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>I</m:mi><m:mmultiscripts><m:mtext/><m:mprescripts/><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:none/></m:mmultiscripts></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I"" lSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and the current in coil 2 to be zero, calculate (i) the magnetic flux density in each of the air gaps, (ii) the flux linkage of winding l, and (iii) the flux linkage of winding 2.</para>
+    <para id="id3633718">b. Repeat part (a), assuming zero current in winding 1 and a current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> in winding 2.</para>
+    <para id="id10273184">c. Repeat part (a), assuming the current in winding 1 to be 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and the current in winding 2 to be 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <para id="id7401163">d. Find the self-inductances of windings 1 and 2 and the mutual inductance between the windings.</para>
+    <figure id="id7806965">
+      <media id="id8784137" alt=""><image src="../../media/graphics9-0dd9.png" mime-type="image/png" height="230" width="398"/></media>
+    </figure>
+    <para id="id8314488">Figure 1.9 Magnetic circuit.</para>
+    <figure id="id10742416">
+      <media id="id5894409" alt=""><image src="../../media/graphics10-1f70.png" mime-type="image/png" height="292" width="423"/></media>
+    </figure>
+    <para id="id9319776">Figure 1.10 Symmetric magnetic circuit.</para>
+    <para id="id13461846">1.23 The symmetric magnetic circuit of Fig.1.10 has three windings. Windings A and B each have N turns and are wound on the two bottom legs of the core. The core dimensions are indicated in the figure.</para>
+    <para id="id13192705">a. Find the self-inductances of each of the windings.</para>
+    <para id="id13174549">b. Find the mutual inductances between the three pairs of windings.</para>
+    <para id="id13933882">c. Find the voltage induced in winding 1 by time-varying currents 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>A</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{A} } } {}</m:annotation></m:semantics></m:math>(t) and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>B</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{B} } } {}</m:annotation></m:semantics></m:math>(t) in windings A and B. Show that this voltage can be used to measure the imbalance between two sinusoidal currents of the same frequency.</para>
+    <para id="id13327469">1.24 The reciprocating generator of Fig.1.11 has a movable plunger (position x) which is supported so that it can slide in and out of the magnetic yoke while maintaining a constant air gap of length g on each side adjacent to the yoke. Both the yoke and the plunger can be considered to be of infinite permeability. The motion of the plunger is constrained such that its position is limited to 
+<m:math><m:semantics><m:mrow/><m:annotation encoding="StarMath 5.0">{}</m:annotation></m:semantics></m:math><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mn>0</m:mn><m:mo stretchy="false">≤</m:mo><m:mi>x</m:mi></m:mrow><m:mo stretchy="false">≤</m:mo><m:mi>ω</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{0 &lt;= x &lt;= ω} {}</m:annotation></m:semantics></m:math>.</para>
+    <figure id="id4614709">
+      <media id="id3063332" alt=""><image src="../../media/graphics11-9181.png" mime-type="image/png" height="229" width="356"/></media>
+    </figure>
+    <para id="id13481088">Figure 1.11 Reciprocating generator.</para>
+    <para id="id13390068">There are two windings on this magnetic circuit. The first has 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> turns and carries a constant dc current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math>. The second, which has 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> turns, is open-circuited and can be connected to a load.</para>
+    <para id="id13173895">a. Neglecting any fringing effects, find the mutual inductance between windings 1 and 2 as a function of the plunger position x.</para>
+    <para id="id7951460">b. The plunger is driven by an external source so that its motion is given by</para>
+    <para id="id7222979">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mi>x</m:mi>
+                  <m:mo stretchy="false">(</m:mo>
+                  <m:mi>t</m:mi>
+                  <m:mrow>
+                    <m:mo stretchy="false">)</m:mo>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mfrac>
+                      <m:mrow>
+                        <m:mi>ω</m:mi>
+                        <m:mo stretchy="false">(</m:mo>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mo stretchy="false">+</m:mo>
+                          <m:mi>ε</m:mi>
+                        </m:mrow>
+                        <m:mtext>sin</m:mtext>
+                        <m:mi fontstyle="italic">ωt</m:mi>
+                        <m:mo stretchy="false">)</m:mo>
+                      </m:mrow>
+                      <m:mn>2</m:mn>
+                    </m:mfrac>
+                  </m:mrow>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{x \( t \) = {  {ω \( 1+ε"sin"ωt \) }  over  {2} } } {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id12751596">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>ε</m:mi><m:mo stretchy="false">≤</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ε &lt;= 1} {}</m:annotation></m:semantics></m:math> . Find an expression for the sinusoidal voltage which is generated as a result of this motion.</para>
+    <para id="id13933774">1.25 Figure 1.12 shows a configuration that can be used to measure the magnetic characteristics of electrical steel. The material to be tested is cut or punched into circular laminations which are then stacked (with interspersed insulation to avoid eddy-current formation). Two windings are wound over this stack of laminations: the first, with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> turns, is used to excite a magnetic field in the lamination stack; the second, with 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> turns, is used to sense the resultant magnetic flux.</para>
+    <para id="id11652035">The accuracy of the results requires that the magnetic flux density be uniform within the laminations. This can be accomplished if the lamination width t = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{0} }  - R rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> is much smaller than the lamination radius and if the excitation winding is wound uniformly around the lamination stack. For the purposes of this analysis, assume there are n laminations, each of thickness 
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      . Also assume that winding 1 is excited by a current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } =I rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> sinωt.</para>
+    <para id="id11773996">a. Find the relationship between the magnetic field intensity H in the laminations and current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> in winding 1.</para>
+    <para id="id12751718">b. Find the relationship between the voltage ve and the time rate of change of the flux density B in the laminations.</para>
+    <para id="id11948398">c. Find the relationship between the voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi>G</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∫</m:mo><m:msub><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{v rSub { size 8{0} } =G Int {v rSub { size 8{2} } }  ital "dt"} {}</m:annotation></m:semantics></m:math> and the flux density.</para>
+    <figure id="id12070504">
+      <media id="id1166412641888" alt=""><image src="../../media/graphics12-d38d.png" mime-type="image/png" height="343" width="525"/></media>
+    </figure>
+    <para id="id11943284">Figure 1.12 Configuration for measurement of magnetic properties of electrical steel.</para>
+    <para id="id13931836">In this problem, we have shown that the magnetic field intensity H and the magnetic flux density B in the laminations are proportional to the current 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> and the voltage 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>V</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{V rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> by known constants. Thus, B and H in the magnetic steel can be measured directly, and the B-H characteristics as discussed in Sections 1.3 and 1.4 can be determined.</para>
+    <para id="id6129918">1.26 In order to test the properties of a sample of electrical steel, a set of laminations of the form of Fig.1.12 have been stamped out of a sheet of the electrical steel of thickness 3.0 mm. The radii of the laminations are 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{i} } } {}</m:annotation></m:semantics></m:math> = 75 mm and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 82 mm. They have been assembled in a stack of 10 laminations (separated by appropriate insulation to eliminate eddy currents) for the purposes of testing the magnetic properties at a frequency of 100 Hz.</para>
+    <para id="id13879366">a. The flux in the lamination stack will be excited from a variable-amplitude, 100-Hz voltage source whose peak amplitude is 30 V (peak-to-peak). Calculate the number of turns 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> for the excitation winding required to insure that the lamination stack can be excited up to a peak flux density of 2.0T.</para>
+    <para id="id12946595">b. With a secondary winding of 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> = 20 turns and an integrator gain G = 1000, the output of the integrator is observed to be 7.0 V peak-to-peak. Calculate (i) the corresponding peak flux in the lamination stack and (ii) the corresponding amplitude of the voltage applied to the excitation winding.</para>
+    <figure id="id12930354">
+      <media id="id1166419872346" alt=""><image src="../../media/graphics13-db59.png" mime-type="image/png" height="144" width="267"/></media>
+    </figure>
+    <para id="id7127041">Figure 1.13 Magnetic circuit.</para>
+    <para id="id4464999">1.27 The coils of the magnetic circuit shown in Fig. 1.13 are connected in series so that the mmf's of paths A and B both tend to set up flux in the center leg C in the same direction. The coils are wound with equal turns, 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>N</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{N rSub { size 8{1} } =N rSub { size 8{2} } } {}</m:annotation></m:semantics></m:math> = 100.</para>
+    <para id="id12035526">The dimensions are:</para>
+    <para id="id9497701">Cross-section area of A and B legs = 7 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id12969808">Cross-section area of C legs = 14 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math></para>
+    <para id="id11161372">Length of A path = 17 cm</para>
+    <para id="id8708608">Length of B path = 17 cm</para>
+    <para id="id12750852">Length of C path = 5.5 cm</para>
+    <para id="id12750856">Air gap = 0.4 cm</para>
+    <para id="id11574089">The material is M-5 grade, 0.012-in steel, with a stacking factor of 0.94. Neglect fringing and leakage.</para>
+    <para id="id7247508">a. How many amperes are required to produce a flux density of 1.2 T in the air gap?</para>
+    <para id="id12077768">b. Under the condition of part (a), how many joules of energy are stored in the magnetic field in the air gap?</para>
+    <para id="id12448757">c. Calculate the inductance.</para>
+    <para id="id11425255">1.28 The following table includes data for the top half of a symmetric 60-Hz hysteresis loop for a specimen of magnetic steel:</para>
+    <figure id="id8833736">
+      <media id="id7569916" alt=""><image src="../../media/graphics14-8be0.png" mime-type="image/png" height="74" width="599"/></media>
+    </figure>
+    <para id="id4348859">Using MATLAB, (a) plot this data, (b) calculate the area of the hysteresis loop in joules, and (c) calculate the corresponding 60-Hz core loss in Watts/kg. The density of M-5 steel is 7.65 g/
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ ital "cm" rSup { size 8{3} } } {}</m:annotation></m:semantics></m:math>.</para>
+    <figure id="id7937005">
+      <media id="id1166419108753" alt=""><image src="../../media/graphics15-0611.png" mime-type="image/png" height="232" width="252"/></media>
+    </figure>
+    <para id="id12175270">Figure 1.14 Magnetic circuit for.</para>
+    <para id="id5935530">1.29 It is desired to achieve a time-varying magnetic flux density in the air gap of the magnetic circuit of Fig.1.14 of the form</para>
+    <para id="id12612261">
+      <m:math>
+        <m:semantics>
+          <m:mrow>
+            <m:mstyle fontsize="12pt">
+              <m:mrow>
+                <m:mrow>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>B</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>g</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>B</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>0</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:msub>
+                        <m:mi>B</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                  </m:mrow>
+                  <m:mtext>sin</m:mtext>
+                  <m:mi fontstyle="italic">ωt</m:mi>
+                </m:mrow>
+              </m:mrow>
+            </m:mstyle>
+            <m:mrow/>
+          </m:mrow>
+          <m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{g} } =B rSub { size 8{0} } +B rSub { size 8{1} } "sin"ωt} {}</m:annotation>
+        </m:semantics>
+      </m:math>
+    </para>
+    <para id="id8791784">where 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{0} } } {}</m:annotation></m:semantics></m:math> = 0.5 T and 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msub><m:mi>B</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{B rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math> = 0.25 T. The dc field B0 is to be created by a neodimium-iron-boron magnet, whereas the time-varying field is to be created by a time-varying current.</para>
+    <para id="id13374613">For 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>g</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>6</m:mn></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>cm</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{A rSub { size 8{g} } =6 ital "cm" rSup { size 8{2} } } {}</m:annotation></m:semantics></m:math>, g = 0.4 cm, and N = 200 turns, find:</para>
+    <para id="id12522148">a. the magnet length d and the magnet area Am that will achieve the desired dc air-gap flux density and minimize the magnet volume.</para>
+    <para id="id13077035">b. the minimum and maximum values of the time-varying current required to achieve the desired time-varying air-gap flux density. Will this current vary sinusoidally in time?</para>
+  </content>
+</document>
