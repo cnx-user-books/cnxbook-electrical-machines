@@ -1,3 +1,82 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" type="Course">  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">  <md:content-id>col10767</md:content-id>  <md:title>Electrical Machines</md:title>      <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>  <md:language>en</md:language>        <md:uuid>14e0208f-8e84-43d3-89fb-c41e5c892137</md:uuid>
-<md:slug>electrical-machines</md:slug>
-</metadata>  <col:content>                        <col:subcollection>        <md:title>Chapter 1</md:title>                                <col:content>                    <col:module document="m28345"/>                            <col:module document="m28357"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 2</md:title>                                <col:content>                    <col:module document="m30003"/>                            <col:module document="m28371"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 3</md:title>                                <col:content>                    <col:module document="m28316"/>                            <col:module document="m28362"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 4</md:title>                                <col:content>                    <col:module document="m28323"/>                            <col:module document="m28368"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 5</md:title>                                <col:content>                    <col:module document="m30028"/>                            <col:module document="m28393"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 6</md:title>                                <col:content>                    <col:module document="m28334"/>                            <col:module document="m28386"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 7</md:title>                                <col:content>                    <col:module document="m28340"/>                            <col:module document="m28395"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 8</md:title>                                <col:content>                    <col:module document="m28341"/>                            <col:module document="m28377"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 9</md:title>                                <col:content>                    <col:module document="m28327"/>                            <col:module document="m28398"/>                          </col:content>      </col:subcollection>                            <col:subcollection>        <md:title>Chapter 10</md:title>                                <col:content>                    <col:module document="m27419"/>                          </col:content>      </col:subcollection>      </col:content></col:collection>
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" type="Course" authors="NGUYEN Phuc">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10767</md:content-id>
+    <md:title>Electrical Machines</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>
+    <md:language>en</md:language>
+    <md:uuid>14e0208f-8e84-43d3-89fb-c41e5c892137</md:uuid>
+    <md:slug>electrical-machines</md:slug>
+  </metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Chapter 1</md:title>
+      <col:content>
+        <col:module document="m28345"/>
+        <col:module document="m28357"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 2</md:title>
+      <col:content>
+        <col:module document="m30003"/>
+        <col:module document="m28371"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 3</md:title>
+      <col:content>
+        <col:module document="m28316"/>
+        <col:module document="m28362"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 4</md:title>
+      <col:content>
+        <col:module document="m28323"/>
+        <col:module document="m28368"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 5</md:title>
+      <col:content>
+        <col:module document="m30028"/>
+        <col:module document="m28393"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 6</md:title>
+      <col:content>
+        <col:module document="m28334"/>
+        <col:module document="m28386"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 7</md:title>
+      <col:content>
+        <col:module document="m28340"/>
+        <col:module document="m28395"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 8</md:title>
+      <col:content>
+        <col:module document="m28341"/>
+        <col:module document="m28377"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 9</md:title>
+      <col:content>
+        <col:module document="m28327"/>
+        <col:module document="m28398"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Chapter 10</md:title>
+      <col:content>
+        <col:module document="m27419"/>
+      </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>
